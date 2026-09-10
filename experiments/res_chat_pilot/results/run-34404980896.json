@@ -1,6 +1,6 @@
 {
   "claim_ceiling": "black-box behavioral feasibility only; not Step-0 causal abstraction and not evidence of RES occurrence",
-  "created_at": "2026-09-09T21:06:50.364527+00:00",
+  "created_at": "2026-09-10T02:46:13.235709+00:00",
   "dataset": "evals/registry/data/res_actor_indexed_control/samples.jsonl",
   "models": [
     "gpt-5.6-luna",
