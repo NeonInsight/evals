@@ -23,14 +23,18 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 ROOT = Path("experiments/res_step0_mechanistic")
-PREREG_PATH = ROOT / "preregistration.md"
+PREREG_PATH = Path(
+    os.environ.get("RES_STEP0_PREREG_PATH", ROOT / "preregistration.md")
+)
 RUNNER_PATH = ROOT / "run_step0.py"
 OUT_DIR = Path(os.environ.get("RES_STEP0_OUTPUT_DIR", ROOT / "results"))
+RESULT_PREFIX = os.environ.get("RES_STEP0_RESULT_PREFIX", "step0")
 RUN_ID = os.environ.get("GITHUB_RUN_ID") or datetime.now(timezone.utc).strftime(
     "%Y%m%dT%H%M%SZ"
 )
 MODEL_ID = os.environ.get("RES_MODEL_ID", "Qwen/Qwen2.5-0.5B-Instruct")
 MODEL_REVISION = os.environ.get("RES_MODEL_REVISION", "main")
+MODEL_SCALE_LABEL = os.environ.get("RES_MODEL_SCALE_LABEL", "0.5B")
 SEED = int(os.environ.get("RES_STEP0_SEED", "20260910"))
 BATCH_SIZE = int(os.environ.get("RES_STEP0_BATCH_SIZE", "8"))
 
@@ -588,8 +592,7 @@ def markdown_summary(result: dict[str, Any]) -> str:
             "",
             "## Interpretation ceiling",
             "",
-            "This is a last-token linear-subspace feasibility screen in one 0.5B open model. "
-            "It does not establish CoreRES, StrongRES, persistent selfhood, consciousness, or subjective experience.",
+            result["claim_ceiling"],
             "",
         )
     )
@@ -605,7 +608,13 @@ def main() -> None:
 
     discovery, heldout, pairs = build_datasets()
     dataset_hash = sha256_bytes(json_bytes({"discovery": discovery, "heldout": heldout, "pairs": pairs}))
+    print(
+        f"Built {len(discovery)} discovery rows, {len(heldout)} held-out rows, "
+        f"and {len(pairs)} directed pairs.",
+        flush=True,
+    )
 
+    print(f"Loading {MODEL_ID} at {MODEL_REVISION}.", flush=True)
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, revision=MODEL_REVISION)
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -615,6 +624,10 @@ def main() -> None:
         MODEL_ID, revision=MODEL_REVISION, torch_dtype=torch.float32
     )
     model.eval()
+    print(
+        f"Loaded {len(model.model.layers)} layers with hidden size {model.config.hidden_size}.",
+        flush=True,
+    )
 
     discovery_prompts = [prompt_for(row, "actor", tokenizer) for row in discovery]
     actor_prompts = [prompt_for(row, "actor", tokenizer) for row in heldout]
@@ -627,6 +640,7 @@ def main() -> None:
     integrity_clean = collect_clean(
         model, tokenizer, integrity_prompts, action_ids, collect_hidden=True
     )
+    print("Completed clean activation collection.", flush=True)
 
     actor_ideal = np.asarray([row["ideal"] for row in heldout])
     integrity_ideal = np.asarray(
@@ -648,6 +662,11 @@ def main() -> None:
             "heldout": heldout_probe_metrics(probe, actor_clean["hidden"], heldout),
             "layer_scores": layer_scores,
         }
+        print(
+            f"Localized {name} at layer {probe.layer} "
+            f"(validation={probe.validation_score:.3f}).",
+            flush=True,
+        )
 
     self_probe = probes["self_profile"]
     random_basis = orthonormal_random_basis(
@@ -687,6 +706,7 @@ def main() -> None:
                 pairs,
             ),
         }
+        print(f"Completed {name} actor and integrity interventions.", flush=True)
 
     classification, reasons = classify(
         clean_actor_accuracy,
@@ -705,7 +725,10 @@ def main() -> None:
         "duration_seconds": (finished_at - started_at).total_seconds(),
         "classification": classification,
         "classification_reasons": reasons,
-        "claim_ceiling": "Last-token linear-subspace feasibility only; not CoreRES, StrongRES, persistence, consciousness, or subjective experience.",
+        "claim_ceiling": (
+            f"Last-token linear-subspace feasibility in one {MODEL_SCALE_LABEL} open model only; "
+            "not CoreRES, StrongRES, persistence, consciousness, or subjective experience."
+        ),
         "model": {
             "id": MODEL_ID,
             "requested_revision": MODEL_REVISION,
@@ -752,8 +775,8 @@ def main() -> None:
         "interventions": interventions,
     }
 
-    result_path = OUT_DIR / f"step0-{RUN_ID}.json"
-    summary_path = OUT_DIR / f"step0-{RUN_ID}.md"
+    result_path = OUT_DIR / f"{RESULT_PREFIX}-{RUN_ID}.json"
+    summary_path = OUT_DIR / f"{RESULT_PREFIX}-{RUN_ID}.md"
     atomic_write(result_path, json.dumps(result, indent=2, sort_keys=True) + "\n")
     atomic_write(summary_path, markdown_summary(result))
     print(json.dumps({

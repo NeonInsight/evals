@@ -1,23 +1,33 @@
-name: RES Step 0 mechanistic feasibility assay
+name: RES Step 0 Qwen2.5-1.5B capacity replication
 
 on:
+  push:
+    branches:
+      - res-chat-feasibility
+    paths:
+      - .github/workflows/res-step0-qwen15b.yml
+      - experiments/res_step0_mechanistic/preregistration-qwen15b.md
+      - experiments/res_step0_mechanistic/run_step0.py
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: res-step0-mechanistic
+  group: res-step0-qwen15b
   cancel-in-progress: false
 
 jobs:
-  step0:
+  step0-qwen15b:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     env:
       HF_HUB_DISABLE_XET: "1"
       TOKENIZERS_PARALLELISM: "false"
-      RES_MODEL_ID: Qwen/Qwen2.5-0.5B-Instruct
+      RES_MODEL_ID: Qwen/Qwen2.5-1.5B-Instruct
+      RES_MODEL_SCALE_LABEL: 1.5B
+      RES_STEP0_PREREG_PATH: experiments/res_step0_mechanistic/preregistration-qwen15b.md
+      RES_STEP0_RESULT_PREFIX: step0-qwen15b
       RES_STEP0_SEED: "20260910"
       RES_STEP0_BATCH_SIZE: "8"
 
@@ -43,12 +53,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          revision=$(git ls-remote https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct refs/heads/main | awk 'NR == 1 {print $1}')
+          revision=$(git ls-remote https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct refs/heads/main | awk 'NR == 1 {print $1}')
           test -n "$revision"
           echo "RES_MODEL_REVISION=$revision" >> "$GITHUB_ENV"
           echo "Resolved model revision: $revision"
 
-      - name: Run preregistered Step 0 assay
+      - name: Run preregistered 1.5B Step 0 assay
         run: python experiments/res_step0_mechanistic/run_step0.py
 
       - name: Persist completed results
@@ -56,11 +66,11 @@ jobs:
         run: |
           set -euo pipefail
           shopt -s nullglob
-          result_files=(experiments/res_step0_mechanistic/results/step0-"$GITHUB_RUN_ID".*)
+          result_files=(experiments/res_step0_mechanistic/results/step0-qwen15b-"$GITHUB_RUN_ID".*)
           test "${#result_files[@]}" -eq 2
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "${result_files[@]}"
           git diff --cached --quiet && { echo "Completed run produced no new result files."; exit 1; }
-          git commit -m "Record RES Step 0 run $GITHUB_RUN_ID"
+          git commit -m "Record RES Step 0 Qwen1.5B run $GITHUB_RUN_ID"
           git push origin HEAD:res-chat-feasibility
