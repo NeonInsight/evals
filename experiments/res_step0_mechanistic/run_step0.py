@@ -552,6 +552,10 @@ def atomic_write(path: Path, payload: str) -> None:
     temporary.replace(path)
 
 
+def format_metric(value: float | None) -> str:
+    return "NA" if value is None else f"{value:.3f}"
+
+
 def markdown_summary(result: dict[str, Any]) -> str:
     lines = [
         f"# RES Step 0 run {result['run_id']}",
@@ -573,8 +577,9 @@ def markdown_summary(result: dict[str, Any]) -> str:
         item = result["interventions"][name]
         lines.append(
             f"| `{name}` | {item['layer']} | {item['rank']} | "
-            f"{item['iia']:.3f} | {item['source_directed_margin_rate']:.3f} | "
-            f"{item['integrity_retention']:.3f} |"
+            f"{format_metric(item['iia'])} | "
+            f"{format_metric(item['source_directed_margin_rate'])} | "
+            f"{format_metric(item['integrity_retention'])} |"
         )
     lines.extend(("", "## Classification reasons", ""))
     lines.extend(f"- {reason}" for reason in result["classification_reasons"])
