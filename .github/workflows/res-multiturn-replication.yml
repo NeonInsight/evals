@@ -1,0 +1,64 @@
+name: RES multi-turn continuity holdout replication
+
+on:
+  push:
+    branches:
+      - res-chat-feasibility
+    paths:
+      - .github/workflows/res-multiturn-replication.yml
+      - experiments/res_multiturn_continuity/run_multiturn.py
+      - experiments/res_multiturn_replication/preregistration.md
+      - experiments/res_multiturn_replication/scenarios.jsonl
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: res-multiturn-replication
+  cancel-in-progress: false
+
+jobs:
+  multiturn-replication:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out feasibility branch
+        uses: actions/checkout@v4
+        with:
+          ref: res-chat-feasibility
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned OpenAI SDK
+        run: python -m pip install openai==3.11.0
+
+      - name: Run preregistered holdout replication
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RES_MODELS: gpt-5.6-luna,gpt-5.6-terra
+          RES_MULTITURN_REPLICATION: "1"
+          RES_MULTITURN_SCENARIOS_PATH: experiments/res_multiturn_replication/scenarios.jsonl
+          RES_MULTITURN_PREREG_PATH: experiments/res_multiturn_replication/preregistration.md
+          RES_MULTITURN_OUTPUT_DIR: experiments/res_multiturn_replication/results
+          RES_MULTITURN_SEED: "20260913"
+        run: python experiments/res_multiturn_continuity/run_multiturn.py
+
+      - name: Persist completed or partial checkpoints
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/res_multiturn_replication/results
+          if git diff --cached --quiet; then
+            echo "No multi-turn replication checkpoint files to commit."
+            exit 0
+          fi
+          git commit -m "Record RES multi-turn replication run $GITHUB_RUN_ID"
+          git push origin HEAD:res-chat-feasibility
