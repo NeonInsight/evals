@@ -1,0 +1,116 @@
+name: RES Step 0 Qwen2.5-3B gated mechanistic assay
+
+on:
+  push:
+    branches:
+      - res-chat-feasibility
+    paths:
+      - .github/workflows/res-step0-qwen3b.yml
+      - experiments/res_step0_interface_gate/preregistration-qwen3b.md
+      - experiments/res_step0_interface_gate/run_interface_gate.py
+      - experiments/res_step0_mechanistic/preregistration-qwen3b.md
+      - experiments/res_step0_mechanistic/run_step0.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: res-step0-qwen3b
+  cancel-in-progress: false
+
+jobs:
+  gated-step0-qwen3b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      HF_HUB_DISABLE_XET: "1"
+      TOKENIZERS_PARALLELISM: "false"
+      RES_MODEL_ID: Qwen/Qwen2.5-3B-Instruct
+      RES_MODEL_SCALE_LABEL: 3B
+      RES_MODEL_DTYPE: bfloat16
+      RES_INTERFACE_PREREG_PATH: experiments/res_step0_interface_gate/preregistration-qwen3b.md
+      RES_INTERFACE_RESULT_PREFIX: interface-gate-qwen3b
+      RES_INTERFACE_SEED: "20260913"
+      RES_INTERFACE_BATCH_SIZE: "4"
+      RES_STEP0_PREREG_PATH: experiments/res_step0_mechanistic/preregistration-qwen3b.md
+      RES_STEP0_RESULT_PREFIX: step0-qwen3b
+      RES_STEP0_SEED: "20260910"
+      RES_STEP0_BATCH_SIZE: "2"
+
+    steps:
+      - name: Check out feasibility branch
+        uses: actions/checkout@v4
+        with:
+          ref: res-chat-feasibility
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pinned CPU dependencies
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.1
+          python -m pip install transformers==4.48.3 scikit-learn==1.6.1 safetensors==0.5.2
+
+      - name: Freeze model revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          revision=$(git ls-remote https://huggingface.co/Qwen/Qwen2.5-3B-Instruct refs/heads/main | awk 'NR == 1 {print $1}')
+          test -n "$revision"
+          echo "RES_MODEL_REVISION=$revision" >> "$GITHUB_ENV"
+          echo "Resolved model revision: $revision"
+
+      - name: Run preregistered 3B capability gate
+        id: capability_gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python experiments/res_step0_interface_gate/run_interface_gate.py
+          result_path="experiments/res_step0_interface_gate/results/interface-gate-qwen3b-$GITHUB_RUN_ID.json"
+          test -f "$result_path"
+          classification=$(jq -r '.classification' "$result_path")
+          test -n "$classification"
+          echo "classification=$classification" >> "$GITHUB_OUTPUT"
+          echo "Capability classification: $classification"
+
+      - name: Run conditional 3B mechanistic assay
+        if: steps.capability_gate.outputs.classification == 'RESPONSE_INTERFACE_GATE_PASSED'
+        run: python experiments/res_step0_mechanistic/run_step0.py
+
+      - name: Persist completed results
+        if: always() && steps.capability_gate.outcome == 'success'
+        shell: bash
+        env:
+          GATE_CLASSIFICATION: ${{ steps.capability_gate.outputs.classification }}
+        run: |
+          set -euo pipefail
+          gate_files=(
+            experiments/res_step0_interface_gate/results/interface-gate-qwen3b-"$GITHUB_RUN_ID".json
+            experiments/res_step0_interface_gate/results/interface-gate-qwen3b-"$GITHUB_RUN_ID".md
+            experiments/res_step0_interface_gate/results/interface-gate-qwen3b-"$GITHUB_RUN_ID"-fixtures.jsonl
+          )
+          for path in "${gate_files[@]}"; do test -f "$path"; done
+          git add "${gate_files[@]}"
+
+          if [[ "$GATE_CLASSIFICATION" == "RESPONSE_INTERFACE_GATE_PASSED" ]]; then
+            step0_files=(
+              experiments/res_step0_mechanistic/results/step0-qwen3b-"$GITHUB_RUN_ID".json
+              experiments/res_step0_mechanistic/results/step0-qwen3b-"$GITHUB_RUN_ID".md
+            )
+            if [[ -f "${step0_files[0]}" && -f "${step0_files[1]}" ]]; then
+              git add "${step0_files[@]}"
+            else
+              echo "The gate passed, but the conditional mechanistic assay did not produce complete results."
+            fi
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --cached --quiet && { echo "Completed gate produced no new result files."; exit 1; }
+          git commit -m "Record RES Step 0 Qwen3B run $GITHUB_RUN_ID"
+          git push origin HEAD:res-chat-feasibility
