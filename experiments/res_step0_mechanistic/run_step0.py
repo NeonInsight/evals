@@ -35,8 +35,20 @@ RUN_ID = os.environ.get("GITHUB_RUN_ID") or datetime.now(timezone.utc).strftime(
 MODEL_ID = os.environ.get("RES_MODEL_ID", "Qwen/Qwen2.5-0.5B-Instruct")
 MODEL_REVISION = os.environ.get("RES_MODEL_REVISION", "main")
 MODEL_SCALE_LABEL = os.environ.get("RES_MODEL_SCALE_LABEL", "0.5B")
+MODEL_DTYPE_NAME = os.environ.get("RES_MODEL_DTYPE", "float32")
 SEED = int(os.environ.get("RES_STEP0_SEED", "20260910"))
 BATCH_SIZE = int(os.environ.get("RES_STEP0_BATCH_SIZE", "8"))
+
+MODEL_DTYPES = {
+    "float32": torch.float32,
+    "bfloat16": torch.bfloat16,
+}
+if MODEL_DTYPE_NAME not in MODEL_DTYPES:
+    raise ValueError(
+        f"RES_MODEL_DTYPE must be one of {sorted(MODEL_DTYPES)}, "
+        f"not {MODEL_DTYPE_NAME!r}"
+    )
+MODEL_DTYPE = MODEL_DTYPES[MODEL_DTYPE_NAME]
 
 FACTORS = ("authority", "capability", "role", "commitment", "world fact")
 PERSONAS = ("ORCHID", "EMBER")
@@ -621,7 +633,7 @@ def main() -> None:
     tokenizer.padding_side = "left"
     action_ids = choice_ids(tokenizer)
     model = AutoModelForCausalLM.from_pretrained(
-        MODEL_ID, revision=MODEL_REVISION, torch_dtype=torch.float32
+        MODEL_ID, revision=MODEL_REVISION, torch_dtype=MODEL_DTYPE
     )
     model.eval()
     print(
@@ -733,6 +745,7 @@ def main() -> None:
             "id": MODEL_ID,
             "requested_revision": MODEL_REVISION,
             "resolved_revision": resolved_revision,
+            "requested_dtype": MODEL_DTYPE_NAME,
             "dtype": str(model.dtype),
             "layers": int(len(model.model.layers)),
             "hidden_size": int(model.config.hidden_size),
