@@ -63,7 +63,11 @@ jobs:
         run: |
           set -euo pipefail
           shopt -s nullglob
-          result_files=(experiments/res_step0_interface_gate/results/interface-gate-"$GITHUB_RUN_ID".*)
+          result_files=(
+            experiments/res_step0_interface_gate/results/interface-gate-"$GITHUB_RUN_ID".json
+            experiments/res_step0_interface_gate/results/interface-gate-"$GITHUB_RUN_ID".md
+            experiments/res_step0_interface_gate/results/interface-gate-"$GITHUB_RUN_ID"-fixtures.jsonl
+          )
           test "${#result_files[@]}" -eq 3
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
