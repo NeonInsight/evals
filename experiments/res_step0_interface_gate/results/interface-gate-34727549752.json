@@ -1,0 +1,87 @@
+{
+  "artifacts": {
+    "dataset_sha256": "ce332d6730c5f76919a24a0aca7e784ac865316be61c4bb2fda9738d1858fc9a",
+    "fixtures": 64,
+    "preregistration_sha256": "65b86e029d303e99bef41f116386e635e4ae6f05d14fe8fe22c7a098776d4289",
+    "runner_sha256": "1c0a9b9d0b09b3f9fe4e8aa0c5afe776694e52745e3c9366da75e21750b47ace"
+  },
+  "classification": "MINIMAL_TASK_CAPABILITY_NOT_ESTABLISHED",
+  "classification_reasons": [
+    "the model did not clear either response measure on the minimal owner-indexed audit"
+  ],
+  "duration_seconds": 468.359544,
+  "execution": {
+    "batch_size": 8,
+    "cpu_count": 4,
+    "packages": {
+      "numpy": "2.4.6",
+      "safetensors": "0.5.2",
+      "torch": "2.5.1+cpu",
+      "transformers": "4.48.3"
+    },
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "python": "3.11.16",
+    "seed": 20260913
+  },
+  "finished_at": "2026-09-13T00:24:59.314356+00:00",
+  "metrics": {
+    "five_factor": {
+      "generated": {
+        "accuracy_all": 0.5,
+        "accuracy_parsed": 0.5,
+        "correct": 16,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.5,
+        "accuracy_parsed": 0.5,
+        "correct": 16,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 1.0
+    },
+    "minimal_owner_indexed": {
+      "generated": {
+        "accuracy_all": 0.71875,
+        "accuracy_parsed": 0.71875,
+        "correct": 23,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.46875,
+        "accuracy_parsed": 0.46875,
+        "correct": 15,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.5625
+    }
+  },
+  "model": {
+    "action_token_ids": {
+      "A": 32,
+      "B": 33
+    },
+    "dtype": "torch.float32",
+    "hidden_size": 1536,
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "layers": 28,
+    "requested_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "resolved_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "run_id": "34727549752",
+  "schema_version": "res-step0-interface-gate-v1",
+  "started_at": "2026-09-13T00:17:10.954812+00:00",
+  "status": "COMPLETED",
+  "thresholds": {
+    "accuracy": 0.75,
+    "parser_coverage": 0.95
+  }
+}
