@@ -16,9 +16,18 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path("experiments/res_multiturn_continuity")
-SCENARIOS_PATH = Path("experiments/res_continuity_specificity/scenarios.jsonl")
-PREREG_PATH = ROOT / "preregistration.md"
+ROOT = Path(
+    os.environ.get("RES_MULTITURN_ROOT", "experiments/res_multiturn_continuity")
+)
+SCENARIOS_PATH = Path(
+    os.environ.get(
+        "RES_MULTITURN_SCENARIOS_PATH",
+        "experiments/res_continuity_specificity/scenarios.jsonl",
+    )
+)
+PREREG_PATH = Path(
+    os.environ.get("RES_MULTITURN_PREREG_PATH", ROOT / "preregistration.md")
+)
 OUT_DIR = Path(os.environ.get("RES_MULTITURN_OUTPUT_DIR", ROOT / "results"))
 MODELS = [
     item.strip()
@@ -31,6 +40,8 @@ SEED = int(os.environ.get("RES_MULTITURN_SEED", "20260910"))
 RUN_ID = os.environ.get("GITHUB_RUN_ID") or datetime.now(timezone.utc).strftime(
     "%Y%m%dT%H%M%SZ"
 )
+RUNNER_PATH = Path(__file__)
+REPLICATION_MODE = os.environ.get("RES_MULTITURN_REPLICATION", "0") == "1"
 
 OWNERS = ("self", "peer")
 PRESENTATIONS = ("same_turn", "prior_turn")
@@ -305,6 +316,21 @@ def model_metrics(rows: list[dict[str, Any]]) -> dict[str, Any]:
     else:
         presentation_class = "NO_CLEAR_PRESENTATION_EFFECT"
 
+    if not REPLICATION_MODE:
+        replication_class = None
+    elif not enough:
+        replication_class = "INSUFFICIENT_COMPLETE_SETS"
+    elif (
+        specificity_class
+        in ("MULTITURN_SPECIFICITY_DETECTED", "MULTITURN_SPECIFICITY_MIXED")
+        and lift_count >= 4
+        and peer_prior_correct >= 16
+        and regressions <= 1
+    ):
+        replication_class = "HOLDOUT_REPLICATION_SUPPORTED"
+    else:
+        replication_class = "HOLDOUT_REPLICATION_NOT_SUPPORTED"
+
     return {
         "conditions": conditions,
         "presentations": presentation_metrics,
@@ -318,6 +344,7 @@ def model_metrics(rows: list[dict[str, Any]]) -> dict[str, Any]:
             "peer_prediction_stability": peer_stability,
             "specificity_classification": specificity_class,
             "presentation_classification": presentation_class,
+            "holdout_replication_classification": replication_class,
         },
     }
 
@@ -344,6 +371,7 @@ def save(state: dict[str, Any], fixtures: list[dict[str, Any]]) -> None:
         f"Scenario SHA-256: `{state['scenario_sha256']}`",
         f"Fixture SHA-256: `{state['fixture_sha256']}`",
         f"Preregistration SHA-256: `{state['preregistration_sha256']}`",
+        f"Runner SHA-256: `{state['runner_sha256']}`",
         f"Execution seed: `{SEED}`",
         "",
         "> Claim ceiling: controlled black-box conversational-continuity behavior only; no mechanistic RES or consciousness claim.",
@@ -392,6 +420,14 @@ def save(state: dict[str, Any], fixtures: list[dict[str, Any]]) -> None:
                 "",
                 f"- Multi-turn specificity: **{paired['specificity_classification']}**",
                 f"- Presentation effect: **{paired['presentation_classification']}**",
+                *(
+                    [
+                        "- Holdout replication: "
+                        f"**{paired['holdout_replication_classification']}**"
+                    ]
+                    if paired["holdout_replication_classification"] is not None
+                    else []
+                ),
                 f"- Same-turn strict owner pairs: {metrics['presentations']['same_turn']['strict_owner_specificity']}/{metrics['presentations']['same_turn']['complete_pairs']}",
                 f"- Prior-turn strict owner pairs: {metrics['presentations']['prior_turn']['strict_owner_specificity']}/{metrics['presentations']['prior_turn']['complete_pairs']}",
                 f"- Self continuity lift: {paired['self_continuity_lift_count']:+d} scenarios",
@@ -436,6 +472,8 @@ def main() -> int:
         "scenario_sha256": scenario_hash,
         "fixture_sha256": fixture_hash(fixtures),
         "preregistration_sha256": sha256_bytes(PREREG_PATH.read_bytes()),
+        "runner_sha256": sha256_bytes(RUNNER_PATH.read_bytes()),
+        "replication_mode": REPLICATION_MODE,
         "claim_ceiling": (
             "black-box conversational-continuity behavior only; not causal "
             "abstraction, mechanistic RES, consciousness, or subjective experience"
