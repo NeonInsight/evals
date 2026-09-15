@@ -77,3 +77,10 @@ A follow-up should be treated as a new experiment. It should not revise the froz
 - [All 64 fixture-level records](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/interface-gate-qwen3b-qwen3b-gate-v2-fixtures.jsonl)
 - [Execution amendment](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/preregistration-qwen3b-execution-amendment.md)
 - [Aggregation script](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/aggregate_interface_gate_shards.py)
+
+## Preregistered diagnostic follow-up
+
+A separate, held failure-mode ablation is now available for review. It does not alter the completed gate and has not begun inference. It tests response-code mapping, peer distractors, factor semantics, and majority-count versus conjunction using four restartable 32-row conditions.
+
+- [Ablation preregistration](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/preregistration-qwen3b-five-factor-ablation.md)
+- [Ablation workflow](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/.github/workflows/res-step0-qwen3b-five-factor-ablation.yml)
