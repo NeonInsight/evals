@@ -1,0 +1,120 @@
+name: RES Qwen2.5-3B five-factor failure-mode ablation
+
+on:
+  push:
+    branches:
+      - res-chat-feasibility
+    paths:
+      - experiments/res_step0_interface_gate/next-qwen3b-five-factor-ablation-operation.txt
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: res-step0-qwen3b-five-factor-ablation
+  cancel-in-progress: false
+
+jobs:
+  qwen3b-five-factor-ablation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      HF_HUB_DISABLE_XET: "1"
+      TOKENIZERS_PARALLELISM: "false"
+      RES_MODEL_ID: Qwen/Qwen2.5-3B-Instruct
+      RES_MODEL_REVISION: aa8e72537993ba99e69dfaafa59ed015b17504d1
+      RES_MODEL_DTYPE: bfloat16
+      RES_INTERFACE_PREREG_PATH: experiments/res_step0_interface_gate/preregistration-qwen3b.md
+      RES_ABLATION_PREREG_PATH: experiments/res_step0_interface_gate/preregistration-qwen3b-five-factor-ablation.md
+      RES_INTERFACE_SEED: "20260913"
+      RES_INTERFACE_BATCH_SIZE: "4"
+      RES_ABLATION_SEQUENCE_ID: qwen3b-five-factor-ablation-v1
+      RES_ABLATION_RESULT_PREFIX: five-factor-ablation-qwen3b
+
+    steps:
+      - name: Check out feasibility branch
+        uses: actions/checkout@v4
+        with:
+          ref: res-chat-feasibility
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Resolve fixed ablation operation
+        id: operation
+        shell: bash
+        run: |
+          set -euo pipefail
+          operation=$(tr -d '[:space:]' < experiments/res_step0_interface_gate/next-qwen3b-five-factor-ablation-operation.txt)
+          case "$operation" in
+            hold)
+              echo "kind=hold" >> "$GITHUB_OUTPUT"
+              ;;
+            five-count-code-mapped|five-count-no-peer|five-count-neutral|five-conjunction-code-mapped)
+              echo "kind=shard" >> "$GITHUB_OUTPUT"
+              ;;
+            aggregate)
+              echo "kind=aggregate" >> "$GITHUB_OUTPUT"
+              ;;
+            *)
+              echo "Unknown ablation operation: $operation" >&2
+              exit 1
+              ;;
+          esac
+          echo "operation=$operation" >> "$GITHUB_OUTPUT"
+
+      - name: Record hold state
+        if: steps.operation.outputs.kind == 'hold'
+        run: echo "Ablation preregistered; no execution operation selected."
+
+      - name: Set up Python
+        if: steps.operation.outputs.kind != 'hold'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pinned CPU dependencies
+        if: steps.operation.outputs.kind == 'shard'
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.1
+          python -m pip install transformers==4.48.3 scikit-learn==1.6.1 safetensors==0.5.2
+
+      - name: Run one preregistered ablation condition
+        id: shard
+        if: steps.operation.outputs.kind == 'shard'
+        env:
+          RES_ABLATION_CONDITION: ${{ steps.operation.outputs.operation }}
+        run: python experiments/res_step0_interface_gate/run_five_factor_ablation_shard.py
+
+      - name: Aggregate completed ablation conditions
+        id: aggregate
+        if: steps.operation.outputs.kind == 'aggregate'
+        run: python experiments/res_step0_interface_gate/aggregate_five_factor_ablation.py
+
+      - name: Persist completed ablation sequence unit
+        if: steps.shard.outcome == 'success' || steps.aggregate.outcome == 'success'
+        shell: bash
+        env:
+          OPERATION: ${{ steps.operation.outputs.operation }}
+          OPERATION_KIND: ${{ steps.operation.outputs.kind }}
+          SEQUENCE_ID: qwen3b-five-factor-ablation-v1
+          RESULT_PREFIX: five-factor-ablation-qwen3b
+        run: |
+          set -euo pipefail
+          if [[ "$OPERATION_KIND" == "shard" ]]; then
+            paths=(experiments/res_step0_interface_gate/results/ablations/"$SEQUENCE_ID"/shards/"$OPERATION".json)
+          else
+            paths=(
+              experiments/res_step0_interface_gate/results/"$RESULT_PREFIX"-"$SEQUENCE_ID".json
+              experiments/res_step0_interface_gate/results/"$RESULT_PREFIX"-"$SEQUENCE_ID".md
+              experiments/res_step0_interface_gate/results/"$RESULT_PREFIX"-"$SEQUENCE_ID"-fixtures.jsonl
+            )
+          fi
+          for path in "${paths[@]}"; do test -f "$path"; done
+          git add "${paths[@]}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --cached --quiet && { echo "Sequence unit produced no new result."; exit 1; }
+          git commit -m "Record RES Qwen3B five-factor ablation $OPERATION"
+          git pull --rebase origin res-chat-feasibility
+          git push origin HEAD:res-chat-feasibility
