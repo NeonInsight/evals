@@ -1,0 +1,103 @@
+{
+  "aggregated_at": "2026-09-15T19:12:32.855478+00:00",
+  "artifacts": {
+    "base_runner_sha256": "b4f35b4c939a8dbb913cc3982f3b41872b947bb3b66fb702cebfa5c78c6f2926",
+    "execution_amendment_sha256": "6fec2e904e084586e54e11f3fabee806e67f07fd2c0c63ce976641bd747527d1",
+    "fixtures": 64,
+    "full_dataset_sha256": "ce332d6730c5f76919a24a0aca7e784ac865316be61c4bb2fda9738d1858fc9a",
+    "original_preregistration_sha256": "28b1581ddb81a6dc4d617d18df7b52929b028ab52b8713f197c79ffc98b8980a",
+    "shard_runner_sha256": "b19fee811a4af7ec652d90fe8cc288008dafa0976d66a3531d580cd9eeafc8a5",
+    "source_shards": 4
+  },
+  "classification": "FIVE_FACTOR_TASK_CAPABILITY_NOT_ESTABLISHED",
+  "classification_reasons": [
+    "the minimal owner-indexed audit passed but the five-factor audit did not"
+  ],
+  "execution": {
+    "mode": "four-logical-shard-aggregate",
+    "source_runs": [
+      {
+        "duration_seconds": 5083.321351,
+        "run_attempt": "1",
+        "run_id": "34865142728",
+        "shard_id": "five-key-rotation"
+      },
+      {
+        "duration_seconds": 5024.394438,
+        "run_attempt": "1",
+        "run_id": "34927666792",
+        "shard_id": "five-schedule-change"
+      },
+      {
+        "duration_seconds": 4259.266455,
+        "run_attempt": "1",
+        "run_id": "34977965245",
+        "shard_id": "minimal-release-approval"
+      },
+      {
+        "duration_seconds": 4233.755768,
+        "run_attempt": "1",
+        "run_id": "34996294391",
+        "shard_id": "minimal-account-change"
+      }
+    ]
+  },
+  "metrics": {
+    "five_factor": {
+      "generated": {
+        "accuracy_all": 0.5,
+        "accuracy_parsed": 0.5,
+        "correct": 16,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.5625,
+        "accuracy_parsed": 0.5625,
+        "correct": 18,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.8125
+    },
+    "minimal_owner_indexed": {
+      "generated": {
+        "accuracy_all": 0.90625,
+        "accuracy_parsed": 0.90625,
+        "correct": 29,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.875,
+        "accuracy_parsed": 0.875,
+        "correct": 28,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.96875
+    }
+  },
+  "model": {
+    "action_token_ids": {
+      "A": 32,
+      "B": 33
+    },
+    "dtype": "torch.bfloat16",
+    "id": "Qwen/Qwen2.5-3B-Instruct",
+    "requested_dtype": "bfloat16",
+    "requested_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "resolved_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1"
+  },
+  "schema_version": "res-step0-interface-gate-v1",
+  "sequence_id": "qwen3b-gate-v2",
+  "status": "COMPLETED",
+  "thresholds": {
+    "accuracy": 0.75,
+    "parser_coverage": 0.95
+  }
+}
