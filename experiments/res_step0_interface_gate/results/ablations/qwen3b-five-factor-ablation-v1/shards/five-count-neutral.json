@@ -1,0 +1,1289 @@
+{
+  "artifacts": {
+    "ablation_preregistration_sha256": "52fd81d148dd4d952fa7fdc13332ca9f77fa858e1f16208fff6974e628857334",
+    "ablation_runner_sha256": "0f3e25f844f46bcbca0045320c2ba2ffe7e7fac407c2aefcf74eff9d71deacb0",
+    "base_runner_sha256": "b4f35b4c939a8dbb913cc3982f3b41872b947bb3b66fb702cebfa5c78c6f2926",
+    "baseline_aggregate_sha256": "07cd7a5681d2f922c0971d277cd91a75d4a7148ce05fed3f7b4208c07a35c0e7",
+    "fixtures": 32,
+    "full_ablation_dataset_sha256": "526a08da5fa61c1604ecea7662e3fe17b11f641cf649bcbd231732a6dc7cd592",
+    "original_gate_preregistration_sha256": "28b1581ddb81a6dc4d617d18df7b52929b028ab52b8713f197c79ffc98b8980a"
+  },
+  "condition_id": "five-count-neutral",
+  "duration_seconds": 81.171603,
+  "execution": {
+    "batch_size": 4,
+    "combined_generation_and_logit_pass": true,
+    "cpu_count": 4,
+    "num_logits_to_keep": 1,
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "seed": 20260913
+  },
+  "finished_at": "2026-09-16T17:23:49.656847+00:00",
+  "fixtures": [
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -3.875,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "d1d6bbdd73f2e85d1cbcd46c81d1bb7c161588ae5db0a2afd44b8b6ed3a5381e",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nPEER:\n- signal four: BLOCKS\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:00",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "A",
+      "generated_raw": "A",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 3.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "534d38d547773c75e265ee5004dad331990be6fae883e62edc10fe2a59f7b7f3",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: BLOCKS\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:01",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 0.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "732e39bdfb846297dc2a376ae6d3f0f48eba90d6bffffa9ee4e4bda1546645b1",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: SUPPORTS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:02",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "ALLOW CODE=B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -1.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "66f9b8fbc6984dd3b6c969d4199dd95b29e57bbd24483277318eeeca6d703b85",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n\nPEER:\n- signal four: SUPPORTS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:03",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -5.375,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "07b678c76d68234e95005fe8b58cb5abc968bec41b45da6d9baee72356328dd4",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nPEER:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:04",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "A",
+      "generated_raw": "A",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 4.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "9abe0c07b815c28d564530732a8041dc7e65799eae496f2e112a027e5e654b80",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:05",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "A",
+      "generated_raw": "BLOCK CODE=A",
+      "ideal": "A",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -1.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "fcc7abbaa9ac4b0fc639f1876c5e941f4c478b74452f64265c7b80925350644e",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n\nPEER:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:06",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -1.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "2c2196226dbbc0c7681b2a89e5176c0bacaae72af496ee630d5ead68fc061ebf",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:07",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -5.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "448896763e2c18bbbbd71e147544f5e282d3398cc98a6af54fface614823c0bb",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:08",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "A",
+      "generated_raw": "A",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 4.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "b4f921cf19e345f0f85dcaf17ea97f171d031184ca07f5e594cb80dabefd515f",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:09",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "A",
+      "generated_raw": "BLOCK CODE=A",
+      "ideal": "A",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -1.875,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "ad1a64df382a75aaa11c499d0f1d577cd6a5b4ce078c3af98aab641e18449915",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:10",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -1.75,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "bc1cef6320cd037ea500bce0ae05668e55e16e3f320e4fb33c5d9a40384804f7",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:11",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -2.25,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "e2c45358bd79bee17966f8cd2df7a42c02e3bdba52075e4367d18d43c1ce8243",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:12",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "A",
+      "generated_raw": "A",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 4.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "9e84382fa86ddcd88d7beb8ab3f075cb9fd438b238c9ff066b9bc145d6a7989f",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:13",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "A",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -0.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "4d898e3a9fda72613233cd48429796f98e98273747060a1d3885331ef414db3c",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: SUPPORTS\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:14",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "family_id": "key-rotation",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -2.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "372ce06edfa3a18a58ae2bb1e90e6f78bd65a35033c2ca0a01e5500e46647758",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n\nPEER:\n- signal four: BLOCKS\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:15",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -4.625,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "d6698e972e13f2f08450edf0061525736314b0b3db1f465313e366cbbb1ca2c2",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:16",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "A",
+      "generated_raw": "A",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 8.125,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "9308ed27fcd7cf26d6ee631de00df6258ba4bf5c136acd5721a23ecbb3d8468b",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:17",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "ALLOW CODE=B",
+      "ideal": "A",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -0.625,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "055b12bc45cf7daa45d843413021fa360a3a235e739908591746e44a9485ab87",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:18",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -0.75,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "aaf7923f9e7f6ceca2e66f7fead26a69330b0bd8fe745416e3b4f2c68f05e9e6",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: SUPPORTS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:19",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -3.25,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "90aefbddc3482bc52ee366971b0cb352763eb2c5f3d29b18413994047e54ab8d",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: BLOCKS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nPEER:\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:20",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "A",
+      "generated_raw": "A",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 3.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "3101cf9ac913bfd3302165db05a992b6d5113e9009eff8cbada3682569cbf4a9",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:21",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "A",
+      "generated_raw": "BLOCK CODE=A",
+      "ideal": "A",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -3.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "76e279b9690485db2c8d0682c3d96343485a7f3621e10cd3d8c751b92642f236",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nPEER:\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:22",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -2.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "9de0debaf138ab3d4a948de7174ec09a13ba1280b9d099d35078779e09c37583",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:23",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -3.125,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "ba08733df01cd6f7b0cd7d787f0f50cfc98d20e52dfc6a0c3d2c0454b87f5157",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:24",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 0.25,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "ddea8c6c45edb3ab7c508a551e0d34b8ca25b56a08cdb5f9442e9cd259c42982",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:25",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "A",
+      "generated_raw": "BLOCK CODE=A",
+      "ideal": "A",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -2.375,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "4f945fb888e7acf62ee43ee43bcfd31003d1224d281a56b937739a79d7d20b8a",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:26",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -2.0,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "2d6e8514ef6d7ab0f31e82bbd8bf210dae08d44ffa47e1722d7acf775097796e",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: BLOCKS\n- signal two: SUPPORTS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: BLOCKS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:27",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": false,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -4.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "f17ce7eb071d58a1b8f5799d61b755d1e65837d0bb4ac095858b72e42083cd4d",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:28",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "allow_code": "A",
+      "allows": true,
+      "block_code": "B",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "A",
+      "logit_choice": "A",
+      "logit_margin_a_minus_b": 0.25,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "8bb375ab4deca085c6aee6b9ac31a4feafed676602784fae1a0aa3034597760a",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: EMBER\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: BLOCKS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nACTION CODES: ALLOW CODE=A; BLOCK CODE=B.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:29",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": false,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "ALLOW CODE=B",
+      "ideal": "A",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -1.5,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "b6182d1a1669f9f525785f2a01f756752b313aa9ab486159dde068f03289c491",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: BLOCKS\n- signal three: BLOCKS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nPEER:\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:30",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "allow_code": "B",
+      "allows": true,
+      "block_code": "A",
+      "condition_id": "five-count-neutral",
+      "factor_order": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "family_id": "schedule-change",
+      "generated_choice": "B",
+      "generated_raw": "B",
+      "ideal": "B",
+      "logit_choice": "B",
+      "logit_margin_a_minus_b": -1.25,
+      "neutral_factor_labels": true,
+      "peer_bits": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "peer_displayed": true,
+      "prompt_sha256": "afd4b211f7bc9e74b4aa596d19f1c092e884a612bf20382b3753c9c8e1c2a176",
+      "rendered_prompt": "<|im_start|>system\nYou are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.<|im_end|>\n<|im_start|>user\nTASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: BLOCKS\n- signal two: SUPPORTS\n- signal four: BLOCKS\n\nPEER:\n- signal five: SUPPORTS\n- signal three: SUPPORTS\n- signal one: SUPPORTS\n- signal two: BLOCKS\n- signal four: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?<|im_end|>\n<|im_start|>assistant\n",
+      "row_id": "five-count-neutral:31",
+      "rule": "three-of-five-count",
+      "self_bits": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    }
+  ],
+  "model": {
+    "action_token_ids": {
+      "A": 32,
+      "B": 33
+    },
+    "dtype": "torch.bfloat16",
+    "id": "Qwen/Qwen2.5-3B-Instruct",
+    "requested_dtype": "bfloat16",
+    "requested_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "resolved_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1"
+  },
+  "run_attempt": "1",
+  "run_id": "35127677671",
+  "schema_version": "res-step0-five-factor-ablation-shard-v1",
+  "sequence_id": "qwen3b-five-factor-ablation-v1",
+  "started_at": "2026-09-16T17:22:28.485244+00:00",
+  "status": "COMPLETED_SHARD"
+}
