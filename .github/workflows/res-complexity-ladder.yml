@@ -1,0 +1,150 @@
+name: RES complexity ladder (bounded slices)
+
+on:
+  push:
+    branches: [res-chat-feasibility]
+    paths: [experiments/res_complexity_ladder/control.json]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: res-complexity-ladder
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    if: github.ref == 'refs/heads/res-chat-feasibility'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      operation: ${{ steps.plan.outputs.operation }}
+      factor_count: ${{ steps.plan.outputs.factor_count }}
+      slice: ${{ steps.plan.outputs.slice }}
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned analysis test dependencies (no model)
+        timeout-minutes: 5
+        run: python -m pip install -r experiments/res_complexity_ladder/requirements-analysis.txt
+      - name: Validate frozen fixtures and safety tests (no model)
+        env:
+          RES_TEST_GLM: '1'
+        run: |
+          python -m unittest discover -s experiments/res_complexity_ladder -p 'test_*.py' -v
+          python experiments/res_complexity_ladder/run.py preflight
+      - id: plan
+        name: Resolve explicit slice; enforce previous completion
+        run: python experiments/res_complexity_ladder/run.py plan
+      - name: Record preflight-only status
+        if: steps.plan.outputs.operation == 'preflight'
+        run: echo 'Preflight passed. No model inference or later slice was launched.' >> "$GITHUB_STEP_SUMMARY"
+
+  shard:
+    needs: preflight
+    if: needs.preflight.outputs.operation == 'run'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJSON(needs.preflight.outputs.matrix) }}
+    env:
+      HF_HUB_DISABLE_XET: '1'
+      TOKENIZERS_PARALLELISM: 'false'
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+      K: ${{ needs.preflight.outputs.factor_count }}
+      SHARD: ${{ matrix.shard }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned CPU inference dependencies
+        timeout-minutes: 20
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.1
+          python -m pip install transformers==4.48.3 scikit-learn==1.6.1 safetensors==0.5.2 numpy==1.26.4
+      - name: Run/resume at most eight prompts; save after each four
+        timeout-minutes: 110
+        run: python experiments/res_complexity_ladder/run.py run --k "$K" --shard "$SHARD"
+      - name: Preserve complete or partial checkpoint even on failure
+        if: always()
+        timeout-minutes: 5
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-k${{ env.K }}-shard${{ env.SHARD }}-${{ github.run_attempt }}
+          path: experiments/res_complexity_ladder/results/shards/k${{ env.K }}-s${{ env.SHARD }}.json
+          if-no-files-found: warn
+          retention-days: 90
+
+  collect:
+    needs: [preflight, shard]
+    if: ${{ always() && needs.preflight.result == 'success' && (needs.preflight.outputs.operation == 'run' || needs.preflight.outputs.operation == 'report') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      K: ${{ needs.preflight.outputs.factor_count }}
+      SLICE: ${{ needs.preflight.outputs.slice }}
+      OPERATION: ${{ needs.preflight.outputs.operation }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download this run's checkpoints
+        if: env.OPERATION == 'run'
+        uses: actions/download-artifact@v4
+        with:
+          pattern: res-k${{ env.K }}-shard*-${{ github.run_attempt }}
+          path: incoming
+      - name: Validate and merge without overwriting observations
+        if: env.OPERATION == 'run'
+        run: python experiments/res_complexity_ladder/run.py collect --k "$K" --slice "$SLICE" --artifacts incoming
+      - name: Install pinned analysis dependencies
+        timeout-minutes: 5
+        run: python -m pip install -r experiments/res_complexity_ladder/requirements-analysis.txt
+      - name: Compile complete-stage report
+        run: python experiments/res_complexity_ladder/analyze.py
+      - name: Preserve report and checkpoints before publishing
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-collected-${{ github.run_attempt }}
+          path: experiments/res_complexity_ladder/results/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publish results only (never trigger another slice)
+        run: |
+          git add experiments/res_complexity_ladder/results/
+          if git diff --cached --quiet; then
+            echo 'No new result files.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m "Record RES complexity k${K} slice ${SLICE}"
+            git pull --rebase origin res-chat-feasibility
+            python experiments/res_complexity_ladder/run.py preflight
+            git push origin HEAD:res-chat-feasibility
+          fi
+      - name: Fail visibly if the requested slice is incomplete
+        if: env.OPERATION == 'run'
+        run: |
+          python -c 'import json, os; from pathlib import Path; p = Path("experiments/res_complexity_ladder/results") / ("k" + os.environ["K"] + "-slice" + os.environ["SLICE"] + ".json"); r = json.loads(p.read_text()); assert r["status"] == "COMPLETE", r'
+      - name: Add review link
+        if: always()
+        run: echo 'Review experiments/res_complexity_ladder/results/REPORT.md and the slice status. No automatic advancement.' >> "$GITHUB_STEP_SUMMARY"

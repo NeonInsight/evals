@@ -1,0 +1,62 @@
+{
+  "freeze_hash": "e2b27f9c409d6c93adb46443bed833ac351f1037aeba72cb530e43cb9d36c021",
+  "frozen_gate": "FIVE_FACTOR_TASK_CAPABILITY_NOT_ESTABLISHED",
+  "mechanism_assay_authorized": false,
+  "onset_descriptive": {
+    "LL": {
+      "complete_ladder": false,
+      "first_observed_below_criterion": null,
+      "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
+      "nonmonotonic": false
+    },
+    "LN": {
+      "complete_ladder": false,
+      "first_observed_below_criterion": null,
+      "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
+      "nonmonotonic": false
+    },
+    "NL": {
+      "complete_ladder": false,
+      "first_observed_below_criterion": null,
+      "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
+      "nonmonotonic": false
+    },
+    "NN": {
+      "complete_ladder": false,
+      "first_observed_below_criterion": null,
+      "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
+      "nonmonotonic": false
+    }
+  },
+  "protocol": "res-complexity-semantics-v1",
+  "stages": {
+    "2": {
+      "completed_prompts": 0,
+      "expected_prompts": 128,
+      "status": "NOT_STARTED"
+    },
+    "3": {
+      "completed_prompts": 0,
+      "expected_prompts": 128,
+      "status": "NOT_STARTED"
+    },
+    "4": {
+      "completed_prompts": 0,
+      "expected_prompts": 128,
+      "status": "NOT_STARTED"
+    },
+    "5": {
+      "completed_prompts": 0,
+      "expected_prompts": 256,
+      "status": "NOT_STARTED"
+    }
+  },
+  "status": "INCOMPLETE_NO_GLOBAL_CONCLUSION",
+  "token_ledger": {
+    "completed_prompt_attempts": 0,
+    "excludes": "Interrupted uncheckpointed batches; generated slots may include padding after EOS.",
+    "generated_token_slots": 0,
+    "padded_input_token_slots": 0,
+    "unpadded_input_tokens": 0
+  }
+}

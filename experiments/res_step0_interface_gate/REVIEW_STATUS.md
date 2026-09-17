@@ -57,9 +57,15 @@ All four ablation conditions had 32/32 parseable generated responses.
 - The data do not establish anything about a model's subjective experience, consciousness, personhood, or mechanistic mediation.
 - The planned mechanism-stage assay remains blocked by the frozen gate result.
 
-## Recommended next research step
+## Review clarification and next research step
 
-If the project advances, preregister an independent replication that separates factor labels from task wording and context, retains counterbalanced response codes, and uses a larger sample. That would test whether the semantic-framing signal replicates and identify which semantic manipulation is responsible. The completed gate and diagnostic ablation should remain frozen records.
+The matched code-mapped versus neutral rows produced **9 generated-answer corrections and 0 regressions** (post-hoc exact two-sided McNemar p=.00390625). Their logit comparison produced **11 corrections and 5 regressions** (p≈.21), which is inconclusive. These paired analyses were not the original preregistered decision rule and are not a fresh replication. Near-boundary logit behavior was also a post-hoc observation, not proof of an internal mechanism.
+
+The neutral condition changed both factor labels and task wording. The conjunction condition changed the decision rule **and** the sampled profiles, so it did not isolate counting alone.
+
+The next protocol is now specified as a [staged 2→3→4→5 complexity × semantics ladder](../res_complexity_ladder/README.md), with a [prospective preregistration](../res_complexity_ladder/preregistration.md). It crosses loaded/neutral labels with loaded/neutral task wording at every level, uses generated accuracy as primary, and reserves one confirmatory paired test for 64 fresh five-factor fixtures. Small, separately triggered slices bound runtime and preserve checkpoints. Initial publication is **preflight only**, not new capability evidence.
+
+All completed gate and ablation data remain frozen. No diagnostic outcome reverses the original non-pass or unlocks the mechanism assay.
 
 ## Primary records
 

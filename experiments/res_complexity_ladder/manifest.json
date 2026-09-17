@@ -1,0 +1,31 @@
+{
+  "dataset_sha256": "f5ee38e6c0745a019b4d1ef815b886537bc94a8f5f7e496ee4f424fda863741d",
+  "max_generated_tokens_per_prompt": 4,
+  "max_input_tokens_per_prompt": 512,
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "protocol": "res-complexity-semantics-v1",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "seed": 20260917,
+  "source_sha256": {
+    ".github/workflows/res-complexity-ladder.yml": "ebf670e67d734ce2759d7d344786e08dc7a4c43f7a31a0d57cfea954860f5bf4",
+    "experiments/res_complexity_ladder/analyze.py": "53c6abaee6416e72665fa8e35039d915cfd2cf93c6ce7ca13c23d11cbf44efee",
+    "experiments/res_complexity_ladder/preregistration.md": "d74d8c8ff91b813c6e6e2c47de9fd2a61670166dec70576e0d1d32e9b20fc8e9",
+    "experiments/res_complexity_ladder/protocol.py": "0a451688f41b655c3fe2dc4753f2ea2d2e3a407a5992145ee21be74a42ba16f9",
+    "experiments/res_complexity_ladder/requirements-analysis.txt": "b25210f561913c4168c0233a3e4a35c9e6d69bff26bf407922348ea04b6fae48",
+    "experiments/res_complexity_ladder/run.py": "6eb50bf95ce9063048d4a1f90f391ec2497710d6120ba1dc7e5e19c42e6fc87d",
+    "experiments/res_complexity_ladder/test_ladder.py": "659a86717bf67cbc501790b0cb5e3a0bc06d768ecd2eef253126e1c25af7eaab"
+  },
+  "stage_prompts": {
+    "2": 128,
+    "3": 128,
+    "4": 128,
+    "5": 256
+  },
+  "stage_sha256": {
+    "2": "f2cd82392429bfa742a1b985bbbedf50f3e19de8f0927e8d063367f19b3e416f",
+    "3": "e6dae089e9fcbc2612f2b6f6253f5cfcb7212c22d248a044ee28bad443541447",
+    "4": "3fd65cf7cd3d602be0b82fdf8cff4f36fb8e71c6ec40283192a05b9fb5bc4339",
+    "5": "c23c0b8ca5f40d9a3bcc375d82a2e11ff66a3147b85c4dff030d7e295ed6ca97"
+  },
+  "total_prompts": 640
+}
