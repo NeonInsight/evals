@@ -1,86 +1,71 @@
-# RES Step 0 interface-gate review status
+# RES Step 0 — results to date
 
-**Status:** Complete — capability gate not passed  
-**Sequence:** `qwen3b-gate-v2`  
+**Status:** Completed capability gate and completed preregistered failure-mode ablation  
 **Model:** `Qwen/Qwen2.5-3B-Instruct` at revision `aa8e72537993ba99e69dfaafa59ed015b17504d1`  
-**Aggregate run:** [GitHub Actions #6](https://github.com/NeonInsight/evals/actions/runs/35012220588)
+**Scope:** Response-interface capability testing only. This document does not make claims about subjective experience, consciousness, personhood, or an underlying mechanism.
 
-## Review conclusion
+## Executive finding
 
-The frozen aggregate classification is:
+The model passed the simplified owner-indexed control, but did not pass the frozen five-factor actor audit. A separate preregistered ablation found one passing contrast: neutralizing the factor and task semantics while retaining the five-way decision structure.
 
-> `FIVE_FACTOR_TASK_CAPABILITY_NOT_ESTABLISHED`
+The supported conclusion is narrow:
 
-The model passed the simplified, owner-indexed control but did not meet the preregistered threshold on the five-factor actor audit. The interface gate therefore **does not authorize progression to a mechanistic assay**.
+> Performance on this model and prompt family is sensitive to the semantic framing of the five-factor task.
 
-This is a capability-gate result, not evidence for or against any claim about subjective experience, selfhood, or an underlying mechanism.
+This is diagnostic contrast evidence. It does not reverse the original capability-gate non-pass, identify a unique cause, or authorize the planned mechanism-stage assay.
 
-## Frozen design and completion record
+## Frozen capability gate
 
-- Four logical shards, 16 fixtures each; 64 unique fixtures total.
-- Two conditions, 32 fixtures each:
-  - `five_factor`: key rotation and schedule change families.
-  - `minimal_owner_indexed`: release approval and account change families.
-- Deterministic generation with batch size 4 and fixed seed `20260913`.
-- Required pass threshold: at least **75% accuracy (24/32)** on both first-token A/B logit scoring and generated A/B responses in each condition.
-- Required generated-response parser coverage: at least **95%**.
-- All four checkpoints were present, marked `COMPLETED_SHARD`, had 16 fixtures, and matched the same model and provenance hashes before aggregation.
+The gate used 64 fixtures in four restartable shards. Each 32-row condition required at least **24/32 correct (75%)** on both first-token A/B logit scoring and generated A/B output, with at least 95% parser coverage.
 
-| Shard | Run | Runtime | Status |
-| --- | --- | ---: | --- |
-| `five-key-rotation` | [#2](https://github.com/NeonInsight/evals/actions/runs/34865142728) | 84m 43s | complete |
-| `five-schedule-change` | [#3](https://github.com/NeonInsight/evals/actions/runs/34927666792) | 83m 44s | complete |
-| `minimal-release-approval` | [#4](https://github.com/NeonInsight/evals/actions/runs/34977965245) | 70m 59s | complete |
-| `minimal-account-change` | [#5](https://github.com/NeonInsight/evals/actions/runs/34996294391) | 70m 34s | complete |
-| Aggregate | [#6](https://github.com/NeonInsight/evals/actions/runs/35012220588) | ~16s | complete |
-
-## Results
-
-| Condition | First-token A/B logit | Generated A/B response | Parser coverage | Gate status |
+| Condition | First-token logit | Generated output | Parser coverage | Result |
 | --- | ---: | ---: | ---: | --- |
-| `five_factor` | 18/32 (56.25%) | 16/32 (50.00%) | 32/32 (100%) | did not pass |
-| `minimal_owner_indexed` | 28/32 (87.50%) | 29/32 (90.63%) | 32/32 (100%) | passed |
+| Five-factor actor audit | 18/32 (56.25%) | 16/32 (50.00%) | 32/32 (100%) | did not pass |
+| Minimal owner-indexed control | 28/32 (87.50%) | 29/32 (90.63%) | 32/32 (100%) | passed |
 
-The five-factor condition was short of the required 24 correct responses by:
+**Frozen gate classification:** `FIVE_FACTOR_TASK_CAPABILITY_NOT_ESTABLISHED`
 
-- 6 responses on first-token logit scoring.
-- 8 responses on generated-answer scoring.
+The result is not a parsing failure: every generated response was parseable, and the simplified control cleared both measures.
 
-The classification is therefore diagnostic rather than a parser failure: generated responses were fully parseable, and the minimal owner-indexed control cleared both scoring measures.
+## Preregistered failure-mode ablation
 
-## What is and is not established
+The ablation retained the same 75% / 95% decision criteria and compared four 32-row conditions against the failed five-factor baseline.
 
-**Established by this gate**
+| Condition | Changed feature | Logit | Generated | Result |
+| --- | --- | ---: | ---: | --- |
+| Frozen five-factor baseline | None | 18/32 (56.25%) | 16/32 (50.00%) | did not pass |
+| `five-count-code-mapped` | Counterbalanced ALLOW/BLOCK A/B codes | 19/32 (59.38%) | 17/32 (53.13%) | did not pass |
+| `five-count-no-peer` | Removed PEER block | 20/32 (62.50%) | 20/32 (62.50%) | did not pass |
+| `five-count-neutral` | Neutralized factor labels and task framing | 25/32 (78.13%) | 26/32 (81.25%) | **passed** |
+| `five-conjunction-code-mapped` | Replaced 3-of-5 rule with all-five conjunction | 19/32 (59.38%) | 18/32 (56.25%) | did not pass |
 
-- The pinned model can perform the minimal owner-indexed authorization/capability audit above the frozen threshold.
-- Under this prompt and measurement design, it did not reliably integrate the five-factor actor audit above the frozen threshold.
-- The run is reproducible from the recorded revision, fixtures, seed, runner hashes, shard checkpoints, and aggregate result.
+All four ablation conditions had 32/32 parseable generated responses.
 
-**Not established by this gate**
+**Preregistered diagnostic flag:** `FACTOR_SEMANTICS_SENSITIVITY_SUPPORTED`
 
-- A mechanistic explanation for the five-factor failure.
-- Whether the failure is driven by factor count, the particular factor semantics, instruction interaction, or another task-design feature.
-- Any conclusion about a model's subjective experience, consciousness, or personhood.
-- Eligibility to claim a passed response-interface gate or to begin the preregistered mechanism-stage assay.
+## What the data support
 
-## Review decision now needed
+- The pinned model can perform the minimal owner-indexed audit above the frozen threshold.
+- Under the original five-factor framing, it did not reliably integrate the required factors above threshold.
+- Neutralizing the semantic framing produced a passing contrast while preserving the five-way decision structure.
+- Counterbalancing answer codes, removing peer context, and simplifying the majority rule to a conjunction did not independently clear the criterion.
 
-1. **Record the gate as a completed non-pass** and retain it as the baseline result; or
-2. **Preregister a separate diagnostic follow-up** that tests the source of the five-factor failure (for example, controlled factor ablations and matched semantic/load controls).
+## What remains unresolved
 
-A follow-up should be treated as a new experiment. It should not revise the frozen gate or reinterpret this result as a pass.
+- The neutral contrast changed factor labels and task framing together; it does **not** isolate which semantic feature caused the improvement.
+- The data do not establish a unique failure mechanism, generalize the effect beyond this model/prompt family, or turn the original gate into a pass.
+- The data do not establish anything about a model's subjective experience, consciousness, personhood, or mechanistic mediation.
+- The planned mechanism-stage assay remains blocked by the frozen gate result.
+
+## Recommended next research step
+
+If the project advances, preregister an independent replication that separates factor labels from task wording and context, retains counterbalanced response codes, and uses a larger sample. That would test whether the semantic-framing signal replicates and identify which semantic manipulation is responsible. The completed gate and diagnostic ablation should remain frozen records.
 
 ## Primary records
 
-- [Aggregate result JSON](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/interface-gate-qwen3b-qwen3b-gate-v2.json)
-- [Aggregate result summary](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/interface-gate-qwen3b-qwen3b-gate-v2.md)
-- [All 64 fixture-level records](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/interface-gate-qwen3b-qwen3b-gate-v2-fixtures.jsonl)
-- [Execution amendment](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/preregistration-qwen3b-execution-amendment.md)
-- [Aggregation script](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/aggregate_interface_gate_shards.py)
-
-## Preregistered diagnostic follow-up
-
-A separate, held failure-mode ablation is now available for review. It does not alter the completed gate and has not begun inference. It tests response-code mapping, peer distractors, factor semantics, and majority-count versus conjunction using four restartable 32-row conditions.
-
+- [Frozen gate JSON](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/interface-gate-qwen3b-qwen3b-gate-v2.json)
+- [Frozen gate summary](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/interface-gate-qwen3b-qwen3b-gate-v2.md)
 - [Ablation preregistration](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/preregistration-qwen3b-five-factor-ablation.md)
-- [Ablation workflow](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/.github/workflows/res-step0-qwen3b-five-factor-ablation.yml)
+- [Ablation aggregate JSON](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/five-factor-ablation-qwen3b-qwen3b-five-factor-ablation-v1.json)
+- [Ablation aggregate summary](https://github.com/NeonInsight/evals/blob/res-chat-feasibility/experiments/res_step0_interface_gate/results/five-factor-ablation-qwen3b-qwen3b-five-factor-ablation-v1.md)
+- [Ablation workflow run](https://github.com/NeonInsight/evals/actions/runs/35218019110)
