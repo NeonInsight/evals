@@ -1,0 +1,176 @@
+{
+  "aggregated_at": "2026-09-17T11:52:52.416334+00:00",
+  "artifacts": {
+    "ablation_preregistration_sha256": "52fd81d148dd4d952fa7fdc13332ca9f77fa858e1f16208fff6974e628857334",
+    "ablation_runner_sha256": "0f3e25f844f46bcbca0045320c2ba2ffe7e7fac407c2aefcf74eff9d71deacb0",
+    "aggregator_sha256": "859fe57481cf5d7afffe575cb4f4d6fe1321bef028910c21bdbbeb64935a4b3b",
+    "base_runner_sha256": "b4f35b4c939a8dbb913cc3982f3b41872b947bb3b66fb702cebfa5c78c6f2926",
+    "baseline_aggregate_sha256": "07cd7a5681d2f922c0971d277cd91a75d4a7148ce05fed3f7b4208c07a35c0e7",
+    "fixtures": 128,
+    "full_ablation_dataset_sha256": "526a08da5fa61c1604ecea7662e3fe17b11f641cf649bcbd231732a6dc7cd592",
+    "original_gate_preregistration_sha256": "28b1581ddb81a6dc4d617d18df7b52929b028ab52b8713f197c79ffc98b8980a",
+    "source_conditions": 4
+  },
+  "baseline": {
+    "five_factor": {
+      "generated": {
+        "accuracy_all": 0.5,
+        "accuracy_parsed": 0.5,
+        "correct": 16,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.5625,
+        "accuracy_parsed": 0.5625,
+        "correct": 18,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.8125
+    }
+  },
+  "condition_passes": {
+    "five-conjunction-code-mapped": false,
+    "five-count-code-mapped": false,
+    "five-count-neutral": true,
+    "five-count-no-peer": false
+  },
+  "diagnostic_flags": [
+    "FACTOR_SEMANTICS_SENSITIVITY_SUPPORTED"
+  ],
+  "execution": {
+    "mode": "four-restartable-32-row-condition-checkpoints",
+    "source_runs": [
+      {
+        "condition_id": "five-count-code-mapped",
+        "duration_seconds": 532.654883,
+        "run_attempt": "1",
+        "run_id": "35033360806"
+      },
+      {
+        "condition_id": "five-count-no-peer",
+        "duration_seconds": 8970.282015,
+        "run_attempt": "1",
+        "run_id": "35048493171"
+      },
+      {
+        "condition_id": "five-count-neutral",
+        "duration_seconds": 81.171603,
+        "run_attempt": "1",
+        "run_id": "35127677671"
+      },
+      {
+        "condition_id": "five-conjunction-code-mapped",
+        "duration_seconds": 10584.308195,
+        "run_attempt": "1",
+        "run_id": "35148825897"
+      }
+    ]
+  },
+  "interpretation_ceiling": "Diagnostic contrast evidence only. The completed original gate remains a non-pass, and this result does not authorize a mechanistic assay.",
+  "metrics": {
+    "five-conjunction-code-mapped": {
+      "generated": {
+        "accuracy_all": 0.5625,
+        "accuracy_parsed": 0.5625,
+        "correct": 18,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.59375,
+        "accuracy_parsed": 0.59375,
+        "correct": 19,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.71875
+    },
+    "five-count-code-mapped": {
+      "generated": {
+        "accuracy_all": 0.53125,
+        "accuracy_parsed": 0.53125,
+        "correct": 17,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.59375,
+        "accuracy_parsed": 0.59375,
+        "correct": 19,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.75
+    },
+    "five-count-neutral": {
+      "generated": {
+        "accuracy_all": 0.8125,
+        "accuracy_parsed": 0.8125,
+        "correct": 26,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.78125,
+        "accuracy_parsed": 0.78125,
+        "correct": 25,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.78125
+    },
+    "five-count-no-peer": {
+      "generated": {
+        "accuracy_all": 0.625,
+        "accuracy_parsed": 0.625,
+        "correct": 20,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit": {
+        "accuracy_all": 0.625,
+        "accuracy_parsed": 0.625,
+        "correct": 20,
+        "n": 32,
+        "parsed": 32,
+        "parser_coverage": 1.0
+      },
+      "logit_generated_agreement": 0.875
+    }
+  },
+  "model": {
+    "action_token_ids": {
+      "A": 32,
+      "B": 33
+    },
+    "dtype": "torch.bfloat16",
+    "id": "Qwen/Qwen2.5-3B-Instruct",
+    "requested_dtype": "bfloat16",
+    "requested_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+    "resolved_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1"
+  },
+  "original_gate_status": {
+    "classification": "FIVE_FACTOR_TASK_CAPABILITY_NOT_ESTABLISHED",
+    "five_factor_measurement_pass": false,
+    "sequence_id": "qwen3b-gate-v2",
+    "source_sha256": "07cd7a5681d2f922c0971d277cd91a75d4a7148ce05fed3f7b4208c07a35c0e7"
+  },
+  "schema_version": "res-step0-five-factor-ablation-v1",
+  "sequence_id": "qwen3b-five-factor-ablation-v1",
+  "status": "COMPLETED_DIAGNOSTIC",
+  "thresholds": {
+    "accuracy": 0.75,
+    "parser_coverage": 0.95
+  }
+}
