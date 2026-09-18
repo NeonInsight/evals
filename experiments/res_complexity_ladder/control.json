@@ -1,6 +1,6 @@
 {
-  "operation": "preflight",
+  "operation": "run",
   "factor_count": 2,
   "slice": 0,
-  "attempt": 1
+  "attempt": 2
 }
