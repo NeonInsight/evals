@@ -31,7 +31,7 @@
   "protocol": "res-complexity-semantics-v1",
   "stages": {
     "2": {
-      "completed_prompts": 32,
+      "completed_prompts": 64,
       "expected_prompts": 128,
       "status": "INCOMPLETE"
     },
@@ -53,10 +53,10 @@
   },
   "status": "INCOMPLETE_NO_GLOBAL_CONCLUSION",
   "token_ledger": {
-    "completed_prompt_attempts": 32,
+    "completed_prompt_attempts": 64,
     "excludes": "Interrupted uncheckpointed batches; generated slots may include padding after EOS.",
-    "generated_token_slots": 80,
-    "padded_input_token_slots": 5364,
-    "unpadded_input_tokens": 5308
+    "generated_token_slots": 160,
+    "padded_input_token_slots": 10724,
+    "unpadded_input_tokens": 10616
   }
 }
