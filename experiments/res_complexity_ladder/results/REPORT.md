@@ -6,7 +6,7 @@ LL = loaded labels / loaded task; NN = neutral / neutral; NL = neutral labels / 
 
 | Factors | Progress | LL generated | NN generated | NL generated | LN generated |
 | --- | --- | --- | --- | --- | --- |
-| 2 | 64/128 prompts | — | — | — | — |
+| 2 | 96/128 prompts | — | — | — | — |
 | 3 | 0/128 prompts | — | — | — | — |
 | 4 | 0/128 prompts | — | — | — | — |
 | 5 | 0/256 prompts | — | — | — | — |
