@@ -1364,7 +1364,7 @@
       "status": "COMPLETE_DIAGNOSTIC"
     },
     "3": {
-      "completed_prompts": 32,
+      "completed_prompts": 64,
       "expected_prompts": 128,
       "status": "INCOMPLETE"
     },
@@ -1381,10 +1381,10 @@
   },
   "status": "INCOMPLETE_NO_GLOBAL_CONCLUSION",
   "token_ledger": {
-    "completed_prompt_attempts": 160,
+    "completed_prompt_attempts": 192,
     "excludes": "Interrupted uncheckpointed batches; generated slots may include padding after EOS.",
-    "generated_token_slots": 400,
-    "padded_input_token_slots": 27252,
-    "unpadded_input_tokens": 26968
+    "generated_token_slots": 496,
+    "padded_input_token_slots": 33060,
+    "unpadded_input_tokens": 32696
   }
 }
