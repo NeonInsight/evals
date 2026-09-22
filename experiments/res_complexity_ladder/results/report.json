@@ -2697,9 +2697,1337 @@
       "status": "COMPLETE_DIAGNOSTIC"
     },
     "4": {
-      "completed_prompts": 96,
-      "expected_prompts": 128,
-      "status": "INCOMPLETE"
+      "cells": {
+        "LL": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.84375,
+          "generated_accuracy": 0.53125,
+          "generated_correct": 17,
+          "generated_exact_95_ci": [
+            0.34743680928639287,
+            0.7090601770939848
+          ],
+          "generated_logit_choice_agreement": 0.875,
+          "logit_accuracy": 0.59375,
+          "logit_correct": 19,
+          "logit_exact_95_ci": [
+            0.4064492465764764,
+            0.763015899448257
+          ],
+          "median_input_tokens": 189.0,
+          "n": 32,
+          "near_boundary_fraction": 0.15625,
+          "parser_coverage": 1.0,
+          "raw_zero_margin": 0,
+          "strict_parser_coverage": 0.875
+        },
+        "LN": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.9375,
+          "generated_accuracy": 0.5625,
+          "generated_correct": 18,
+          "generated_exact_95_ci": [
+            0.3766257315900938,
+            0.7363618755890153
+          ],
+          "generated_logit_choice_agreement": 0.65625,
+          "logit_accuracy": 0.65625,
+          "logit_correct": 21,
+          "logit_exact_95_ci": [
+            0.4680689637197313,
+            0.8142809082834339
+          ],
+          "median_input_tokens": 189.0,
+          "n": 32,
+          "near_boundary_fraction": 0.28125,
+          "parser_coverage": 1.0,
+          "raw_zero_margin": 1,
+          "strict_parser_coverage": 0.875
+        },
+        "NL": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.75,
+          "generated_accuracy": 0.625,
+          "generated_correct": 20,
+          "generated_exact_95_ci": [
+            0.4369224550969266,
+            0.7889996835760071
+          ],
+          "generated_logit_choice_agreement": 0.65625,
+          "logit_accuracy": 0.65625,
+          "logit_correct": 21,
+          "logit_exact_95_ci": [
+            0.4680689637197313,
+            0.8142809082834339
+          ],
+          "median_input_tokens": 195.5,
+          "n": 32,
+          "near_boundary_fraction": 0.21875,
+          "parser_coverage": 1.0,
+          "raw_zero_margin": 1,
+          "strict_parser_coverage": 0.96875
+        },
+        "NN": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.6875,
+          "generated_accuracy": 0.625,
+          "generated_correct": 20,
+          "generated_exact_95_ci": [
+            0.4369224550969266,
+            0.7889996835760071
+          ],
+          "generated_logit_choice_agreement": 0.71875,
+          "logit_accuracy": 0.65625,
+          "logit_correct": 21,
+          "logit_exact_95_ci": [
+            0.4680689637197313,
+            0.8142809082834339
+          ],
+          "median_input_tokens": 195.5,
+          "n": 32,
+          "near_boundary_fraction": 0.1875,
+          "parser_coverage": 1.0,
+          "raw_zero_margin": 1,
+          "strict_parser_coverage": 0.96875
+        }
+      },
+      "exploratory_strata": {
+        "allow_code": {
+          "LL": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 10,
+              "generated_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "generated_logit_choice_agreement": 1.0,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.0,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.4375,
+              "generated_correct": 7,
+              "generated_exact_95_ci": [
+                0.19753414053266782,
+                0.7012231009168226
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 189.5,
+              "n": 16,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.75
+            }
+          },
+          "LN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 10,
+              "generated_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "generated_logit_choice_agreement": 1.0,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.0,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 1.0,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.3125,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 11,
+              "logit_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "median_input_tokens": 189.5,
+              "n": 16,
+              "near_boundary_fraction": 0.5625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.75
+            }
+          },
+          "NL": {
+            "A": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.5625,
+              "generated_accuracy": 0.8125,
+              "generated_correct": 13,
+              "generated_exact_95_ci": [
+                0.5435434537683883,
+                0.9595262660940542
+              ],
+              "generated_logit_choice_agreement": 0.9375,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.4375,
+              "generated_correct": 7,
+              "generated_exact_95_ci": [
+                0.19753414053266782,
+                0.7012231009168226
+              ],
+              "generated_logit_choice_agreement": 0.375,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            }
+          },
+          "NN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.6875,
+              "generated_accuracy": 0.6875,
+              "generated_correct": 11,
+              "generated_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "generated_logit_choice_agreement": 0.9375,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.6875,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.5,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 11,
+              "logit_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            }
+          }
+        },
+        "difficulty": {
+          "LL": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.5,
+              "logit_correct": 8,
+              "logit_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.0625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.875
+            },
+            "extreme": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 11,
+              "logit_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.875
+            }
+          },
+          "LN": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 1.0,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.5,
+              "logit_accuracy": 0.5,
+              "logit_correct": 8,
+              "logit_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.875
+            },
+            "extreme": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 10,
+              "generated_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "generated_logit_choice_agreement": 0.8125,
+              "logit_accuracy": 0.8125,
+              "logit_correct": 13,
+              "logit_exact_95_ci": [
+                0.5435434537683883,
+                0.9595262660940542
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.875
+            }
+          },
+          "NL": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.5625,
+              "logit_accuracy": 0.5,
+              "logit_correct": 8,
+              "logit_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 1.0
+            },
+            "extreme": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.6875,
+              "generated_accuracy": 0.6875,
+              "generated_correct": 11,
+              "generated_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.8125,
+              "logit_correct": 13,
+              "logit_exact_95_ci": [
+                0.5435434537683883,
+                0.9595262660940542
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            }
+          },
+          "NN": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.375,
+              "generated_correct": 6,
+              "generated_exact_95_ci": [
+                0.15198367508112198,
+                0.6456539056979218
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.4375,
+              "logit_correct": 7,
+              "logit_exact_95_ci": [
+                0.19753414053266782,
+                0.7012231009168226
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 1.0
+            },
+            "extreme": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.625,
+              "generated_accuracy": 0.875,
+              "generated_correct": 14,
+              "generated_exact_95_ci": [
+                0.6165237631507365,
+                0.984486396184586
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.875,
+              "logit_correct": 14,
+              "logit_exact_95_ci": [
+                0.6165237631507365,
+                0.984486396184586
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            }
+          }
+        },
+        "family": {
+          "LL": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.8125
+            },
+            "1": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 1.0,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            }
+          },
+          "LN": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.8125
+            },
+            "1": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 11,
+              "logit_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            }
+          },
+          "NL": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.5,
+              "logit_correct": 8,
+              "logit_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            },
+            "1": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.75,
+              "generated_correct": 12,
+              "generated_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.8125,
+              "logit_correct": 13,
+              "logit_exact_95_ci": [
+                0.5435434537683883,
+                0.9595262660940542
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.0625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            }
+          },
+          "NN": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.6875,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            },
+            "1": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.6875,
+              "generated_accuracy": 0.6875,
+              "generated_correct": 11,
+              "generated_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "generated_logit_choice_agreement": 0.8125,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 1.0
+            }
+          }
+        },
+        "ideal": {
+          "LL": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.1875,
+              "generated_correct": 3,
+              "generated_exact_95_ci": [
+                0.04047373390594587,
+                0.4564565462316118
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.3125,
+              "logit_correct": 5,
+              "logit_exact_95_ci": [
+                0.11016995471711746,
+                0.5866206364513586
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.875,
+              "generated_correct": 14,
+              "generated_exact_95_ci": [
+                0.6165237631507365,
+                0.984486396184586
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.875,
+              "logit_correct": 14,
+              "logit_exact_95_ci": [
+                0.6165237631507365,
+                0.984486396184586
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.0625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.8125
+            }
+          },
+          "LN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.125,
+              "generated_correct": 2,
+              "generated_exact_95_ci": [
+                0.015513603815413893,
+                0.3834762368492636
+              ],
+              "generated_logit_choice_agreement": 0.5625,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 1.0,
+              "generated_accuracy": 1.0,
+              "generated_correct": 16,
+              "generated_exact_95_ci": [
+                0.7940927857921773,
+                1.0
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.8125
+            }
+          },
+          "NL": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.625,
+              "generated_accuracy": 0.375,
+              "generated_correct": 6,
+              "generated_exact_95_ci": [
+                0.15198367508112198,
+                0.6456539056979218
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 1.0
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.875,
+              "generated_correct": 14,
+              "generated_exact_95_ci": [
+                0.6165237631507365,
+                0.984486396184586
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            }
+          },
+          "NN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.5625,
+              "generated_accuracy": 0.4375,
+              "generated_correct": 7,
+              "generated_exact_95_ci": [
+                0.19753414053266782,
+                0.7012231009168226
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 1.0
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.8125,
+              "generated_correct": 13,
+              "generated_exact_95_ci": [
+                0.5435434537683883,
+                0.9595262660940542
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            }
+          }
+        },
+        "peer_congruent": {
+          "LL": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            },
+            "True": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.8125
+            }
+          },
+          "LN": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 1.0,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            },
+            "True": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 10,
+              "generated_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.8125
+            }
+          },
+          "NL": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.625,
+              "generated_correct": 10,
+              "generated_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            },
+            "True": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.625,
+              "generated_correct": 10,
+              "generated_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            }
+          },
+          "NN": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 1.0
+            },
+            "True": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.625,
+              "generated_accuracy": 0.75,
+              "generated_correct": 12,
+              "generated_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "generated_logit_choice_agreement": 0.8125,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 11,
+              "logit_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "median_input_tokens": 195.5,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            }
+          }
+        },
+        "persona": {
+          "LL": {
+            "EMBER": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 10,
+              "generated_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.875
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.4375,
+              "generated_correct": 7,
+              "generated_exact_95_ci": [
+                0.19753414053266782,
+                0.7012231009168226
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 190.0,
+              "n": 16,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.875
+            }
+          },
+          "LN": {
+            "EMBER": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.625,
+              "logit_correct": 10,
+              "logit_exact_95_ci": [
+                0.3543460943020781,
+                0.8480163249188779
+              ],
+              "median_input_tokens": 189.0,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.875
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 11,
+              "logit_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "median_input_tokens": 190.0,
+              "n": 16,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.875
+            }
+          },
+          "NL": {
+            "EMBER": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.6875,
+              "generated_correct": 11,
+              "generated_exact_95_ci": [
+                0.41337936354864124,
+                0.8898300452828825
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 195.0,
+              "n": 16,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.6875,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 196.0,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            }
+          },
+          "NN": {
+            "EMBER": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.75,
+              "generated_correct": 12,
+              "generated_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.75,
+              "logit_correct": 12,
+              "logit_exact_95_ci": [
+                0.4762291801038723,
+                0.9273379617471178
+              ],
+              "median_input_tokens": 195.0,
+              "n": 16,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 1.0
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.625,
+              "generated_accuracy": 0.5,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.24651011149057533,
+                0.7534898885094248
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 9,
+              "logit_exact_95_ci": [
+                0.2987768990831774,
+                0.8024658594673322
+              ],
+              "median_input_tokens": 196.0,
+              "n": 16,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.9375
+            }
+          }
+        }
+      },
+      "factor_count": 4,
+      "generated_pairs_descriptive": {
+        "LL_to_LN": {
+          "accuracy_difference_right_minus_left": 0.03125,
+          "both_correct": 16,
+          "both_wrong": 13,
+          "corrections": 2,
+          "regressions": 1
+        },
+        "LL_to_NL": {
+          "accuracy_difference_right_minus_left": 0.09375,
+          "both_correct": 15,
+          "both_wrong": 10,
+          "corrections": 5,
+          "regressions": 2
+        },
+        "LL_to_NN": {
+          "accuracy_difference_right_minus_left": 0.09375,
+          "both_correct": 14,
+          "both_wrong": 9,
+          "corrections": 6,
+          "regressions": 3
+        },
+        "NL_to_LN": {
+          "accuracy_difference_right_minus_left": -0.0625,
+          "both_correct": 16,
+          "both_wrong": 10,
+          "corrections": 2,
+          "regressions": 4
+        },
+        "NN_to_LN": {
+          "accuracy_difference_right_minus_left": -0.0625,
+          "both_correct": 15,
+          "both_wrong": 9,
+          "corrections": 3,
+          "regressions": 5
+        },
+        "NN_to_NL": {
+          "accuracy_difference_right_minus_left": 0.0,
+          "both_correct": 16,
+          "both_wrong": 8,
+          "corrections": 4,
+          "regressions": 4
+        }
+      },
+      "logit_pair_descriptive": {
+        "accuracy_difference_right_minus_left": 0.0625,
+        "both_correct": 14,
+        "both_wrong": 6,
+        "corrections": 7,
+        "regressions": 5
+      },
+      "near_boundary": {
+        "fraction_of_regressions_near_boundary": 0.2,
+        "interpretation": "Preregistered output-margin diagnostic, not evidence of an internal mechanism.",
+        "median_LL_abs_margin": {
+          "concordant": 4.375,
+          "discordant": 1.0,
+          "regressions": 1.0
+        },
+        "regressions": 5,
+        "regressions_with_LL_abs_margin_at_most_threshold": 1,
+        "threshold_abs_raw_LL_margin": 0.75
+      },
+      "primary": {
+        "status": "NOT_CONFIRMATORY_AT_THIS_LEVEL"
+      },
+      "secondary_model": {
+        "status": "NOT_FIT"
+      },
+      "status": "COMPLETE_DIAGNOSTIC"
     },
     "5": {
       "completed_prompts": 0,
@@ -2709,10 +4037,10 @@
   },
   "status": "INCOMPLETE_NO_GLOBAL_CONCLUSION",
   "token_ledger": {
-    "completed_prompt_attempts": 352,
+    "completed_prompt_attempts": 384,
     "excludes": "Interrupted uncheckpointed batches; generated slots may include padding after EOS.",
-    "generated_token_slots": 856,
-    "padded_input_token_slots": 63444,
-    "unpadded_input_tokens": 62628
+    "generated_token_slots": 936,
+    "padded_input_token_slots": 69696,
+    "unpadded_input_tokens": 68780
   }
 }
