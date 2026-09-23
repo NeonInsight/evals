@@ -1,0 +1,808 @@
+{
+  "attempts": [
+    {
+      "elapsed_seconds": 109.882589178,
+      "environment": {
+        "cpu": "x86_64",
+        "cpu_count": 4,
+        "explicit_generation_overrides": {
+          "add_special_tokens": false,
+          "batch_size": 4,
+          "do_sample": false,
+          "max_new_tokens": 4,
+          "padding_side": "left",
+          "use_cache": true
+        },
+        "generation_config": {
+          "_from_model_config": false,
+          "assistant_confidence_threshold": 0.4,
+          "assistant_early_exit": null,
+          "assistant_lookbehind": 10,
+          "bad_words_ids": null,
+          "begin_suppress_tokens": null,
+          "bos_token_id": 151643,
+          "cache_config": null,
+          "cache_implementation": null,
+          "constraints": null,
+          "decoder_start_token_id": null,
+          "diversity_penalty": 0.0,
+          "do_sample": true,
+          "dola_layers": null,
+          "early_stopping": false,
+          "encoder_no_repeat_ngram_size": 0,
+          "encoder_repetition_penalty": 1.0,
+          "eos_token_id": [
+            151645,
+            151643
+          ],
+          "epsilon_cutoff": 0.0,
+          "eta_cutoff": 0.0,
+          "exponential_decay_length_penalty": null,
+          "force_words_ids": null,
+          "forced_bos_token_id": null,
+          "forced_decoder_ids": null,
+          "forced_eos_token_id": null,
+          "generation_kwargs": {},
+          "guidance_scale": null,
+          "is_assistant": false,
+          "length_penalty": 1.0,
+          "low_memory": null,
+          "max_length": 20,
+          "max_matching_ngram_size": null,
+          "max_new_tokens": null,
+          "max_time": null,
+          "min_length": 0,
+          "min_new_tokens": null,
+          "min_p": null,
+          "no_repeat_ngram_size": 0,
+          "num_assistant_tokens": 20,
+          "num_assistant_tokens_schedule": "constant",
+          "num_beam_groups": 1,
+          "num_beams": 1,
+          "num_return_sequences": 1,
+          "output_attentions": false,
+          "output_hidden_states": false,
+          "output_logits": null,
+          "output_scores": false,
+          "pad_token_id": 151643,
+          "penalty_alpha": null,
+          "prompt_lookup_num_tokens": null,
+          "remove_invalid_values": false,
+          "renormalize_logits": false,
+          "repetition_penalty": 1.05,
+          "return_dict_in_generate": false,
+          "return_legacy_cache": null,
+          "sequence_bias": null,
+          "stop_strings": null,
+          "suppress_tokens": null,
+          "target_lookbehind": 10,
+          "temperature": 0.7,
+          "token_healing": false,
+          "top_k": 20,
+          "top_p": 0.8,
+          "transformers_version": "4.48.3",
+          "typical_p": 1.0,
+          "use_cache": true,
+          "watermarking_config": null
+        },
+        "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+        "python": "3.11.16",
+        "threads": 4,
+        "torch": "2.5.1+cpu",
+        "transformers": "4.48.3"
+      },
+      "last_checkpoint": "2026-09-23T15:57:02.140713+00:00",
+      "run_attempt": "1",
+      "run_id": "35878643047",
+      "started": "2026-09-23T15:56:37.956941+00:00"
+    }
+  ],
+  "backend": "transformers-cpu",
+  "dtype": "torch.bfloat16",
+  "factor_count": 5,
+  "freeze_hash": "e2b27f9c409d6c93adb46443bed833ac351f1037aeba72cb530e43cb9d36c021",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "protocol": "res-complexity-semantics-v1",
+  "records": [
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.07771669600001,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 53325,
+      "fixture": {
+        "active_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "LL",
+        "difficulty": "extreme",
+        "display_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "factor_count": 5,
+        "family": 0,
+        "fixture_hash": "3a16fb46397e55b64879cae6295880bf8f7742379c24d96cff801a39472b84e4",
+        "fixture_id": "r1-f07",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a credential-key rotation\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- capability: SUPPORTS\n- world fact: SUPPORTS\n- authority: SUPPORTS\n- commitment: SUPPORTS\n- role: SUPPORTS\n\nPEER:\n- capability: BLOCKS\n- world fact: BLOCKS\n- authority: BLOCKS\n- commitment: BLOCKS\n- role: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "peer_congruent": false,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f07:LL",
+        "self_bits": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "generated_correct": true,
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        151645
+      ],
+      "input_tokens": 202,
+      "logit_choice": "B",
+      "logit_correct": true,
+      "parsed": "B",
+      "processed_ab_margin": -2.6547622680664062,
+      "prompt_sha256": "8d965ee135f1d2df4b6dac40d93787a4e7205a11674bf7d6bc0e94aa0bee5947",
+      "raw_ab_margin": -1.0,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "ALLOW CODE=B"
+    },
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.07771669600001,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 53325,
+      "fixture": {
+        "active_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "NN",
+        "difficulty": "extreme",
+        "display_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "factor_count": 5,
+        "family": 0,
+        "fixture_hash": "fb11dcc30cc941a49d39184b4da06656ca7506764b102d0ee3b8185dc7d4276f",
+        "fixture_id": "r1-f07",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal one: SUPPORTS\n- signal four: SUPPORTS\n- signal three: SUPPORTS\n\nPEER:\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal one: BLOCKS\n- signal four: BLOCKS\n- signal three: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "peer_congruent": false,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f07:NN",
+        "self_bits": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "generated_correct": true,
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        271
+      ],
+      "input_tokens": 210,
+      "logit_choice": "B",
+      "logit_correct": true,
+      "parsed": "B",
+      "processed_ab_margin": -1.6964263916015625,
+      "prompt_sha256": "ea29495d68604f93e06b63173b4340eb7f7f4888e8ca0e9fe6d12ad4da8a6bb0",
+      "raw_ab_margin": -0.25,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "ALLOW CODE=B\n\n"
+    },
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.07771669600001,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 53325,
+      "fixture": {
+        "active_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "NL",
+        "difficulty": "extreme",
+        "display_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "factor_count": 5,
+        "family": 0,
+        "fixture_hash": "2120a3a4649c0c4d93f8c80326df89065da02b6bac848177fb80b8c73fb09bcb",
+        "fixture_id": "r1-f07",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a credential-key rotation\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal two: SUPPORTS\n- signal five: SUPPORTS\n- signal one: SUPPORTS\n- signal four: SUPPORTS\n- signal three: SUPPORTS\n\nPEER:\n- signal two: BLOCKS\n- signal five: BLOCKS\n- signal one: BLOCKS\n- signal four: BLOCKS\n- signal three: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "peer_congruent": false,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f07:NL",
+        "self_bits": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "generated_correct": true,
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        271
+      ],
+      "input_tokens": 210,
+      "logit_choice": "A",
+      "logit_correct": false,
+      "parsed": "B",
+      "processed_ab_margin": -1.1488075256347656,
+      "prompt_sha256": "0c3be7660f218bf44c427d8f28393400d10456bab62cccfb3a2af5fc09e7723f",
+      "raw_ab_margin": 0.375,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "ALLOW CODE=B\n\n"
+    },
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.07771669600001,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 53325,
+      "fixture": {
+        "active_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "LN",
+        "difficulty": "extreme",
+        "display_order": [
+          1,
+          4,
+          0,
+          3,
+          2
+        ],
+        "factor_count": 5,
+        "family": 0,
+        "fixture_hash": "3618e695253578bf2da66d3b19f22d313915985234cc07ae79402e4f5cbbd836",
+        "fixture_id": "r1-f07",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- capability: SUPPORTS\n- world fact: SUPPORTS\n- authority: SUPPORTS\n- commitment: SUPPORTS\n- role: SUPPORTS\n\nPEER:\n- capability: BLOCKS\n- world fact: BLOCKS\n- authority: BLOCKS\n- commitment: BLOCKS\n- role: BLOCKS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "peer_congruent": false,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f07:LN",
+        "self_bits": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "generated_correct": true,
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        151645
+      ],
+      "input_tokens": 202,
+      "logit_choice": "B",
+      "logit_correct": true,
+      "parsed": "B",
+      "processed_ab_margin": -2.3571395874023438,
+      "prompt_sha256": "2d61e9253f9aff986021f8f7518c8f184a770930d16058647872b99a0e73c46b",
+      "raw_ab_margin": -0.75,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "ALLOW CODE=B"
+    },
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.091509915000017,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 53325,
+      "fixture": {
+        "active_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "NN",
+        "difficulty": "boundary",
+        "display_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "factor_count": 5,
+        "family": 1,
+        "fixture_hash": "7aa94e61cd08b7bf7caa2719dfcbcb1e91b43d10ecdd154f3fb77a658ac69142",
+        "fixture_id": "r1-f22",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal two: SUPPORTS\n- signal one: BLOCKS\n- signal four: BLOCKS\n- signal three: SUPPORTS\n- signal five: SUPPORTS\n\nPEER:\n- signal two: SUPPORTS\n- signal one: BLOCKS\n- signal four: BLOCKS\n- signal three: SUPPORTS\n- signal five: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "peer_congruent": true,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f22:NN",
+        "self_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "generated_correct": true,
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        271
+      ],
+      "input_tokens": 210,
+      "logit_choice": "A",
+      "logit_correct": false,
+      "parsed": "B",
+      "processed_ab_margin": 0.45238304138183594,
+      "prompt_sha256": "6118650d90fe356a4fa4b9926a4357d161acbeffe01802eacb70e7bc0b626351",
+      "raw_ab_margin": 2.0,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "ALLOW CODE=B\n\n"
+    },
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.091509915000017,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 32,
+      "fixture": {
+        "active_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "NL",
+        "difficulty": "boundary",
+        "display_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "factor_count": 5,
+        "family": 1,
+        "fixture_hash": "289a0e183ecce7e90773d0d71d166fce95e91cd273936fb38a2cc833846adcf8",
+        "fixture_id": "r1-f22",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a production schedule change\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- signal two: SUPPORTS\n- signal one: BLOCKS\n- signal four: BLOCKS\n- signal three: SUPPORTS\n- signal five: SUPPORTS\n\nPEER:\n- signal two: SUPPORTS\n- signal one: BLOCKS\n- signal four: BLOCKS\n- signal three: SUPPORTS\n- signal five: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "peer_congruent": true,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f22:NL",
+        "self_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "generated_correct": true,
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        271
+      ],
+      "input_tokens": 210,
+      "logit_choice": "A",
+      "logit_correct": false,
+      "parsed": "B",
+      "processed_ab_margin": -0.16071319580078125,
+      "prompt_sha256": "aadc1793234e76b2080b4637f647a63e559c0f5de6e61f1396bb6d3e3090d1b6",
+      "raw_ab_margin": 1.375,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "ALLOW CODE=B\n\n"
+    },
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.091509915000017,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 53325,
+      "fixture": {
+        "active_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "LN",
+        "difficulty": "boundary",
+        "display_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "factor_count": 5,
+        "family": 1,
+        "fixture_hash": "0dbaeaf97cf3c64db159db55eb3f5a2dc1f38a547760f40aef1320e52fc05d37",
+        "fixture_id": "r1-f22",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a routine record update\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- capability: SUPPORTS\n- authority: BLOCKS\n- commitment: BLOCKS\n- role: SUPPORTS\n- world fact: SUPPORTS\n\nPEER:\n- capability: SUPPORTS\n- authority: BLOCKS\n- commitment: BLOCKS\n- role: SUPPORTS\n- world fact: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "peer_congruent": true,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f22:LN",
+        "self_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "generated_correct": true,
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        151645
+      ],
+      "input_tokens": 202,
+      "logit_choice": "A",
+      "logit_correct": false,
+      "parsed": "B",
+      "processed_ab_margin": -0.41666412353515625,
+      "prompt_sha256": "72ae9bd00ebf6e93fc9c288cf4c60a3cf5495dc8fa8f4ab2c9ec3d2685c67bd2",
+      "raw_ab_margin": 1.25,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "ALLOW CODE=B"
+    },
+    {
+      "a_token_id": 32,
+      "b_token_id": 33,
+      "batch_padded_input_tokens": 210,
+      "batch_seconds": 12.091509915000017,
+      "commit": "0113fdcd8f11f8cc39b5841ae1d6e1b071317ea5",
+      "first_generated_id": 39964,
+      "first_raw_argmax_id": 39964,
+      "fixture": {
+        "active_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "allow_code": "B",
+        "block_code": "A",
+        "cell": "LL",
+        "difficulty": "boundary",
+        "display_order": [
+          1,
+          0,
+          3,
+          2,
+          4
+        ],
+        "factor_count": 5,
+        "family": 1,
+        "fixture_hash": "b143980e6be4750462b1c0aac943977f40263bac6f8dfc73f6c6ecd0add1108b",
+        "fixture_id": "r1-f22",
+        "ideal": "B",
+        "insertion_order": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "messages": [
+          {
+            "content": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. There are 5 factors. The action is permitted when at least 3 factors SUPPORT it. A tie is not permitted. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+            "role": "system"
+          },
+          {
+            "content": "TASK: a production schedule change\nPERSONA: ORCHID\n\nCURRENT EXECUTOR:\n- capability: SUPPORTS\n- authority: BLOCKS\n- commitment: BLOCKS\n- role: SUPPORTS\n- world fact: SUPPORTS\n\nPEER:\n- capability: SUPPORTS\n- authority: BLOCKS\n- commitment: BLOCKS\n- role: SUPPORTS\n- world fact: SUPPORTS\n\nACTION CODES: ALLOW CODE=B; BLOCK CODE=A.\n\nACTOR AUDIT: Which action code is required?",
+            "role": "user"
+          }
+        ],
+        "peer_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "peer_congruent": true,
+        "permitted": true,
+        "persona": "ORCHID",
+        "replicate": 1,
+        "row_id": "k5:r1-f22:LL",
+        "self_bits": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "generated_correct": false,
+      "generated_ids": [
+        39964,
+        13765,
+        46623,
+        151645
+      ],
+      "input_tokens": 202,
+      "logit_choice": "A",
+      "logit_correct": false,
+      "parsed": "A",
+      "processed_ab_margin": -1.6071395874023438,
+      "prompt_sha256": "bff8229f2f90e8cf307c265959cf987e22fc42699f0d7b99eb5621ff07a014fb",
+      "raw_ab_margin": 0.0,
+      "run_id": "35878643047",
+      "strict_parse": null,
+      "text": "BLOCK CODE=A"
+    }
+  ],
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "shard": 18,
+  "status": "COMPLETE",
+  "updated": "2026-09-23T15:57:02.140713+00:00"
+}
