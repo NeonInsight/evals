@@ -1,0 +1,14 @@
+{
+  "factor_count": 5,
+  "freeze_hash": "e2b27f9c409d6c93adb46443bed833ac351f1037aeba72cb530e43cb9d36c021",
+  "protocol": "res-complexity-semantics-v1",
+  "run_id": "35912818425",
+  "shards": {
+    "20": "COMPLETE",
+    "21": "COMPLETE",
+    "22": "COMPLETE",
+    "23": "COMPLETE"
+  },
+  "slice": 5,
+  "status": "COMPLETE"
+}
