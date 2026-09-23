@@ -4030,17 +4030,17 @@
       "status": "COMPLETE_DIAGNOSTIC"
     },
     "5": {
-      "completed_prompts": 64,
+      "completed_prompts": 96,
       "expected_prompts": 256,
       "status": "INCOMPLETE"
     }
   },
   "status": "INCOMPLETE_NO_GLOBAL_CONCLUSION",
   "token_ledger": {
-    "completed_prompt_attempts": 448,
+    "completed_prompt_attempts": 480,
     "excludes": "Interrupted uncheckpointed batches; generated slots may include padding after EOS.",
-    "generated_token_slots": 1120,
-    "padded_input_token_slots": 83108,
-    "unpadded_input_tokens": 81936
+    "generated_token_slots": 1192,
+    "padded_input_token_slots": 89812,
+    "unpadded_input_tokens": 88512
   }
 }
