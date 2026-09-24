@@ -4,25 +4,25 @@
   "mechanism_assay_authorized": false,
   "onset_descriptive": {
     "LL": {
-      "complete_ladder": false,
+      "complete_ladder": true,
       "first_observed_below_criterion": 2,
       "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
       "nonmonotonic": false
     },
     "LN": {
-      "complete_ladder": false,
+      "complete_ladder": true,
       "first_observed_below_criterion": 2,
       "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
       "nonmonotonic": false
     },
     "NL": {
-      "complete_ladder": false,
+      "complete_ladder": true,
       "first_observed_below_criterion": 2,
       "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
       "nonmonotonic": false
     },
     "NN": {
-      "complete_ladder": false,
+      "complete_ladder": true,
       "first_observed_below_criterion": 3,
       "limitation": "Observed task-specific screening result, not a universal complexity threshold.",
       "nonmonotonic": false
@@ -4030,17 +4030,1393 @@
       "status": "COMPLETE_DIAGNOSTIC"
     },
     "5": {
-      "completed_prompts": 224,
-      "expected_prompts": 256,
-      "status": "INCOMPLETE"
+      "cells": {
+        "LL": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.828125,
+          "generated_accuracy": 0.546875,
+          "generated_correct": 35,
+          "generated_exact_95_ci": [
+            0.41747631531604745,
+            0.671792885496282
+          ],
+          "generated_logit_choice_agreement": 0.8125,
+          "logit_accuracy": 0.640625,
+          "logit_correct": 41,
+          "logit_exact_95_ci": [
+            0.5109625981612298,
+            0.7568097089687873
+          ],
+          "median_input_tokens": 201.5,
+          "n": 64,
+          "near_boundary_fraction": 0.25,
+          "parser_coverage": 1.0,
+          "raw_zero_margin": 5,
+          "strict_parser_coverage": 0.828125
+        },
+        "LN": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.859375,
+          "generated_accuracy": 0.515625,
+          "generated_correct": 33,
+          "generated_exact_95_ci": [
+            0.3872588082204236,
+            0.6424980032802374
+          ],
+          "generated_logit_choice_agreement": 0.640625,
+          "logit_accuracy": 0.6875,
+          "logit_correct": 44,
+          "logit_exact_95_ci": [
+            0.5594056331825381,
+            0.7975785274198701
+          ],
+          "median_input_tokens": 201.5,
+          "n": 64,
+          "near_boundary_fraction": 0.3125,
+          "parser_coverage": 1.0,
+          "raw_zero_margin": 4,
+          "strict_parser_coverage": 0.796875
+        },
+        "NL": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.84375,
+          "generated_accuracy": 0.640625,
+          "generated_correct": 41,
+          "generated_exact_95_ci": [
+            0.5109625981612298,
+            0.7568097089687873
+          ],
+          "generated_logit_choice_agreement": 0.6875,
+          "logit_accuracy": 0.640625,
+          "logit_correct": 41,
+          "logit_exact_95_ci": [
+            0.5109625981612298,
+            0.7568097089687873
+          ],
+          "median_input_tokens": 209.5,
+          "n": 64,
+          "near_boundary_fraction": 0.390625,
+          "parser_coverage": 0.984375,
+          "raw_zero_margin": 4,
+          "strict_parser_coverage": 0.828125
+        },
+        "NN": {
+          "descriptive_criterion_met": false,
+          "generated_B_fraction": 0.84375,
+          "generated_accuracy": 0.59375,
+          "generated_correct": 38,
+          "generated_exact_95_ci": [
+            0.4636768777077156,
+            0.7148529871891394
+          ],
+          "generated_logit_choice_agreement": 0.671875,
+          "logit_accuracy": 0.640625,
+          "logit_correct": 41,
+          "logit_exact_95_ci": [
+            0.5109625981612298,
+            0.7568097089687873
+          ],
+          "median_input_tokens": 209.5,
+          "n": 64,
+          "near_boundary_fraction": 0.359375,
+          "parser_coverage": 1.0,
+          "raw_zero_margin": 3,
+          "strict_parser_coverage": 0.703125
+        }
+      },
+      "exploratory_strata": {
+        "allow_code": {
+          "LL": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.78125,
+              "generated_accuracy": 0.71875,
+              "generated_correct": 23,
+              "generated_exact_95_ci": [
+                0.5325289003570655,
+                0.8625430967044982
+              ],
+              "generated_logit_choice_agreement": 1.0,
+              "logit_accuracy": 0.71875,
+              "logit_correct": 23,
+              "logit_exact_95_ci": [
+                0.5325289003570655,
+                0.8625430967044982
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.0,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.96875
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.375,
+              "generated_correct": 12,
+              "generated_exact_95_ci": [
+                0.2110003164239928,
+                0.5630775449030734
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 18,
+              "logit_exact_95_ci": [
+                0.3766257315900938,
+                0.7363618755890153
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.5,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 5,
+              "strict_parser_coverage": 0.6875
+            }
+          },
+          "LN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.65625,
+              "generated_correct": 21,
+              "generated_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "generated_logit_choice_agreement": 0.96875,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 22,
+              "logit_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.0,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.9375
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.375,
+              "generated_correct": 12,
+              "generated_exact_95_ci": [
+                0.2110003164239928,
+                0.5630775449030734
+              ],
+              "generated_logit_choice_agreement": 0.3125,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 22,
+              "logit_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 4,
+              "strict_parser_coverage": 0.65625
+            }
+          },
+          "NL": {
+            "A": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.71875,
+              "generated_accuracy": 0.75,
+              "generated_correct": 24,
+              "generated_exact_95_ci": [
+                0.5659506250777573,
+                0.8853839948974118
+              ],
+              "generated_logit_choice_agreement": 0.875,
+              "logit_accuracy": 0.75,
+              "logit_correct": 24,
+              "logit_exact_95_ci": [
+                0.5659506250777573,
+                0.8853839948974118
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.15625,
+              "parser_coverage": 0.96875,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.96875
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.96875,
+              "generated_accuracy": 0.53125,
+              "generated_correct": 17,
+              "generated_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "generated_logit_choice_agreement": 0.5,
+              "logit_accuracy": 0.53125,
+              "logit_correct": 17,
+              "logit_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.6875
+            }
+          },
+          "NN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.78125,
+              "generated_accuracy": 0.65625,
+              "generated_correct": 21,
+              "generated_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "generated_logit_choice_agreement": 0.90625,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 22,
+              "logit_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.96875
+            },
+            "B": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.90625,
+              "generated_accuracy": 0.53125,
+              "generated_correct": 17,
+              "generated_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "generated_logit_choice_agreement": 0.4375,
+              "logit_accuracy": 0.59375,
+              "logit_correct": 19,
+              "logit_exact_95_ci": [
+                0.4064492465764764,
+                0.763015899448257
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.59375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.4375
+            }
+          }
+        },
+        "difficulty": {
+          "LL": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.90625,
+              "generated_accuracy": 0.40625,
+              "generated_correct": 13,
+              "generated_exact_95_ci": [
+                0.23698410055174313,
+                0.5935507534235236
+              ],
+              "generated_logit_choice_agreement": 0.71875,
+              "logit_accuracy": 0.5,
+              "logit_correct": 16,
+              "logit_exact_95_ci": [
+                0.31887496423416395,
+                0.681125035765836
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.28125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 4,
+              "strict_parser_coverage": 0.875
+            },
+            "extreme": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.6875,
+              "generated_correct": 22,
+              "generated_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "generated_logit_choice_agreement": 0.90625,
+              "logit_accuracy": 0.78125,
+              "logit_correct": 25,
+              "logit_exact_95_ci": [
+                0.6002717362878924,
+                0.9072284677152807
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.21875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.78125
+            }
+          },
+          "LN": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.4375,
+              "generated_correct": 14,
+              "generated_exact_95_ci": [
+                0.26363812441098466,
+                0.6233742684099062
+              ],
+              "generated_logit_choice_agreement": 0.59375,
+              "logit_accuracy": 0.53125,
+              "logit_correct": 17,
+              "logit_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.875
+            },
+            "extreme": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.78125,
+              "generated_accuracy": 0.59375,
+              "generated_correct": 19,
+              "generated_exact_95_ci": [
+                0.4064492465764764,
+                0.763015899448257
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.84375,
+              "logit_correct": 27,
+              "logit_exact_95_ci": [
+                0.6721212343179581,
+                0.947249435597866
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.71875
+            }
+          },
+          "NL": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.96875,
+              "generated_accuracy": 0.5,
+              "generated_correct": 16,
+              "generated_exact_95_ci": [
+                0.31887496423416395,
+                0.681125035765836
+              ],
+              "generated_logit_choice_agreement": 0.65625,
+              "logit_accuracy": 0.53125,
+              "logit_correct": 17,
+              "logit_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.40625,
+              "parser_coverage": 0.96875,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.90625
+            },
+            "extreme": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.71875,
+              "generated_accuracy": 0.78125,
+              "generated_correct": 25,
+              "generated_exact_95_ci": [
+                0.6002717362878924,
+                0.9072284677152807
+              ],
+              "generated_logit_choice_agreement": 0.71875,
+              "logit_accuracy": 0.75,
+              "logit_correct": 24,
+              "logit_exact_95_ci": [
+                0.5659506250777573,
+                0.8853839948974118
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.75
+            }
+          },
+          "NN": {
+            "boundary": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.96875,
+              "generated_accuracy": 0.46875,
+              "generated_correct": 15,
+              "generated_exact_95_ci": [
+                0.2909398229060153,
+                0.6525631907136071
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.46875,
+              "logit_correct": 15,
+              "logit_exact_95_ci": [
+                0.2909398229060153,
+                0.6525631907136071
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.875
+            },
+            "extreme": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.71875,
+              "generated_accuracy": 0.71875,
+              "generated_correct": 23,
+              "generated_exact_95_ci": [
+                0.5325289003570655,
+                0.8625430967044982
+              ],
+              "generated_logit_choice_agreement": 0.65625,
+              "logit_accuracy": 0.8125,
+              "logit_correct": 26,
+              "logit_exact_95_ci": [
+                0.63560769013591,
+                0.9279238345415024
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.34375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.53125
+            }
+          }
+        },
+        "family": {
+          "LL": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.53125,
+              "generated_correct": 17,
+              "generated_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "generated_logit_choice_agreement": 0.65625,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 22,
+              "logit_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.40625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 4,
+              "strict_parser_coverage": 0.84375
+            },
+            "1": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 18,
+              "generated_exact_95_ci": [
+                0.3766257315900938,
+                0.7363618755890153
+              ],
+              "generated_logit_choice_agreement": 0.96875,
+              "logit_accuracy": 0.59375,
+              "logit_correct": 19,
+              "logit_exact_95_ci": [
+                0.4064492465764764,
+                0.763015899448257
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.09375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.8125
+            }
+          },
+          "LN": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.5,
+              "generated_correct": 16,
+              "generated_exact_95_ci": [
+                0.31887496423416395,
+                0.681125035765836
+              ],
+              "generated_logit_choice_agreement": 0.59375,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.8125
+            },
+            "1": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.53125,
+              "generated_correct": 17,
+              "generated_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.71875,
+              "logit_correct": 23,
+              "logit_exact_95_ci": [
+                0.5325289003570655,
+                0.8625430967044982
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.78125
+            }
+          },
+          "NL": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.65625,
+              "generated_correct": 21,
+              "generated_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.59375,
+              "logit_correct": 19,
+              "logit_exact_95_ci": [
+                0.4064492465764764,
+                0.763015899448257
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.875
+            },
+            "1": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.625,
+              "generated_correct": 20,
+              "generated_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 22,
+              "logit_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.40625,
+              "parser_coverage": 0.96875,
+              "raw_zero_margin": 4,
+              "strict_parser_coverage": 0.78125
+            }
+          },
+          "NN": {
+            "0": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.65625,
+              "generated_correct": 21,
+              "generated_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "generated_logit_choice_agreement": 0.65625,
+              "logit_accuracy": 0.625,
+              "logit_correct": 20,
+              "logit_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.4375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 0,
+              "strict_parser_coverage": 0.71875
+            },
+            "1": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.53125,
+              "generated_correct": 17,
+              "generated_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.28125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.6875
+            }
+          }
+        },
+        "ideal": {
+          "LL": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.78125,
+              "generated_accuracy": 0.21875,
+              "generated_correct": 7,
+              "generated_exact_95_ci": [
+                0.09277153228471932,
+                0.3997282637121077
+              ],
+              "generated_logit_choice_agreement": 0.8125,
+              "logit_accuracy": 0.40625,
+              "logit_correct": 13,
+              "logit_exact_95_ci": [
+                0.23698410055174313,
+                0.5935507534235236
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.21875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.9375
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.875,
+              "generated_correct": 28,
+              "generated_exact_95_ci": [
+                0.7100515798092444,
+                0.9648693468966887
+              ],
+              "generated_logit_choice_agreement": 0.8125,
+              "logit_accuracy": 0.875,
+              "logit_correct": 28,
+              "logit_exact_95_ci": [
+                0.7100515798092444,
+                0.9648693468966887
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.28125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.71875
+            }
+          },
+          "LN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.15625,
+              "generated_correct": 5,
+              "generated_exact_95_ci": [
+                0.05275056440213409,
+                0.3278787656820418
+              ],
+              "generated_logit_choice_agreement": 0.59375,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 18,
+              "logit_exact_95_ci": [
+                0.3766257315900938,
+                0.7363618755890153
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.40625,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.90625
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.875,
+              "generated_correct": 28,
+              "generated_exact_95_ci": [
+                0.7100515798092444,
+                0.9648693468966887
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.8125,
+              "logit_correct": 26,
+              "logit_exact_95_ci": [
+                0.63560769013591,
+                0.9279238345415024
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.21875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.6875
+            }
+          },
+          "NL": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.6875,
+              "generated_accuracy": 0.28125,
+              "generated_correct": 9,
+              "generated_exact_95_ci": [
+                0.1374569032955017,
+                0.46747109964293465
+              ],
+              "generated_logit_choice_agreement": 0.65625,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 18,
+              "logit_exact_95_ci": [
+                0.3766257315900938,
+                0.7363618755890153
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.46875,
+              "parser_coverage": 0.96875,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.9375
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 1.0,
+              "generated_accuracy": 1.0,
+              "generated_correct": 32,
+              "generated_exact_95_ci": [
+                0.8911188393206471,
+                1.0
+              ],
+              "generated_logit_choice_agreement": 0.71875,
+              "logit_accuracy": 0.71875,
+              "logit_correct": 23,
+              "logit_exact_95_ci": [
+                0.5325289003570655,
+                0.8625430967044982
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.71875
+            }
+          },
+          "NN": {
+            "A": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.75,
+              "generated_accuracy": 0.25,
+              "generated_correct": 8,
+              "generated_exact_95_ci": [
+                0.11461600510258818,
+                0.4340493749222428
+              ],
+              "generated_logit_choice_agreement": 0.5625,
+              "logit_accuracy": 0.5625,
+              "logit_correct": 18,
+              "logit_exact_95_ci": [
+                0.3766257315900938,
+                0.7363618755890153
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.4375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.8125
+            },
+            "B": {
+              "descriptive_criterion_met": true,
+              "generated_B_fraction": 0.9375,
+              "generated_accuracy": 0.9375,
+              "generated_correct": 30,
+              "generated_exact_95_ci": [
+                0.7919305701049926,
+                0.9923392636535435
+              ],
+              "generated_logit_choice_agreement": 0.78125,
+              "logit_accuracy": 0.71875,
+              "logit_correct": 23,
+              "logit_exact_95_ci": [
+                0.5325289003570655,
+                0.8625430967044982
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.28125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.59375
+            }
+          }
+        },
+        "peer_congruent": {
+          "LL": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.53125,
+              "generated_correct": 17,
+              "generated_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "generated_logit_choice_agreement": 0.8125,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.1875,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.8125
+            },
+            "True": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 18,
+              "generated_exact_95_ci": [
+                0.3766257315900938,
+                0.7363618755890153
+              ],
+              "generated_logit_choice_agreement": 0.8125,
+              "logit_accuracy": 0.625,
+              "logit_correct": 20,
+              "logit_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.84375
+            }
+          },
+          "LN": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.40625,
+              "generated_correct": 13,
+              "generated_exact_95_ci": [
+                0.23698410055174313,
+                0.5935507534235236
+              ],
+              "generated_logit_choice_agreement": 0.53125,
+              "logit_accuracy": 0.75,
+              "logit_correct": 24,
+              "logit_exact_95_ci": [
+                0.5659506250777573,
+                0.8853839948974118
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.78125
+            },
+            "True": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 20,
+              "generated_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.625,
+              "logit_correct": 20,
+              "logit_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "median_input_tokens": 201.5,
+              "n": 32,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.8125
+            }
+          },
+          "NL": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.625,
+              "generated_correct": 20,
+              "generated_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.6875,
+              "logit_correct": 22,
+              "logit_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.46875,
+              "parser_coverage": 0.96875,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.875
+            },
+            "True": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.65625,
+              "generated_correct": 21,
+              "generated_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "generated_logit_choice_agreement": 0.75,
+              "logit_accuracy": 0.59375,
+              "logit_correct": 19,
+              "logit_exact_95_ci": [
+                0.4064492465764764,
+                0.763015899448257
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.3125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.78125
+            }
+          },
+          "NN": {
+            "False": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.5,
+              "generated_correct": 16,
+              "generated_exact_95_ci": [
+                0.31887496423416395,
+                0.681125035765836
+              ],
+              "generated_logit_choice_agreement": 0.71875,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.6875
+            },
+            "True": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.6875,
+              "generated_correct": 22,
+              "generated_exact_95_ci": [
+                0.49992241836783036,
+                0.8388152759117995
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.625,
+              "logit_correct": 20,
+              "logit_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "median_input_tokens": 209.5,
+              "n": 32,
+              "near_boundary_fraction": 0.34375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.71875
+            }
+          }
+        },
+        "persona": {
+          "LL": {
+            "EMBER": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 20,
+              "generated_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "generated_logit_choice_agreement": 0.84375,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 201.0,
+              "n": 32,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.875
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.78125,
+              "generated_accuracy": 0.46875,
+              "generated_correct": 15,
+              "generated_exact_95_ci": [
+                0.2909398229060153,
+                0.6525631907136071
+              ],
+              "generated_logit_choice_agreement": 0.78125,
+              "logit_accuracy": 0.625,
+              "logit_correct": 20,
+              "logit_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "median_input_tokens": 202.0,
+              "n": 32,
+              "near_boundary_fraction": 0.25,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 4,
+              "strict_parser_coverage": 0.78125
+            }
+          },
+          "LN": {
+            "EMBER": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.5,
+              "generated_correct": 16,
+              "generated_exact_95_ci": [
+                0.31887496423416395,
+                0.681125035765836
+              ],
+              "generated_logit_choice_agreement": 0.59375,
+              "logit_accuracy": 0.71875,
+              "logit_correct": 23,
+              "logit_exact_95_ci": [
+                0.5325289003570655,
+                0.8625430967044982
+              ],
+              "median_input_tokens": 201.0,
+              "n": 32,
+              "near_boundary_fraction": 0.28125,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.8125
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.84375,
+              "generated_accuracy": 0.53125,
+              "generated_correct": 17,
+              "generated_exact_95_ci": [
+                0.34743680928639287,
+                0.7090601770939848
+              ],
+              "generated_logit_choice_agreement": 0.6875,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 202.0,
+              "n": 32,
+              "near_boundary_fraction": 0.34375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.78125
+            }
+          },
+          "NL": {
+            "EMBER": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.625,
+              "generated_correct": 20,
+              "generated_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "generated_logit_choice_agreement": 0.71875,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 209.0,
+              "n": 32,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 3,
+              "strict_parser_coverage": 0.875
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.65625,
+              "generated_correct": 21,
+              "generated_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "generated_logit_choice_agreement": 0.65625,
+              "logit_accuracy": 0.625,
+              "logit_correct": 20,
+              "logit_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "median_input_tokens": 210.0,
+              "n": 32,
+              "near_boundary_fraction": 0.40625,
+              "parser_coverage": 0.96875,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.78125
+            }
+          },
+          "NN": {
+            "EMBER": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.8125,
+              "generated_accuracy": 0.625,
+              "generated_correct": 20,
+              "generated_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "generated_logit_choice_agreement": 0.625,
+              "logit_accuracy": 0.625,
+              "logit_correct": 20,
+              "logit_exact_95_ci": [
+                0.4369224550969266,
+                0.7889996835760071
+              ],
+              "median_input_tokens": 209.0,
+              "n": 32,
+              "near_boundary_fraction": 0.375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 2,
+              "strict_parser_coverage": 0.6875
+            },
+            "ORCHID": {
+              "descriptive_criterion_met": false,
+              "generated_B_fraction": 0.875,
+              "generated_accuracy": 0.5625,
+              "generated_correct": 18,
+              "generated_exact_95_ci": [
+                0.3766257315900938,
+                0.7363618755890153
+              ],
+              "generated_logit_choice_agreement": 0.71875,
+              "logit_accuracy": 0.65625,
+              "logit_correct": 21,
+              "logit_exact_95_ci": [
+                0.4680689637197313,
+                0.8142809082834339
+              ],
+              "median_input_tokens": 210.0,
+              "n": 32,
+              "near_boundary_fraction": 0.34375,
+              "parser_coverage": 1.0,
+              "raw_zero_margin": 1,
+              "strict_parser_coverage": 0.71875
+            }
+          }
+        }
+      },
+      "factor_count": 5,
+      "generated_pairs_descriptive": {
+        "LL_to_LN": {
+          "accuracy_difference_right_minus_left": -0.03125,
+          "both_correct": 31,
+          "both_wrong": 27,
+          "corrections": 2,
+          "regressions": 4
+        },
+        "LL_to_NL": {
+          "accuracy_difference_right_minus_left": 0.09375,
+          "both_correct": 35,
+          "both_wrong": 23,
+          "corrections": 6,
+          "regressions": 0
+        },
+        "LL_to_NN": {
+          "accuracy_difference_right_minus_left": 0.046875,
+          "both_correct": 32,
+          "both_wrong": 23,
+          "corrections": 6,
+          "regressions": 3
+        },
+        "NL_to_LN": {
+          "accuracy_difference_right_minus_left": -0.125,
+          "both_correct": 33,
+          "both_wrong": 23,
+          "corrections": 0,
+          "regressions": 8
+        },
+        "NN_to_LN": {
+          "accuracy_difference_right_minus_left": -0.078125,
+          "both_correct": 30,
+          "both_wrong": 23,
+          "corrections": 3,
+          "regressions": 8
+        },
+        "NN_to_NL": {
+          "accuracy_difference_right_minus_left": 0.046875,
+          "both_correct": 37,
+          "both_wrong": 22,
+          "corrections": 4,
+          "regressions": 1
+        }
+      },
+      "logit_pair_descriptive": {
+        "accuracy_difference_right_minus_left": 0.0,
+        "both_correct": 33,
+        "both_wrong": 15,
+        "corrections": 8,
+        "regressions": 8
+      },
+      "near_boundary": {
+        "fraction_of_regressions_near_boundary": 0.625,
+        "interpretation": "Preregistered output-margin diagnostic, not evidence of an internal mechanism.",
+        "median_LL_abs_margin": {
+          "concordant": 6.0,
+          "discordant": 1.25,
+          "regressions": 0.625
+        },
+        "regressions": 8,
+        "regressions_with_LL_abs_margin_at_most_threshold": 5,
+        "threshold_abs_raw_LL_margin": 0.75
+      },
+      "primary": {
+        "alpha": 0.05,
+        "contrast": "LL vs NN",
+        "endpoint": "generated accuracy",
+        "neutral_benefit_replicated": false,
+        "p_value": 0.5078125,
+        "reject_equal_accuracy": false,
+        "status": "COMPLETE",
+        "test": "exact two-sided McNemar"
+      },
+      "secondary_model": {
+        "effects": {
+          "Intercept": {
+            "approximate_95_interval": [
+              0.4906867646637331,
+              1.4514310861933153
+            ],
+            "log_odds_mean": 0.9710589254285242,
+            "posterior_sd": 0.24508783712489343
+          },
+          "label_loaded": {
+            "approximate_95_interval": [
+              -1.761534396266891,
+              -0.44948228931477263
+            ],
+            "log_odds_mean": -1.1055083427908319,
+            "posterior_sd": 0.33470717014084655
+          },
+          "label_loaded:task_loaded": {
+            "approximate_95_interval": [
+              -1.2421077703819687,
+              0.6038975650863437
+            ],
+            "log_odds_mean": -0.31910510264781256,
+            "posterior_sd": 0.47091972843579405
+          },
+          "task_loaded": {
+            "approximate_95_interval": [
+              0.09664395422504446,
+              1.4632032880470875
+            ],
+            "log_odds_mean": 0.7799236211360661,
+            "posterior_sd": 0.3486120749546029
+          }
+        },
+        "fixed_effect_prior_sd": 2.0,
+        "fixture_log_sd_mean": 1.4598761193336864,
+        "formula": "correct ~ label_loaded * task_loaded + (1 | fixture_id)",
+        "method": "BinomialBayesMixedGLM.fit_vb (mean-field variational Bayes)",
+        "note": "Secondary localization; approximate marginal posterior intervals, not confirmatory tests.",
+        "random_effect_log_sd_prior_sd": 0.5,
+        "status": "FIT_OK",
+        "warnings": []
+      },
+      "status": "COMPLETE_DIAGNOSTIC"
     }
   },
-  "status": "INCOMPLETE_NO_GLOBAL_CONCLUSION",
+  "status": "COMPLETE_DIAGNOSTIC",
   "token_ledger": {
-    "completed_prompt_attempts": 608,
+    "completed_prompt_attempts": 640,
     "excludes": "Interrupted uncheckpointed batches; generated slots may include padding after EOS.",
-    "generated_token_slots": 1552,
-    "padded_input_token_slots": 116628,
-    "unpadded_input_tokens": 114816
+    "generated_token_slots": 1648,
+    "padded_input_token_slots": 123328,
+    "unpadded_input_tokens": 121388
   }
 }
