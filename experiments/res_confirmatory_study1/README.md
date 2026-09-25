@@ -10,7 +10,7 @@ From the repository root, before any scored inference:
 python -m unittest discover -s experiments/res_confirmatory_study1 -p 'test_*.py' -v
 python experiments/res_confirmatory_study1/run.py freeze
 python experiments/res_confirmatory_study1/run.py preflight
-python -m pip install transformers==4.48.3 tokenizers==0.21.0
+python -m pip install transformers==4.48.3 tokenizers==0.21.0 jinja2==3.1.6
 python experiments/res_confirmatory_study1/run.py token-audit
 ```
 
@@ -30,3 +30,5 @@ python experiments/res_confirmatory_study1/analyze.py
 ```
 
 The workflow uploads individual raw shard checkpoints even if inference fails, collects without overwriting observations, and commits `results/` only. Review `results/run_status.json`, `results/results.json`, and `results/REPORT.md`. A partial study is explicitly marked incomplete and receives no confirmatory analysis. The raw shard JSON is the record of generated text, IDs, logits, prompt provenance, and parameters. `scored_observations.csv`, `matched_transitions.csv`, `factorial_analysis.json`, `decision_margin_analysis.json`, and `length_confound_analysis.json` are derived artifacts. Verify hashes with `python experiments/res_confirmatory_study1/run.py preflight`.
+
+The initial tokenizer-only preflight failed before model inference because its environment lacked `jinja2`. The frozen prompt and canonical fixture hashes did not change. The versioned [execution amendment](execution-amendment.md) and archived initial manifest record the dependency repair; a revised manifest was committed while control remained `preflight`, before any scored call.

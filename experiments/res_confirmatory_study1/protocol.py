@@ -28,6 +28,7 @@ SOURCE_FILES = (
     "experiments/res_confirmatory_study1/test_study.py",
     "experiments/res_confirmatory_study1/preregistration.md",
     "experiments/res_confirmatory_study1/README.md",
+    "experiments/res_confirmatory_study1/execution-amendment.md",
     ".github/workflows/res-confirmatory-study1.yml",
 )
 

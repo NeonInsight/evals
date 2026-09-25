@@ -335,12 +335,11 @@
   "scoring_parser": "frozen Step 0 isolated single A/B",
   "seed": 20260925,
   "source_sha256": {
-    ".github/workflows/res-confirmatory-study1.yml": "b5a20e3308112861a7c354a335b23879dabcca1ba56b9bd488e06fe840cb0a99",
-    "experiments/res_confirmatory_study1/README.md": "d81b191794174292f59bb41cd5a100fb5a38287a2d1c43d9785301a1b27dd828",
+    ".github/workflows/res-confirmatory-study1.yml": "bfa543003bdd5dec1bee4389ac30f801addc8623400f471bd5e7068f22109010",
+    "experiments/res_confirmatory_study1/README.md": "b43ffc65b9ea6cc189c56eef038d1d95477029208d8ec62edd161bd36c6b5459",
     "experiments/res_confirmatory_study1/analyze.py": "b62ebd6d6544805fc2c50acef8b2cf3c8ea51b0563cec0b90ff8af93580b0e66",
-    "experiments/res_confirmatory_study1/execution-amendment.md": "067541dc2d38230cb880d1ef0a717a7768fc5dc977ad89095ef0f30665240533",
     "experiments/res_confirmatory_study1/preregistration.md": "69aa80691f1e49ba1db94c7da5373fcd7ad1b882962c1b0fa388b4fd243d3e1b",
-    "experiments/res_confirmatory_study1/protocol.py": "29cb589b3e51c09658e042e65d99e6c8b17d85948bcdf924ae2c5a367a206477",
+    "experiments/res_confirmatory_study1/protocol.py": "c602089f94a678dd0583417c5b86c9dbb8ddd8a4982b9e766ab95ec3f8d20b0e",
     "experiments/res_confirmatory_study1/run.py": "ace9d30ac6559bab940650cadb6ae913a6737d609ba4c9208e7b910a9a746a03",
     "experiments/res_confirmatory_study1/test_study.py": "2d098dfc224b75258d12544616825f68d1d846d3b52b967c02cf7e189ae5b273"
   }
