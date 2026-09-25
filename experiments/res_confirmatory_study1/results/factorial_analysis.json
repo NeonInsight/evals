@@ -1,0 +1,535 @@
+{
+  "effect_size": {
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 20260936,
+    "contrast_counts": {
+      "-1": 1,
+      "-2": 1,
+      "0": 51,
+      "1": 11,
+      "2": 0
+    },
+    "fixture_bootstrap_percentile_95_ci": [
+      0.0,
+      0.234375
+    ],
+    "framing_effect_high": {
+      "absolute_difference": 0.109375,
+      "fixture_bootstrap_percentile_95_ci": [
+        -0.015625,
+        0.234375
+      ]
+    },
+    "framing_effect_low": {
+      "absolute_difference": -0.015625,
+      "fixture_bootstrap_percentile_95_ci": [
+        -0.125,
+        0.09375
+      ]
+    },
+    "interaction_difference_in_differences": 0.125
+  },
+  "interaction_model": {
+    "method": "ConditionalLogit fixture-stratified maximum likelihood; Wald intervals/tests",
+    "n_informative_fixtures": 21,
+    "n_observations": 84,
+    "status": "FIT_WITH_WARNINGS",
+    "terms": {
+      "explicit": {
+        "ci_95_log_odds": [
+          -1.2941757667964202,
+          0.9631200129119758
+        ],
+        "ci_95_odds_ratio": [
+          0.27412371310886174,
+          2.619857725127246
+        ],
+        "log_odds": -0.16552787694222224,
+        "odds_ratio": 0.8474462386658025,
+        "standard_error": 0.5758407601296929,
+        "two_sided_wald_p": 0.7737645233780933
+      },
+      "high": {
+        "ci_95_log_odds": [
+          -2.1853930083185626,
+          0.30313555300924344
+        ],
+        "ci_95_odds_ratio": [
+          0.11243353765457699,
+          1.3540980040615946
+        ],
+        "log_odds": -0.9411287276546596,
+        "odds_ratio": 0.3901871716595086,
+        "standard_error": 0.6348287146244403,
+        "two_sided_wald_p": 0.1382093314795683
+      },
+      "interaction": {
+        "ci_95_log_odds": [
+          -0.2547864319970381,
+          3.110699803110929
+        ],
+        "ci_95_odds_ratio": [
+          0.7750820130037421,
+          22.43674020871534
+        ],
+        "log_odds": 1.4279566855569457,
+        "odds_ratio": 4.170169512887107,
+        "standard_error": 0.8585424069152978,
+        "two_sided_wald_p": 0.09626565926326948
+      }
+    },
+    "warnings": [
+      "Dropped 43 groups and 172 observations for having no within-group variance"
+    ]
+  },
+  "matched_four_cell_table": [
+    {
+      "EH": 1,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-000"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-001"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-002"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-003"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-004"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 1,
+      "fixture_id": "RESCS1-005"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-006"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-007"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 0,
+      "NL": 1,
+      "fixture_id": "RESCS1-008"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 0,
+      "NL": 1,
+      "fixture_id": "RESCS1-009"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-010"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-011"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-012"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 1,
+      "fixture_id": "RESCS1-013"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-014"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-015"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-016"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-017"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-018"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-019"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-020"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 1,
+      "fixture_id": "RESCS1-021"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-022"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-023"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-024"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-025"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-026"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-027"
+    },
+    {
+      "EH": 0,
+      "EL": 1,
+      "NH": 1,
+      "NL": 0,
+      "fixture_id": "RESCS1-028"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-029"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-030"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-031"
+    },
+    {
+      "EH": 1,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-032"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-033"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-034"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-035"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-036"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-037"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-038"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-039"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-040"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 0,
+      "NL": 1,
+      "fixture_id": "RESCS1-041"
+    },
+    {
+      "EH": 1,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-042"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-043"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-044"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-045"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-046"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-047"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-048"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-049"
+    },
+    {
+      "EH": 1,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-050"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-051"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-052"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-053"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-054"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-055"
+    },
+    {
+      "EH": 1,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-056"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-057"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-058"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-059"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-060"
+    },
+    {
+      "EH": 0,
+      "EL": 1,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-061"
+    },
+    {
+      "EH": 0,
+      "EL": 0,
+      "NH": 0,
+      "NL": 0,
+      "fixture_id": "RESCS1-062"
+    },
+    {
+      "EH": 1,
+      "EL": 1,
+      "NH": 1,
+      "NL": 1,
+      "fixture_id": "RESCS1-063"
+    }
+  ]
+}

@@ -1,0 +1,2059 @@
+{
+  "a_token_id": 32,
+  "b_token_id": 33,
+  "freeze_hash": "6831ed12d7a401925facc206a9f703650f3da103ea3c4a31e44c8399407486d7",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "protocol": "res-confirmatory-study1-v1",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "rows": [
+    {
+      "chat_template_char_count": 1036,
+      "chat_template_prompt_sha256": "deef53b4cdb2a7523f563b9021a51cd2d0b2c75ed8d0e47805bcfa65560452a3",
+      "messages_sha256": "173acd2cc0606bfda7bb63733a162445603779761a6faf3d3d9bffdca7b2d1a0",
+      "observation_id": "RESCS1-047:NH",
+      "prompt_char_count": 956,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 960,
+      "chat_template_prompt_sha256": "4ea017a2fc6902c123ecb8b589a5a79922a9e6d1a67672d17496978a8cec03a3",
+      "messages_sha256": "5b516ecfb5df26b2a1d7e8a88556677e164c6a710eac9bdcf14a52a939d0474f",
+      "observation_id": "RESCS1-047:NL",
+      "prompt_char_count": 880,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 948,
+      "chat_template_prompt_sha256": "d6aa2f38a8fcea33d287f919176ec16ee1da09a77a0b1984e75283e86d0b42dd",
+      "messages_sha256": "8e3738f78f1dc9ef44b0e2dbf9cc04c893a375297d4a9de9c5fd21d2c4770235",
+      "observation_id": "RESCS1-047:EL",
+      "prompt_char_count": 868,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1020,
+      "chat_template_prompt_sha256": "7a3f6b621930855f1c6d031ab3ece8f03d91370540960e1b591642e7ce9f103a",
+      "messages_sha256": "d4e88c6fa33548f0f4655edbf6d5cd8be0eaf6a6bea2c83692e64d7529874d64",
+      "observation_id": "RESCS1-047:EH",
+      "prompt_char_count": 940,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "219888680282659fb651cef76d6534f5d6b8595fae35abdefad93bec71f5c546",
+      "messages_sha256": "91512a0a5f786e23abbd66425e7cc3820873ae76deb63c2c7a7dfad059e997c7",
+      "observation_id": "RESCS1-043:NL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 928,
+      "chat_template_prompt_sha256": "b59a8cdf793207a0d294bd2ec5a7658f842374df4b25af208175907b5a5dda96",
+      "messages_sha256": "1c1be1e3f727f78df9fa813110e9445918380cfd6ea2fb8263d3feff58451a93",
+      "observation_id": "RESCS1-043:EL",
+      "prompt_char_count": 848,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1000,
+      "chat_template_prompt_sha256": "1512d5416e6f74c550886216edb76f570ae1c4f37e9e6149b7ee3f84f7793c79",
+      "messages_sha256": "656b4043b2649d3a991469db938648ee86eca1e5fd83451a3d16982c2334280a",
+      "observation_id": "RESCS1-043:EH",
+      "prompt_char_count": 920,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1016,
+      "chat_template_prompt_sha256": "4329ece576cc5f28a0b289ec4fc7fd465f4c749180f365b6a2274c5cce5da9ba",
+      "messages_sha256": "cd5f050e1db35eca228cb58968626d98deaf279165075e18e082147ed4e113ff",
+      "observation_id": "RESCS1-043:NH",
+      "prompt_char_count": 936,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "515fdfb03ea5fa805f7bd8b84378264b71c5420cd8a7409d1e5168901c388466",
+      "messages_sha256": "2731188bbf52bd3c18363865fd820acc860b9fa068a7597de14cbcb5cfe8d56c",
+      "observation_id": "RESCS1-004:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "d7749c07fef59a3405c53299f6b9be5791db2bb171981d515e9ff7f14dfe362e",
+      "messages_sha256": "6965b8942dde088af050ef5c37e1dbd0abb51b038e87f56422b21bc30627ca74",
+      "observation_id": "RESCS1-004:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "0e9ff1d681b9e71218fbab39982977ea7bd8d22858f50f265bbcc5a79cb41459",
+      "messages_sha256": "0c5e85017689e0326929c38f3d8baa674264f4c63764ce5aca0cbbaaa1802633",
+      "observation_id": "RESCS1-004:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "bf82dfd3746ea09dd74b0ffcf76a8765685133215e7e7f88b052bf96df624d1b",
+      "messages_sha256": "8b954c43fecf75f6a6306e2231f719a0fd13399abc5de3b14a0b42392dc15552",
+      "observation_id": "RESCS1-004:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1012,
+      "chat_template_prompt_sha256": "a141baedc0e7ff145132f4ede46b3963d2b3e58c6cd0060fb56dd70cc94c5afe",
+      "messages_sha256": "8711e46e90b7673001892798c6dad40603135f973f5728e2704f9f3d253f0c64",
+      "observation_id": "RESCS1-029:EH",
+      "prompt_char_count": 932,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1028,
+      "chat_template_prompt_sha256": "514f9f89c820574e7c80e44f137c2ee5aa7e5468d597300bea17244d0ddaf1c6",
+      "messages_sha256": "ab1cab0a0710df59d98b0e7aeaeefea9b56ea7d9f1100b4baf1190fd1a187966",
+      "observation_id": "RESCS1-029:NH",
+      "prompt_char_count": 948,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 951,
+      "chat_template_prompt_sha256": "5e95cbb6de32e107b3fe3f9f79b8757002f333880a9a3560d0fb8e8cfd09aa27",
+      "messages_sha256": "3dc17477e5a190e2ea00d0326b9a463e0bae33939d53f9374ed2830b3aa114e4",
+      "observation_id": "RESCS1-029:NL",
+      "prompt_char_count": 871,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 939,
+      "chat_template_prompt_sha256": "2c4358320ae1c7bc5ba551446088c55685204f83c16b1029d9880db96cd36945",
+      "messages_sha256": "dc54db798b2b872dd85b063e03ad0c701b511636bbf12229c053b04d1775facb",
+      "observation_id": "RESCS1-029:EL",
+      "prompt_char_count": 859,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "f0a892fcebadba68568db8713d05995cbd09e5fbea2f9119239972b8c2193876",
+      "messages_sha256": "f8ba7fc9c1f12871c57a52b5cbd4f512f90a5ce36c839aef2565d11898f78a6f",
+      "observation_id": "RESCS1-050:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "f8fa63c3cc3ac0e7dee5fbc6f3b0f929ccfd05ea284f3bacf06d600c03b7be95",
+      "messages_sha256": "60060c6061877ee9ddfdce05036bd8c7219bea0bdfc9d8ed1cc4c4416a95eea9",
+      "observation_id": "RESCS1-050:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "c6c067cfa4cbb897195b2defbbb2d3e6d89d116ba2671f30b1d5d5d832a9c8c5",
+      "messages_sha256": "1ae80a8259a4e446247b011a7e87fa0209b426bc99ed26a96f61189302a66c5b",
+      "observation_id": "RESCS1-050:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "0a9f180de8cf4fe7fde3b2bb4696674fe18e132e6c8a34adfadb21279e57f85a",
+      "messages_sha256": "0b29fdef488d3efd68f1b0fab2b458c75cb9e748c594aed9633b7123ab1e9403",
+      "observation_id": "RESCS1-050:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "7b924958ab6520f06dd125fecbaf9e3ab1d19c132eafb552e52c11dcc1901136",
+      "messages_sha256": "a6d445fb1dde5038451d276299a027d5ec6e8dca5969a9f0fa95166a3d503c43",
+      "observation_id": "RESCS1-042:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "08ffda1917e57c36059fa9c6d989dc63726967e045e4c34c01a831cdc8b078ac",
+      "messages_sha256": "c64ef2dc6caf7aef45b692455e99516b8f36affbfa80b04eeac5a4ecc82dd18b",
+      "observation_id": "RESCS1-042:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "283d3edb12ce0bb80f97e8af5527980579e28a6d73fb8fae976e72cbb4b37f26",
+      "messages_sha256": "95f268c719d033f94a86196d6069316a00b9bc81cf9479a52648312b0a657333",
+      "observation_id": "RESCS1-042:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "e475c18629d0c2659660fed5572f97984fba31f0e3cef7d9896874dcb9926d3b",
+      "messages_sha256": "dc23da5dc1ea283648fd67965cdf53de2c51118e670044fe01ad6c9f1b094825",
+      "observation_id": "RESCS1-042:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "15673eb94645521f336d79f25eb8fae52159efc42ba59d32186b4af4abb7d14a",
+      "messages_sha256": "d35c94d50954bdba5260c262effccb90fed2c32d9181d0f13a6ec116a961d11f",
+      "observation_id": "RESCS1-016:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "9308a3974357e470ce6ced364e7ae14948853c8f0d4b77af39144a3e1be45ccc",
+      "messages_sha256": "d9883b7c1d24cf0446e6a7f2edb60575918e52d31b358875aa7377b0985a0220",
+      "observation_id": "RESCS1-016:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "8cdfed5bda92c1819233413ca954d5d04cbbae97c7c0bcad2e4a5e49ec103702",
+      "messages_sha256": "7a13bb1c61259773dac6763652b2b46cc52a3112ed829ad9b5997c49628cc868",
+      "observation_id": "RESCS1-016:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "5d7b2ee413d47cae31af0d7a2d94104251d02f91056958a549c14ea381a3d35e",
+      "messages_sha256": "d8f7183ca7df815b3865a9fadb9e1725852f3f916dc31c2e745f10dd24fda02a",
+      "observation_id": "RESCS1-016:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "5fb0e92f5826046e91a5d97e6d2ec66c28c466d9f07bd2773aad7eb31e229a1f",
+      "messages_sha256": "b5ac5830ac41928a75a3788a14e7d95514de3e596dd4b2aad3e1e5f4e001dc15",
+      "observation_id": "RESCS1-018:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "382dacec2c00be08c83b0d1d4ad266e028d320b0beb9dd42d28ab09466c7c09a",
+      "messages_sha256": "c300e7e56a201613dcd6dbfe8d413059ed11ac76c4648d2f54e03a9c8555b980",
+      "observation_id": "RESCS1-018:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "afe7717f10465541bdade469c29f9949fa47e2e65c0f52c3868bfe345c49f05a",
+      "messages_sha256": "27aa3ef072888f795a1a13cd59f3e68b861ae1e48d462fb353084f7663826051",
+      "observation_id": "RESCS1-018:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "efa73f4f118f1296631851c658bf9a3165ec959e5d4e4ef5ef5cb9595815ecc4",
+      "messages_sha256": "f9914dc39ace05bbeca02ba1a5131edbf3af315a334a9fd5e062c0a84aa1302e",
+      "observation_id": "RESCS1-018:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 962,
+      "chat_template_prompt_sha256": "1355442dfa984a6524b519e56d5c894297ec22cd71099ba3d5ab6b2eb1dbc176",
+      "messages_sha256": "e0395baf13c5a060df661b436da1440c41c94a58c7b017d5786b80cc8cb05fbe",
+      "observation_id": "RESCS1-063:NL",
+      "prompt_char_count": 882,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "c19860669faf5118f4dae614eea5f7c843291b3f00d03d23747eb8f03a91d7bd",
+      "messages_sha256": "254eb7c35f2dfd73bd3d1c234c5e3b7d6abdd883d92ec35e236ddf6cf07e3605",
+      "observation_id": "RESCS1-063:EL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "47a131609d3d0601fcb05bdcb29a63738a721d39b50bff60aaa19bfb3ead6166",
+      "messages_sha256": "383c452e321f4365773bb3c526b92a9e0aebe6db314bb34beac5e2efbc12b903",
+      "observation_id": "RESCS1-063:EH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1039,
+      "chat_template_prompt_sha256": "5ed8a5c4ca83c77f376ee3bf06b9641b15bd9bcdb4d63fa41f6acfb1e5660aca",
+      "messages_sha256": "2979412b0d3555d5cff4646ced2bc03a9adb5a58b668808828a5d700fcd282e6",
+      "observation_id": "RESCS1-063:NH",
+      "prompt_char_count": 959,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "ec4e82caefb294313a29c30541c23004dcb1e0462d46c68ce61d55fb645ff36d",
+      "messages_sha256": "12802286b2b5d3fd069faf9ccd2131262053b2ae564a005bcb3127d52990a2b2",
+      "observation_id": "RESCS1-025:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1008,
+      "chat_template_prompt_sha256": "bc2e8320902e709a1a6e5a1548eea85e3f67832118570a9c75219e98a9652b36",
+      "messages_sha256": "86bd6b30247c4c562fcfc7cb315e70c96db4963649f03c97656e85a1c685bc23",
+      "observation_id": "RESCS1-025:EH",
+      "prompt_char_count": 928,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1024,
+      "chat_template_prompt_sha256": "f7658c333232a09d30cf6dd179cebcbf2c80da11481799d20a681daa40e3fda9",
+      "messages_sha256": "dc43220532460c0a25303cb5a26886434eea2c98827df219192608aa2d30dfd9",
+      "observation_id": "RESCS1-025:NH",
+      "prompt_char_count": 944,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "21467d014eee5f60bce70978f4e56e554363da4d0b997d882ad9b8b93f08cf57",
+      "messages_sha256": "ec107dcd97e870f28ba23778325bc8f6baff3d57ae7762ed54e583d9ab9561c1",
+      "observation_id": "RESCS1-025:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "3bec123b822657fde370e481972ba8db7f0b5c3b8331666167ca935a252b9ff3",
+      "messages_sha256": "4a65a826cfdee7664916106643a69af79f2cb2096c65c48da62e301aa2d8af81",
+      "observation_id": "RESCS1-006:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "ce4a5ffdb10f68f990ffd1c38cdc8b422ac4925691af1421aa29d16649102c0a",
+      "messages_sha256": "36b5a948cf15c459a25d0725734549f2c15c6048a5121d6028dc10541212045e",
+      "observation_id": "RESCS1-006:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "497bce36e6e1f02f32035f3a3d9135274643ef786c4a2484e85246234fc2a257",
+      "messages_sha256": "0bc118e586723a6a80c8952490701056484249936b3a4a7b3a3108712a2e9cf9",
+      "observation_id": "RESCS1-006:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "df01e7b02a34d49b465c188546e9c85350e17ed709413fb1462739d7676f96ff",
+      "messages_sha256": "c032f4c35c837f4b16e2c25d0623d2c2629301ef2aab8864cad6414a74ceca17",
+      "observation_id": "RESCS1-006:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1028,
+      "chat_template_prompt_sha256": "86ead98efa88889fe28bc9649bc9291f8f73011f8d7709551612cc21bc1a701e",
+      "messages_sha256": "fdb7ac7dc9fa756342722b7883bb8e72cc195644389afddd93b9b0d240b8e8f2",
+      "observation_id": "RESCS1-021:NH",
+      "prompt_char_count": 948,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 951,
+      "chat_template_prompt_sha256": "272862f18d155f233339baed2f2fc7605a331f18e4a5a28ae250c11060dd7b1d",
+      "messages_sha256": "e1e15b491f945e4bbc8160cce0b31afd1be5d7381878f19a872e33866ff3d253",
+      "observation_id": "RESCS1-021:NL",
+      "prompt_char_count": 871,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 939,
+      "chat_template_prompt_sha256": "a07982e453381d1ddf054357b7f66c8cca510e908e13bcaeb9ecb4eca656de24",
+      "messages_sha256": "d1ddf7170d8dd21bf70a7c29ed074172fb41b918c497b225b5a9d3878d758b5e",
+      "observation_id": "RESCS1-021:EL",
+      "prompt_char_count": 859,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1012,
+      "chat_template_prompt_sha256": "faf52bdfd54e593ced8f3a8b587bda7b8db9cf8d2c209ac2f0d8e48ba62041ee",
+      "messages_sha256": "891e65523ed61fb91f7b862cf635a18f47441b084db7b75c598a251d8143c1fc",
+      "observation_id": "RESCS1-021:EH",
+      "prompt_char_count": 932,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1019,
+      "chat_template_prompt_sha256": "0d2647e20cb3e0e256b727299c772074ea0b96a0d0045f889919c5e3b021385a",
+      "messages_sha256": "488e60e96e78f7e3436caf213ffecc2cd19c74463dfa21c03db45f3188cd87e6",
+      "observation_id": "RESCS1-051:NH",
+      "prompt_char_count": 939,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 930,
+      "chat_template_prompt_sha256": "fd9a63e6c96c70f71aadeaf903bf361183553ba3a481d1cd5028518c20331ae3",
+      "messages_sha256": "7570791bdeab5b1a9c21dc112feddcee7b460054c5a329f828cf4900c7e9a046",
+      "observation_id": "RESCS1-051:EL",
+      "prompt_char_count": 850,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 942,
+      "chat_template_prompt_sha256": "f0416bbe331295c3901941d251d3c8ee91441080ec1df99d2cca5066b9cdde0e",
+      "messages_sha256": "f2030f39774aad25ba554834040e36591bf1b9780bddb1fa10a803446a5fe221",
+      "observation_id": "RESCS1-051:NL",
+      "prompt_char_count": 862,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1003,
+      "chat_template_prompt_sha256": "2c69f6dac1075b85d7dd0dd44d7a3422a16b1c95a6c785356789d12b0140cb23",
+      "messages_sha256": "58162270c2b80a215584e7c66695a09843b4459fbcce6979531741c686b1fa46",
+      "observation_id": "RESCS1-051:EH",
+      "prompt_char_count": 923,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 942,
+      "chat_template_prompt_sha256": "46906244b0324f6c2c3aa554bbd35043a17bab4093ac07ac9d158697a3e92a73",
+      "messages_sha256": "7d89498a85c2d88f85f744e35e6c583e9d6e23b6173ccac52c187b0cb01b5fb3",
+      "observation_id": "RESCS1-061:EL",
+      "prompt_char_count": 862,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 954,
+      "chat_template_prompt_sha256": "5d71322986923bc694864094e2b7cce0555cce104ec74c30c5784a25319b0206",
+      "messages_sha256": "719fc1978ae64529835c674402cc687dccf6eb9a5b740bce4abd6385981cea00",
+      "observation_id": "RESCS1-061:NL",
+      "prompt_char_count": 874,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1015,
+      "chat_template_prompt_sha256": "04ed5ef936baadcf69e10fac02a7de896cdb348400181a5f78f0208bbc34f5d1",
+      "messages_sha256": "0794d86c5d4f02f416c033e6ab4e383fbf697f8366d604eb04b2b6dc3107a01e",
+      "observation_id": "RESCS1-061:EH",
+      "prompt_char_count": 935,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1031,
+      "chat_template_prompt_sha256": "96c723ce7c94acbec1b4ddbb80bf6be7eb5c38e6878ee5150cf771a0efa03de5",
+      "messages_sha256": "c344a02d908b9fce4a91c6975d75db5f5274ab4a86d864ba58a4a0cf882fb472",
+      "observation_id": "RESCS1-061:NH",
+      "prompt_char_count": 951,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "b59903b0bef799289f178610551c55476ab84b43a062fa81fa938674e8c311ec",
+      "messages_sha256": "fee825909b78d41c26dbb01d63ae03a0103a6633197226fe09e06bb7af88042e",
+      "observation_id": "RESCS1-038:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "d0e61bdff64ab1d5a6eda29fa32d4d39353cf4f722ae9974b84f2ddd2cae58a6",
+      "messages_sha256": "287507ce24996e54e010d5c629c6985f59de12cef70288411ccd11aa39394b8a",
+      "observation_id": "RESCS1-038:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "837df3edaeedb77bd552eab3325462f925619ea4eefc18d3df204a6b5fcfca6a",
+      "messages_sha256": "df29373cbf8f4843befc83a2a9cbbc697556e6afc0c05bd76502a959a47646af",
+      "observation_id": "RESCS1-038:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "b06de05369d397e6f7a0655c64272b39b074bfb45ccbeeaf5853732b2c18b522",
+      "messages_sha256": "88e41e23f1d540da0b0b44c68e02357c25c4a30a573861c5fcf3918c203d6713",
+      "observation_id": "RESCS1-038:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1012,
+      "chat_template_prompt_sha256": "f5007129214f7b2501218ba9a5a836207300558804e007d5862fb29f70a96ef6",
+      "messages_sha256": "c6fefeb635d3c927527ad79f2a00ad4b14dd2778d5cde5d27e4a6bfcc9021ef3",
+      "observation_id": "RESCS1-045:EH",
+      "prompt_char_count": 932,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1028,
+      "chat_template_prompt_sha256": "0693998abfb6a7966d56195444f5cc4de4afa090db69e3f6a5f317db1109c213",
+      "messages_sha256": "13cda553aceabd7f59f303212848859f19f10f334f6c759db37d659932626219",
+      "observation_id": "RESCS1-045:NH",
+      "prompt_char_count": 948,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "1bcecc32ecc7c827173df05438aee9e68a7866ed42c908eb2793e41ed10f1be3",
+      "messages_sha256": "a6ebcfc784bcbdde18c749c314fb745d7e12f94f84b1831259b3148a3d694705",
+      "observation_id": "RESCS1-045:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "e4bc99e2e78aa5f35b1eaf9a21f6ee2a92b514eb1a19990985981fc24adb5316",
+      "messages_sha256": "fe9d17b0fbf458d18007d64466a80a065fd8ef552a0714b0c6953d0274b32953",
+      "observation_id": "RESCS1-045:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1027,
+      "chat_template_prompt_sha256": "7ff2a9845446aa14d7e1bd859659880fa2f79783cd9d124ec3afa682aac84909",
+      "messages_sha256": "da630173e4ef15d73319ef2e7cb4636ae255a6994a9f96acb4c13ff7d9e28fad",
+      "observation_id": "RESCS1-057:NH",
+      "prompt_char_count": 947,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "075495c19e470a42e2340600a3d0b656216df8fef93349de2f8a18a625ff5721",
+      "messages_sha256": "48a500ed1b4d457ba7f86a1f1301399e97cd3aa78c6d1e92807d8d5ef0ff4b5f",
+      "observation_id": "RESCS1-057:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1011,
+      "chat_template_prompt_sha256": "d1395271b77ebb45503cce7074ac40ce8a12dd967f84f463bb297677779043ec",
+      "messages_sha256": "1b0cdbbb642b93ee4e554e0e1fd23f07f1b46091f70a2b07c3bde78e6b52c735",
+      "observation_id": "RESCS1-057:EH",
+      "prompt_char_count": 931,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "2383ba016e587b0f026e91ed4943f1eb409d2f03e7423722d67191894f74a8c8",
+      "messages_sha256": "9dad328c8bd87db4942b05a7d315968d17188555e5429ab100b71372635a632b",
+      "observation_id": "RESCS1-057:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "a13da0d2531bc86c3245877761fc8ba8532f77b7fe3723f3c49283bd7ed87510",
+      "messages_sha256": "4499bcd02c40f0a6e041dd24e3a55d7993baec24a412668997b29de17a03caaf",
+      "observation_id": "RESCS1-048:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "7f657426312def8082261f4baa5d6e4e05eabc066961f9476dae43f7b63ceb62",
+      "messages_sha256": "1eabb062615965cbcf0682f102710740a2c8337a6c33bce24efa30140b50f9df",
+      "observation_id": "RESCS1-048:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "a01ee9d5367d2aaf0d40f82d5c2fb6c516cde9a9e2eadc5bc25064a155c49e4f",
+      "messages_sha256": "7485438c302fc9c7ac73586ee1a3dbb815fc651b70a0dcbcea8ce01df1c3279b",
+      "observation_id": "RESCS1-048:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "b8fc4acd49e007fbd88b2487fb576a1fd514b248901f81f7ec85e80726bfc21c",
+      "messages_sha256": "2ed44d4126a6e5b00206183019ab6dbb49e640e57a3d128b42c266228867f6a4",
+      "observation_id": "RESCS1-048:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1000,
+      "chat_template_prompt_sha256": "8ba949ae572bfe6a98ac7d7f9e908a6a6b4a70002f4c10cd79582326b7173d78",
+      "messages_sha256": "1e63536ec704599360d16df00f559bc39f2cd4b5520852473a9a0ff0ca62d9f4",
+      "observation_id": "RESCS1-035:EH",
+      "prompt_char_count": 920,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 928,
+      "chat_template_prompt_sha256": "714cdda4f418e0639c704413027d50cee87fd2cb5f2837dff39c3fc3d214d4f1",
+      "messages_sha256": "cb1e07afe11166b141ec9fcc8ef90cd26199d77803eb182be5e940a90d5f6895",
+      "observation_id": "RESCS1-035:EL",
+      "prompt_char_count": 848,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1016,
+      "chat_template_prompt_sha256": "d76e6709188da1b90455a9f48a73e187baaf9a7fa3eaded7b7b0bcb18ae760fa",
+      "messages_sha256": "94d3f184b4eb92de579ed94f031c701584ace3bb1b0cb5084ca49cd7575b35b8",
+      "observation_id": "RESCS1-035:NH",
+      "prompt_char_count": 936,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "a5b048c123626dc1e5e2ef0655b4fcc8de6088c5a2ccac05893a5e453771007e",
+      "messages_sha256": "222cfd2db19e7b1266b3c07fd27293cbc738dac8cc8d343895f75c4ce5e6ecf1",
+      "observation_id": "RESCS1-035:NL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "a72a335aef3d1d142c427102d0941ddf1dd6cf40d7fc43805dbc6ff1b72c8bb5",
+      "messages_sha256": "965bcebdf4fd5d262a364f035eca9777ab631c8d5300ff785e4abbc5e2f02cdd",
+      "observation_id": "RESCS1-024:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "124398f565d3f3b5a1a9064a896b533ed2aa3c95c15cec19270482ce05c0f125",
+      "messages_sha256": "2319bfea7b87abe91b44c134fc307cdb69d5f0fa906109ff625a43649370f43a",
+      "observation_id": "RESCS1-024:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "168aee38fd6933d4cedffd917874be355fcce661be904adda2eb4717c0b06020",
+      "messages_sha256": "2b82b456dab702816b01ec4b224e7a9b084b938577d548cc057de3541d9af621",
+      "observation_id": "RESCS1-024:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "996fcb1a6170478e5b4e539c26f3b551d9ba48436fa6dd1a0ac7c94a09c9e689",
+      "messages_sha256": "d60c8a446f650f0450aaa74590019620febe7e63a754ba5ca65c3beec370668f",
+      "observation_id": "RESCS1-024:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1009,
+      "chat_template_prompt_sha256": "b2cab5e00fbc7c658f81737f470edcfffe2d6003b140ce9a69fa9e754402fac4",
+      "messages_sha256": "8665d938949eae79ee268af0236826cf13d6c92b0d25c3d4a78998f395530d84",
+      "observation_id": "RESCS1-005:EH",
+      "prompt_char_count": 929,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "8935c17b52cd8bb0205f7e8a96c753eb2383b3e48f6cb95d4c439cf89d8370f3",
+      "messages_sha256": "bd9b180c38a8756c84d25bc361a974adf6fd3e3e6cda953c73540b123df92347",
+      "observation_id": "RESCS1-005:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "a8998fcb3e2928370be173c1976642350415b4d785df354960475c62a76f76ac",
+      "messages_sha256": "7e1e3c9e609931611c367294b3908566a07a22afb878a08f3a6c23f3405cff5c",
+      "observation_id": "RESCS1-005:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1025,
+      "chat_template_prompt_sha256": "806c0c6805ff6ad77e0195d7ff86bc05da5b12ed780580122e2c9f26629f6eca",
+      "messages_sha256": "da3470d431053e093bef33e7629fbecb8d4ee58d70c71c577d10082d493a6a02",
+      "observation_id": "RESCS1-005:NH",
+      "prompt_char_count": 945,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "51794eb7e945d4aa51d456dc34b9aad8d0f88045c290d0b9fb2b681463d79f2d",
+      "messages_sha256": "ec9ab1a75e8506977ebffc27b041cd061c1ee675d81e9048a10a6cedd35ff696",
+      "observation_id": "RESCS1-056:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "8dedd86ad44b5c3c1bbc7d50edb62bb0a301d3151b70d2e6a7f8005d448c7ccf",
+      "messages_sha256": "54817640a851643246084e55dac0e251b5edd08bdf0140516611144b447eeb6e",
+      "observation_id": "RESCS1-056:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "8ca72d3745aef1668a92fc4c41a2d68e595f554b2a026282cc28eda3bd737053",
+      "messages_sha256": "5ecb3ddfaf6560dc5c60a1b27550c1eaf31871e2953c4c170fc8f85d3015750d",
+      "observation_id": "RESCS1-056:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "b8f640116b6844468f96ffb16d1d676794f90850b73af766d5bd9b02ae577980",
+      "messages_sha256": "6d5e88408d4ca934d17eb9e98e6d86d70a7b99cd903272cb764a4ccd77276540",
+      "observation_id": "RESCS1-056:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 939,
+      "chat_template_prompt_sha256": "66480a1da2fa299de6d12c6ae083a60b0f5b8b0cf967013618e5a7fd644cf0f7",
+      "messages_sha256": "ec0a5cd3671dc2303d57fca41ab0b9c5be7970aacae43d8e93d4080d70896e31",
+      "observation_id": "RESCS1-027:NL",
+      "prompt_char_count": 859,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1016,
+      "chat_template_prompt_sha256": "c7e8417c13ab3f8d9a4ce7a000bbd2b033528e24257c3e824d241f9f6001ac78",
+      "messages_sha256": "73c7917ed99cf1eaa13cc4096956f92fd4f5fc4d7d7bd8407f60eb29e6888186",
+      "observation_id": "RESCS1-027:NH",
+      "prompt_char_count": 936,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1000,
+      "chat_template_prompt_sha256": "994e10c574fadbad831440be17795de199e9112de6334f6836205f68dd4d7d47",
+      "messages_sha256": "984c5b59c5ff74b03d40983bc1b4b5897310d7e8a6669061c9d467354df13cfd",
+      "observation_id": "RESCS1-027:EH",
+      "prompt_char_count": 920,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 927,
+      "chat_template_prompt_sha256": "5a374559edec33558da3dcf1fcc5633d4c33318b18ebd10cb2691947c32c51ce",
+      "messages_sha256": "46b3be72a2db1f14fae1a1935df3f68e15fd5d3c8956894b3f16453244ef9e52",
+      "observation_id": "RESCS1-027:EL",
+      "prompt_char_count": 847,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "d1744d5c16e093293f5c5a8e30b234a2f69aee07fb0326ede1773f05a5a4bc73",
+      "messages_sha256": "5880c3ce964b55875decd2308457ca6197c4fe785eb7ed24f9da22f1af72aa60",
+      "observation_id": "RESCS1-030:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "0a5f0caa8e5c825cfc3e478c6944d689b7851215a08fe22e123a21ccba2dbfad",
+      "messages_sha256": "360ae21d95adc3d371eea1d2f881689af0e7f4edf3ee1ba75d0a2b80f0833312",
+      "observation_id": "RESCS1-030:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "a5a74b7b128b20333dc8c8f8f10b489e5e4b3e0a946b51946778436a56424983",
+      "messages_sha256": "730c4341a900cef3a329ab571e4797f0f23f5dfb0238c00678c841a3b8c14bc4",
+      "observation_id": "RESCS1-030:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "4f189f79e0f06793a6f8c4a4183c666f529da67e8e732aec6b4dd4454248fa39",
+      "messages_sha256": "b577e8ddbd469f14e6cdcc70073e3e29a0c058bc90599676a7cceee69fd8929c",
+      "observation_id": "RESCS1-030:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "26413bd0179892348ba44a127959795063da2efb404c41c196a42916b87490b4",
+      "messages_sha256": "d17915a42fb67f94254ecad0e6cc56311aecc61c1af34283c5e9f523c2352947",
+      "observation_id": "RESCS1-017:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1024,
+      "chat_template_prompt_sha256": "425763c77a8773bac99ebef48a40b6a4cdb09c6360ca23f9fd3952c9f83e0bb6",
+      "messages_sha256": "79e9b3b88c2f608ca73660b3188fc1105916c14ef910b35a8af6005808ba29f7",
+      "observation_id": "RESCS1-017:NH",
+      "prompt_char_count": 944,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1008,
+      "chat_template_prompt_sha256": "57ebcf0de0806d505ac2bd55a1bc95c5d9e2ab31bac31ed9580d760079c7b59e",
+      "messages_sha256": "9be3f4d00aabb9a4848f3fbb2260160da396be5c1972727b3f014cb3fcc8a90b",
+      "observation_id": "RESCS1-017:EH",
+      "prompt_char_count": 928,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "7555de2d79fe17c47643cf7062705395c9fd05e75381b648c38c0dc706ed64b2",
+      "messages_sha256": "a074613ab2c2c6073e5e0c071b60b1ecc308fd6fea486ece08696d9a672a5b48",
+      "observation_id": "RESCS1-017:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1039,
+      "chat_template_prompt_sha256": "5213dbd7852dabc2a5feb36c637d0906852d5cf48ddecc34aede23b0ef06b035",
+      "messages_sha256": "41c65e3bc1b8a59aa9cf0992e358c6b7d465ff726c9fcc4b6e92993363e96402",
+      "observation_id": "RESCS1-055:NH",
+      "prompt_char_count": 959,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "3d4c25aa75ece61a7206f27013cb327f5726643609fb25d41f5a27e1fb7f811c",
+      "messages_sha256": "32e1d14d87e8b1019c5e0d52907fdfbdd8dfab333edbbdd5cdef7070f6f5176a",
+      "observation_id": "RESCS1-055:EH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "d95dc9c10bcb406bc2a30d0a1331215356d0d446aeb03f202eba4f1282d47133",
+      "messages_sha256": "2a38e4f824297649e0047b00eb373218c716ede5192ac9e866a8af255cb613ea",
+      "observation_id": "RESCS1-055:EL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 962,
+      "chat_template_prompt_sha256": "e63f0b92d88f9430bf9dfb09e9b19bbbb0d7a4577d7dba8cee6353f754ab01d0",
+      "messages_sha256": "829686296b3bdbb980b6cb48f070b60c350b80b8f51d7c26a4c14a645bacee28",
+      "observation_id": "RESCS1-055:NL",
+      "prompt_char_count": 882,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1009,
+      "chat_template_prompt_sha256": "c7f675ad05ea495544b8bb30ab53961bfb4c7642617640491b1150c3bf83f63e",
+      "messages_sha256": "b6a9dde032fae6dd0fa609006632128af7fa3ed8ef2fa817c7ff9216bdfce216",
+      "observation_id": "RESCS1-013:EH",
+      "prompt_char_count": 929,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "f6d4890c870b428680284d11a4ab47949ea6f949e30c812155f9aec46b739745",
+      "messages_sha256": "9e098378ccc9352a3d88f3d40310bd1f9676ce0b98ddabbf33950eb7c1183569",
+      "observation_id": "RESCS1-013:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "165d7bf0e0053be7a4b2104f51d26d7e5c7378590c1ea17e94804a55c189881d",
+      "messages_sha256": "fe0ee2aa09a6013efe5ef88e1f97db26624c0b0c2384460aa96e275674bec64c",
+      "observation_id": "RESCS1-013:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1025,
+      "chat_template_prompt_sha256": "ef6c2d638b9cfcc97be069e149e33a37bafd8194dc97cc891f925b86a0b22f2e",
+      "messages_sha256": "947e6ae93d070929069a2457de101c811d97fb8b3dd43c78de3bc76d6e7efd85",
+      "observation_id": "RESCS1-013:NH",
+      "prompt_char_count": 945,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "19f3b1924037b1a471e3e9705858079bc118eb8bf2f1537df71b969e2406de44",
+      "messages_sha256": "84f9052b8d1bdbc215170f548cb377a938a757a0d844ad1d50910db4ed52178c",
+      "observation_id": "RESCS1-000:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "506145261283081f8b11c902553e2274d5495ccadf7eb8112b45ece783ba4c0b",
+      "messages_sha256": "b2af0b28888cbd72fe736af7be715aaf5f77541d674c238af6bf4c6e908b3a20",
+      "observation_id": "RESCS1-000:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "7afca7441b87cf18cef3440e82e56ad81209687b320dc703b51a84de0fb2c5c6",
+      "messages_sha256": "f027c768ee330e59e691393f23f8a31fa55a60014351dfffb06795283c46498e",
+      "observation_id": "RESCS1-000:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "3c9e12882e2dedc02ad3c232a2ce94c515cc36faeab491fad6cde2b1c396fc08",
+      "messages_sha256": "556c6cf3b0902718e3ab86155c927fbf82094d171c2bf43b0f63237a848fcd1f",
+      "observation_id": "RESCS1-000:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "ed482ad236035964d63b902544596d7ff08d98ff04036a172fc191c517bf7a85",
+      "messages_sha256": "6a68bc238e8a7c00606ed1827b1992efff42158670dbad3a6612bd21bf776ed0",
+      "observation_id": "RESCS1-036:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "428a5157b8d6d1e96905bd42a7ed3f694adb3b889fb20693fbd7a2734dfc209d",
+      "messages_sha256": "9abbfd79c8da1605ca6e21c56b0e7a771e2eb48eecd716b1264737e84626a3ba",
+      "observation_id": "RESCS1-036:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "ee7d1977b97e9430c129ab315cce15515b977b04c0d02deacbcaf5282d3343af",
+      "messages_sha256": "99b704319f54de00f5f5715e7d1810b68f99431e2db8138b45ed51f739370fe6",
+      "observation_id": "RESCS1-036:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "a9e6f64f5fbc355c91fb3454797ae18ea31ebe31fbe9dc9139e3208b257cb7ef",
+      "messages_sha256": "f92a355d5bc3dca58f5ae385cfe86e631b86f9b1d83d80b771d1bfe82ec4ad80",
+      "observation_id": "RESCS1-036:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 948,
+      "chat_template_prompt_sha256": "ecf1884543743d9c9612010611a306580beee34274e02bb6cacddaa9f4281c33",
+      "messages_sha256": "297f745bdd5417edb80bd51a22f53e79359ec1a343598bc75a1a6287eded4be8",
+      "observation_id": "RESCS1-041:NL",
+      "prompt_char_count": 868,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 936,
+      "chat_template_prompt_sha256": "9d632cf13c9fcd43f9f98c0975054b5bbfc95bd9dc876597ba6af09fc22d3802",
+      "messages_sha256": "864041d90a97c985b204dfc6e3effaf0dc63c51f4a6eac0ed425e711d58b05f6",
+      "observation_id": "RESCS1-041:EL",
+      "prompt_char_count": 856,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1008,
+      "chat_template_prompt_sha256": "f927c0dc8e746c54c0358cfd47355d7784546e201c942f67bea199be8aa30a1d",
+      "messages_sha256": "5c08dca0ce704bbbd115d0c67fbdd6ffd753df3892d232ef2786a910e044cc29",
+      "observation_id": "RESCS1-041:EH",
+      "prompt_char_count": 928,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1024,
+      "chat_template_prompt_sha256": "a1e38963117e5bcf3610035efe684f5557e5aee80c4c7c3490fe132dff2df2fe",
+      "messages_sha256": "b47acf05b6732a3d19399549872070533292dff7ba3bf1dc7af653c4d0d5f537",
+      "observation_id": "RESCS1-041:NH",
+      "prompt_char_count": 944,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "d932708c3eaf2030bd2f2f3e9135cfa3473e22d8e2a5bc642c47b0ed2f50eaf2",
+      "messages_sha256": "fb5b9b1a9de95270ea55d6e0784f731107c466a6eccb3b528c9fc5362a73a037",
+      "observation_id": "RESCS1-046:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "857a8abe1f86a2f6d991c72e4e819e47c8bf1449b458563938b3c83e7a133c92",
+      "messages_sha256": "7fe92312cf88efcb19b2a89674a8f711387dbf65bf41046266e82108f9d5852f",
+      "observation_id": "RESCS1-046:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "ef4644022e70343fb01c5c0c96dd3d9edd51f92ceff10765065aa5ceae156e9f",
+      "messages_sha256": "aa5d413659041ad102794c4b4f43c51ff0ff68f0d583f7f486c61c6423e14a92",
+      "observation_id": "RESCS1-046:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "a3b0589a00bed54f8e57fc4712a4d67df5760e83138e426a5374582867d0d524",
+      "messages_sha256": "cda682f989d005d9260d6e1c5fa986c8e3150703fdc95853d0fb64733168c1ae",
+      "observation_id": "RESCS1-046:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "9be8742a826b4ff64d7ed89ed7a8b782ba2dce3fc38ea18e0ef7d87393bda8b1",
+      "messages_sha256": "17c8acea17d3f3f77f0223c4fb680d6441ad56a927df3d3dca21f8b7076e7b5a",
+      "observation_id": "RESCS1-022:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "80e8fb78d842bb5740fe5b42265f96b183af010ac882b0a3c23541af0c66aff6",
+      "messages_sha256": "dab0347c59f9a44f3471d8d8f0257f8be9effc3e66ef1c59004ac18eef54972c",
+      "observation_id": "RESCS1-022:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "7e31fb0556c0d42e027ffa3a0104e51e97cbcb5c17a989900d1acb35813245bb",
+      "messages_sha256": "c748b5c8f23e48e074e6fd570df43c854b90b5f2f3e0d3ff2005484874178425",
+      "observation_id": "RESCS1-022:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "9fb465f569b1cc85f06dabb5f59ba9feadfb6bec10ad50f6ba8a182e83e3b2ab",
+      "messages_sha256": "ce05b59309eee6cefaf7f58e95540592db7eaf2c7d161000bdaae4858968a12b",
+      "observation_id": "RESCS1-022:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "27c46302d051cc7e8cf7eff7f478cc47b329ac9f866e46a0361d0acd2f71781f",
+      "messages_sha256": "4372f7b5bd350c8bf407403a15ead0ea52c72b337c8fe86984be76253057254c",
+      "observation_id": "RESCS1-020:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "4c8c27d50c580b03a678d556b79a5eb908b147f20390226bbc77ddcbd0b8bad9",
+      "messages_sha256": "ddcb77758ce7c014970890b64495c8a11b325b8f28fd8afde82152ade244332c",
+      "observation_id": "RESCS1-020:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "df300ff45a653864fdf3689b36f40036e3cd3a906d6712b7923edbb9534854c3",
+      "messages_sha256": "554d0fdce42b43e15136974871a823db27fc22ab3091580fe1c7ed4167811bb9",
+      "observation_id": "RESCS1-020:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "e471db5e1c2f880db1317379440ed053eb0c183d949796fcb9ad7e9b8dc769cc",
+      "messages_sha256": "520eac8af293e221d7394188ab6845940ff28d5c15387b80f9abaae0b20db4a9",
+      "observation_id": "RESCS1-020:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 936,
+      "chat_template_prompt_sha256": "5bad8d353d5bd3e35f044152ec5e9a2fd0ede0e6a0808ff9832a971a3c2cff58",
+      "messages_sha256": "8f9b4392e438ab32333a79f9bd3e50a146e177c7f42eab8e9f18c6cc22d15bdc",
+      "observation_id": "RESCS1-033:EL",
+      "prompt_char_count": 856,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1008,
+      "chat_template_prompt_sha256": "f1e5c3a7346e108c1152060aff115569e8e6348cfe220913f904ea7b09f83055",
+      "messages_sha256": "3ec0e9bdf9d70c7001d244b40bbb31f58fe4625d21cd2a6fa5fd9df1dc8087e6",
+      "observation_id": "RESCS1-033:EH",
+      "prompt_char_count": 928,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1024,
+      "chat_template_prompt_sha256": "e6f88c2bdf43f02f8b7ed3e70e4497da1c447d9c19e89f34fc77d474e75290cb",
+      "messages_sha256": "d32714950033d34cd46683f072fdf4c93baa6e19f888dad3f6e697b353f721d8",
+      "observation_id": "RESCS1-033:NH",
+      "prompt_char_count": 944,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 948,
+      "chat_template_prompt_sha256": "8610480698f09e384e7668eb2645f7b0a64d1e24ec1418ec9e85fac5482bb423",
+      "messages_sha256": "cf7bd3621a910037891f0a7e74eef5b3b9c985f50e6910b591a7f96899766d41",
+      "observation_id": "RESCS1-033:NL",
+      "prompt_char_count": 868,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "64d93faf34a7bf2a61808d43acacaae20adeb2eb9e780e7197b454af721647da",
+      "messages_sha256": "f80affba8a19e5de9bea92ad33d037f0b35e2367d48550e8fb221b3947cc7eac",
+      "observation_id": "RESCS1-052:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "f2b166f42a12384c26e17685c36ef57ced0e983d5c8c6f67a0a1a2fdd23fd46e",
+      "messages_sha256": "b67d753b6c07b33578ac605a95036a2176f35caa3713b353a455025644dbf59d",
+      "observation_id": "RESCS1-052:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "d885b1393f31f7503af35232fa4aac72ff9f6ab11fd9cd3545b8e45fb78d07af",
+      "messages_sha256": "f00454d8db3105e1b943ad358fa3228605b2b937a8305a431df12ff09ba112d6",
+      "observation_id": "RESCS1-052:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "a0897b25cf95486e7d852479a6983ef5ff0424488941ee2ca90d1b1df41cbce0",
+      "messages_sha256": "4a62b16e6988e341955783c000a077fc010c6ba342049627a2dd43b442ba7ce9",
+      "observation_id": "RESCS1-052:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "cf88844f483fe3a5ba3830b58ce0668d929c776fbe670dee75be72bb3e350009",
+      "messages_sha256": "d4a1254bb44267bf1345c70cebd97548db8b73e0a62e2a15a4f767f10135824b",
+      "observation_id": "RESCS1-058:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "c047f77c1d9ddd9c61d2f57c525b7729e517fded71ee0472cf0e33b24fdadbce",
+      "messages_sha256": "b2fede39a0b09174b546f2dea9230e6eab8b6ae07761ecd4529965baae35fa67",
+      "observation_id": "RESCS1-058:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "3e52aedf132047549bcc73b60d04f6b41ee9d02141a74296cd116e799c7a1e72",
+      "messages_sha256": "4bad78d1efef15d72d80386391637ca4a83280ed1e0a2052f3524f8be196fe69",
+      "observation_id": "RESCS1-058:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "fde3121c1b3c7c49049d7abe213081de22bfad0ea9b5f9f62555fef5ec07533b",
+      "messages_sha256": "c75210b23d4b93fff2ad5dc45b164010f581df5858d4c4341796962f0a76e92a",
+      "observation_id": "RESCS1-058:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "4862467f1accffecb6533d72291a23b43bb2144c68c42fe5d848fc90c57d3449",
+      "messages_sha256": "d8e6a8ed42b154b6f543be75810081cfa3d218bffa7f95050b1ee008d3a56d3d",
+      "observation_id": "RESCS1-010:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "3e96c0367c72878f1c33c2f44e8c96e989826fae59c86c5e249cb14b786450d5",
+      "messages_sha256": "c5c331eeee3194ab75ada0a3940422a4040309708f8e074c994a4ec20b78c1ed",
+      "observation_id": "RESCS1-010:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "fd35e75bc90e31d8dabe935c7c828907d82ffe5e31eb8b343591002f85257473",
+      "messages_sha256": "24d1e3ed2736cdfdf95dfaa8cc185da8c5f36e2e6fe3c9bf2e75b70ce10a4a78",
+      "observation_id": "RESCS1-010:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "0283d8a3ade54126cb7f97ea56b489713483cb157d8d43edfef80a02962bc659",
+      "messages_sha256": "a4b18b0a62b619e8bfc9a84ba6a8ebe361bdb525374a7a0ec3a866f05d72eb0d",
+      "observation_id": "RESCS1-010:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "a83c13674a34f994212058579ae52f9aeb0ac8d477bfe3ad04ac4deb667c7556",
+      "messages_sha256": "bb5a803322f49db9e1ef14e33e6c696848a6fc0a80262c11556c8a030055d81d",
+      "observation_id": "RESCS1-028:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "dac0492e465c4a97eb7c602a51f10d5b500962e0b094c1645f39440766db292a",
+      "messages_sha256": "fcb7ea0e30532fa401a7ad187f6bd4501384609454d4c47e5c53ba4198ffcbb4",
+      "observation_id": "RESCS1-028:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "af784f05de145de3f2a22a796d4a146afe85917163c2cf54c3d9695844280fe5",
+      "messages_sha256": "aff1172a63dcc937fdf9ea8191af5426f9d2e405ecc5039c864cc761a4e54b16",
+      "observation_id": "RESCS1-028:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "043dd35ee5dc611b549f03c1d44086f0584ca8dc6d64b35c81a43682e11ac057",
+      "messages_sha256": "fd64d21d9b167bd414caf4eb14056ce41a9665ad2ed953e229d5f68d1bde87c0",
+      "observation_id": "RESCS1-028:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "70d5d509e8ed0618925ad9e0ec41a6a9b35f396f3ae2c510ec13d25591019e5e",
+      "messages_sha256": "ba29fc452ec9c2a2e2d602eaac98ed11564dcb52b95f865d619bdc109840b9c0",
+      "observation_id": "RESCS1-060:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "511f18b68f45e3f1be2e311f33dac12b66aaa83cf0bfeb704a7c4e7422205796",
+      "messages_sha256": "4bd374815bdda735ed93b037b95482ef5b0eaf0acd0114a938a5cab9c9df8923",
+      "observation_id": "RESCS1-060:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "57c35c38d87985615ac3101cb6be5404c8262f9e36d1a73dc27b8cda61b73df8",
+      "messages_sha256": "c3e9771d41eed7415e14dc48b676ebab2724f114dbbb9700d260e9046be9e98d",
+      "observation_id": "RESCS1-060:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "cd6ae65419378fad0204b5e3ecb68a55948fae516edd1cf421f0261ce7e8b77a",
+      "messages_sha256": "d0714c27c4f7647b65faf46b9cfd26afb8fabbd8d9e4dc98daa20ac4d5be24cb",
+      "observation_id": "RESCS1-060:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "122fd7bb5ca261f899eebffc06783de9f96503cc90bce73a1d52c406827444c0",
+      "messages_sha256": "f5aebe136725b964ac1088094f12d9c2dde0077bf0385b8c5d786ac3424a22fc",
+      "observation_id": "RESCS1-012:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "c4421b4a9a49b4d49608db7bd0cccda690793de44b93be68b70a580967d761f4",
+      "messages_sha256": "cfeb17b37e262193269d49835c025c47fcfe5b39e87b5a60a20aa0e19f9df474",
+      "observation_id": "RESCS1-012:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "4b6d8ecace1535f31d8cb64b4a95068a3b6a771bee953683f511216a50ea60c4",
+      "messages_sha256": "24497ce110a8bc2394112f6ac8fc15e0ec9719a509815b3bde7e8ff8b4de7dc1",
+      "observation_id": "RESCS1-012:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "cb47f2d8b550d5ac4c2faba0cc136ca9cfd7cf0abd4cfc1c18177ef6340882af",
+      "messages_sha256": "753143e25eaa58d339a73a99dd8cf789191b0fd36318a5b24cf152381b7c7e60",
+      "observation_id": "RESCS1-012:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 948,
+      "chat_template_prompt_sha256": "62b5dec6a315a57cbca9f2ae3187f148d13c9a321ca003f48ee131eb05028cac",
+      "messages_sha256": "0e6027d236de6165065773d05b1958f78e01df400269b832ea85342e3c738d4e",
+      "observation_id": "RESCS1-039:EL",
+      "prompt_char_count": 868,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 960,
+      "chat_template_prompt_sha256": "1d489ca0918923e124fe1752e72c3a901027439a8c5c47412197e24d9757d067",
+      "messages_sha256": "e1f1fc4c70662722ecfb6ecabf5a248e6bb93c6a3a44e0556560cd926d7de64f",
+      "observation_id": "RESCS1-039:NL",
+      "prompt_char_count": 880,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1036,
+      "chat_template_prompt_sha256": "c6ff8319862b13429b20da8804896abfdef9a7a466ddb0797f6f3d32dda83283",
+      "messages_sha256": "28122f9e10e13ce9fe378f0dacec310ebfb7a150e7ee15cb0c60d919b3292d54",
+      "observation_id": "RESCS1-039:NH",
+      "prompt_char_count": 956,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1020,
+      "chat_template_prompt_sha256": "6b85fc43ee4d324cb3e13db40138f5655e1f084fa23ff16e43e653c91333c773",
+      "messages_sha256": "dbc2dabc5f98096401f8bc25e87ead05ad131916b7394d7ba6bb9c033fa273d2",
+      "observation_id": "RESCS1-039:EH",
+      "prompt_char_count": 940,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "12dcb2b062285ed3f0aa6242f00126e60a49c880ddd3a8011d15397034e982aa",
+      "messages_sha256": "4969e897e34d1f85f70cd02fcd70f4445fe62633d4e042890dcfcec6b371f53f",
+      "observation_id": "RESCS1-034:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "8585d1691e8d3ae0ce7035e200bb9e95376c38d7577502c186c4df47056b8a39",
+      "messages_sha256": "f5eb5f53e4c6cacb70af61870b0ec93d8f0f986e5a16a8a3e93556136da1900f",
+      "observation_id": "RESCS1-034:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "80027d8c04223bbf82c9f3d9dd13d52fae0132ce9b2cdfd5036e387bd15e639c",
+      "messages_sha256": "7f7abed2b590c535c37273fbc1c888a5604fd47970bd126b92a03d79ac670504",
+      "observation_id": "RESCS1-034:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "1c714f514bf399de6cd81e757d3b361f05be1b0bda942b9f675ae4efcd9f2e20",
+      "messages_sha256": "0c8624a7aacc89c54b3f44f5dadc517aa669cef282b305057aa94a0f6189ea6d",
+      "observation_id": "RESCS1-034:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1016,
+      "chat_template_prompt_sha256": "a84d28638e308d374c87f54070df00ee666a6eeed1f517721c439c35822b726c",
+      "messages_sha256": "812df82be2b5b2f590189035e85944a69954f2b1e7ab515eac2f569efb7c098a",
+      "observation_id": "RESCS1-019:NH",
+      "prompt_char_count": 936,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1000,
+      "chat_template_prompt_sha256": "b31de4ff32170fe1ff938ef9011ff846de45af286f70a2bbb45d384a7b133826",
+      "messages_sha256": "3a2245cd9680d42eaeb5cc9269445db0b425a3a928da64c8cac59a1212855979",
+      "observation_id": "RESCS1-019:EH",
+      "prompt_char_count": 920,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 927,
+      "chat_template_prompt_sha256": "223051e645e2122067fe15d9b6961d5f1588732e35b1052cc145ad7c19ec28ef",
+      "messages_sha256": "fcb93875e3ecba00013aaa8dcd91f9be99180738eb622c38152576a44b75e076",
+      "observation_id": "RESCS1-019:EL",
+      "prompt_char_count": 847,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 939,
+      "chat_template_prompt_sha256": "73dc82638ab03a29578c9e273c08737aa1babfd8a7a77db0c0e6f523d0e6da44",
+      "messages_sha256": "bae2a0157a123c0893065f3e46ded01d7567fbe960ce5bed7e508e82a6e39efd",
+      "observation_id": "RESCS1-019:NL",
+      "prompt_char_count": 859,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 997,
+      "chat_template_prompt_sha256": "e00cfbf004eaada7e46b67b12300977af784ceb9e0e35c608eea290b7c999e4d",
+      "messages_sha256": "287cad5f0a5b1c4e30cea847a72bb168afe75f99fed7a9529f415c4e6f5fdc75",
+      "observation_id": "RESCS1-003:EH",
+      "prompt_char_count": 917,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 925,
+      "chat_template_prompt_sha256": "7c54da05d571dba806b72843a42c34a5cfb678f2951cb86470d02a5c01f81794",
+      "messages_sha256": "9618961e1a0f51e15aa357c7d46f82608779ef6fd6e77ab82b3b951a21441144",
+      "observation_id": "RESCS1-003:EL",
+      "prompt_char_count": 845,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "41dda2d76b076a9e45c36599997336e3191ff3bfcac20947694eeae23c67d2a2",
+      "messages_sha256": "4c14ca4e01763ecb5a28259c526ed3201cbdd019c6c93b1bc3e781277ca0ab9d",
+      "observation_id": "RESCS1-003:NL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "d90d0aaa7f24f715a19c64868f04908719a6fd12a1504c3bf6d969b2e9a24677",
+      "messages_sha256": "31798e371f612959cbc8ae312d949b7527bef5868e0f63fd8f9d4abab0a5b214",
+      "observation_id": "RESCS1-003:NH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "eb1c99cbd4aa8161f5b385b00f41d8a0f32d2be066f0f7afc858f552c259b085",
+      "messages_sha256": "1a8a70279820059f29404d4ec65a442310fc3c66cdd066320676a668172b5ae1",
+      "observation_id": "RESCS1-026:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "2c02895cef2091a9ccb9e095f1029bfd367d5aa635b79d95bba0bc8a3b7f58ed",
+      "messages_sha256": "63673b30d20013eb898947f228d295f2ee2c68e3c2de17cf4dca770ea5d1698c",
+      "observation_id": "RESCS1-026:EL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "91d32f51dab3ae72b62eff86fbd84170347157f2046eca43519a32d27a959958",
+      "messages_sha256": "d0ca42bfb0a7f8348b68618beb58ff02f92507214ed9cb3896e311e13538d680",
+      "observation_id": "RESCS1-026:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 949,
+      "chat_template_prompt_sha256": "73f81887faca857582ce95cdb7ef3f6d4e22ca47698f7c8f7a774f55fc22e7a9",
+      "messages_sha256": "fb955817225bfc5abef284fd55b23fd8e51f1b002dd46f034189808dd3db9b39",
+      "observation_id": "RESCS1-026:NL",
+      "prompt_char_count": 869,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "36f2168caeb28755c92095cba67fd53980fa747c0aade4f4dd71c690f47ec52d",
+      "messages_sha256": "6acc21a59f2958b9c103b677f65593998c3ddcf414225ea0fe5d4b107843d04d",
+      "observation_id": "RESCS1-044:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "34ff0274589c89a388c31642af43422f7f2d9e9c21f148064c482a5d0fc14a27",
+      "messages_sha256": "1c1518483c9a91147e733148cc422f4f043785c45a9cd8121197cc8d428566a0",
+      "observation_id": "RESCS1-044:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "773a23d0ce9381b36c3a830740369815dd120f7852ba43b416698282620ce09a",
+      "messages_sha256": "bbb4a053141019ee3c2885922a187f0c66c989b32b2c119cf261dc711f53c5d0",
+      "observation_id": "RESCS1-044:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "a349f39150a7a55fb1d2e12a41df746ed548607febf53d038c65641332a6ba28",
+      "messages_sha256": "049a5e535d4f24331408432ca7661aa5e6489e79d2d2696c9859118198b2cd76",
+      "observation_id": "RESCS1-044:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "e83e42d36f3cbaea2de84cd5346eec2572b70817eafe389749c6b3a7dcf2b16e",
+      "messages_sha256": "9e782bcd207f00820f189295ea02f33a1af0c70e9bc00f29a66703f266073d4f",
+      "observation_id": "RESCS1-008:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "73741aa91081d0a62a1e059b5ab2aabae8014b6c2ee91732c9f95018dd4e6887",
+      "messages_sha256": "7c4ba43af70aff8325b1f79231a62d41fd7c50cad12120df86bd6e592b9f2f06",
+      "observation_id": "RESCS1-008:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "812570063e6a820161f8c5617cbef4e5638597f3e5655d1699342c89ecf1fbc7",
+      "messages_sha256": "2b481cc95c5f20f52b89d2c2715e94540480050ffe95ba8bdaf6bb5fe8806fe7",
+      "observation_id": "RESCS1-008:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "093b5b4c8d0f205a416fe0260a976731316f3c33ac45fb68d41ca6defad7ed6b",
+      "messages_sha256": "8c8f0b8b7bfc2c90f1c0d2e79216152f704a98b02cc15e648288d3f686b9f1c2",
+      "observation_id": "RESCS1-008:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 942,
+      "chat_template_prompt_sha256": "372d9b12a1967e35bac2ce6801efd4a6595eaa1827dafda5d00295207ab83085",
+      "messages_sha256": "4c54dd0f7835080fa08987090345ad0cca503fa591cf0e6e12d4d2cd635f5776",
+      "observation_id": "RESCS1-059:NL",
+      "prompt_char_count": 862,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1019,
+      "chat_template_prompt_sha256": "ed5fdade026651216cbc2c76c012829a38fd0b3d5695b5ce04864f2ce0a95c32",
+      "messages_sha256": "cc3c7ccd28862c968894a36f864ea6ea12133cf5a9f9b839f44e3b0d90b601b4",
+      "observation_id": "RESCS1-059:NH",
+      "prompt_char_count": 939,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 930,
+      "chat_template_prompt_sha256": "15124cb3ad2250b8f802c753c4272887d1dda4f482adff6d533d0a8b58eba728",
+      "messages_sha256": "78befcc25a6f8044035ded53aef7ae63ec7f83e8a2aff4e5153db7c6df539c14",
+      "observation_id": "RESCS1-059:EL",
+      "prompt_char_count": 850,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1003,
+      "chat_template_prompt_sha256": "ef94d6baba00c7f97162117d599c5ac14b1c7535423db2d59c9a51144febf7e7",
+      "messages_sha256": "80ac9042d19e24a6a69d2ff9845f0134ad391e1df690568c51efe4fff0518780",
+      "observation_id": "RESCS1-059:EH",
+      "prompt_char_count": 923,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1017,
+      "chat_template_prompt_sha256": "453150a43be84b59057248b76603eafc6177e0ed789f29f8ba2d79ed063ce840",
+      "messages_sha256": "defefd6b0da54b1375a1254e3dc5953fb903a700e3ad12bb32e00e9fde85e841",
+      "observation_id": "RESCS1-015:EH",
+      "prompt_char_count": 937,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 1033,
+      "chat_template_prompt_sha256": "15706e6693e0574264e497f1b9fc6a10b054cd677798eed962348b159f08e14c",
+      "messages_sha256": "848a4c44977679925ca78602b51130d2772da1bef684e0a7eeffa942c1b712f4",
+      "observation_id": "RESCS1-015:NH",
+      "prompt_char_count": 953,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 945,
+      "chat_template_prompt_sha256": "ced1c007baa6daf6d3ccbd43a350ced2d7875af7223c734bcb9a3dc0010c3d4e",
+      "messages_sha256": "04e1f026c5f1df914a61e0d3c90d8244a0ce56b2f677308325ee9c28c73dcca2",
+      "observation_id": "RESCS1-015:EL",
+      "prompt_char_count": 865,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 957,
+      "chat_template_prompt_sha256": "ec1359ebbc664128e57deaa2a518009ade376ebf04d52d6ebc0af81a964ffe50",
+      "messages_sha256": "20a317aadbc7c32e47152103b1c7ba0fd382cd7c0a8d83fa480438fa61930f63",
+      "observation_id": "RESCS1-015:NL",
+      "prompt_char_count": 877,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1027,
+      "chat_template_prompt_sha256": "44cf71be547af7e2b31e12774cfd7d5155fce016a2f2474efbf13958b75038f4",
+      "messages_sha256": "d1d5e8506ab6be4e61e077e0771fe37e8f6c91562849a899b79b3488ed46aafb",
+      "observation_id": "RESCS1-049:NH",
+      "prompt_char_count": 947,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "a76a4df971b10b88afc75cf077b29a2a5e6d9eea7a669a9f09bca7234bd613f7",
+      "messages_sha256": "f4a50582f444bc1b7e85508226651eaba4a7ada75b4f6e9fb407a9c45cdd1a0d",
+      "observation_id": "RESCS1-049:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "5590f98c9210a4626323ab94ec9a7fc3b9c4072784898280d7e86c6a25be3960",
+      "messages_sha256": "87d9e3de23e86ae6d6de273400cc7882a05b6589ddeab781df1bbfbc45e02f42",
+      "observation_id": "RESCS1-049:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1011,
+      "chat_template_prompt_sha256": "ef4155d0e7222ca08c1b195f88b3110d752709330695636bfe290beda61b4f36",
+      "messages_sha256": "b346820051f3e637cde99f382360f381ac723b382b88d50ce463c78d1147c7c0",
+      "observation_id": "RESCS1-049:EH",
+      "prompt_char_count": 931,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "caa59894a639139a06b6e24034541f583d90996bb0703e5a0fc83ee06eb4141b",
+      "messages_sha256": "4ad3202a5fc737f8e303bf4339b7e382db9ab64e115a88738babd8aece561df1",
+      "observation_id": "RESCS1-031:EL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 959,
+      "chat_template_prompt_sha256": "a042b42974089fcb3ab09ee5be9257049084900b923076923a2c65f5410b9d78",
+      "messages_sha256": "dde2ded03f287099c36bf01ea4933caa3402e9b4ba0200a7e3708369aee80650",
+      "observation_id": "RESCS1-031:NL",
+      "prompt_char_count": 879,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1020,
+      "chat_template_prompt_sha256": "a148bfb2e380c31dfc6bd77dbed2d59e35c5b3f173197de262e5012fb9d35af8",
+      "messages_sha256": "2e2dcaf41347b2c4b24129b0fe3c51889648594636c9acb4c984309cf6a773c1",
+      "observation_id": "RESCS1-031:EH",
+      "prompt_char_count": 940,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1036,
+      "chat_template_prompt_sha256": "fb3f4c44c4fdc691d9ee5a36b197cbb58f35dc7682c212431d04a02c1149370b",
+      "messages_sha256": "02191c0a1c49d501fd99d07cd0f5882b77570512d69d30e63181ae6626cfd715",
+      "observation_id": "RESCS1-031:NH",
+      "prompt_char_count": 956,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 959,
+      "chat_template_prompt_sha256": "04382964a8f3e2cc80f64ec71eca118c9586726f2df3cf4decb1d2632f0770b9",
+      "messages_sha256": "a1c02f5c014f925c0ee3a162afe71e983d7267129fc40ded969ade964688231a",
+      "observation_id": "RESCS1-023:NL",
+      "prompt_char_count": 879,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1020,
+      "chat_template_prompt_sha256": "2dfce764ed1ccbb1f4739b538e3c39b013eedbc338821d4a877fd87cd3f3bd55",
+      "messages_sha256": "5848e2c0c4fe5359b3056c52d5bc5f26438b6d4d8cd997fb065fc2ca68d0992b",
+      "observation_id": "RESCS1-023:EH",
+      "prompt_char_count": 940,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1036,
+      "chat_template_prompt_sha256": "27712d735bfe0ed83fee845e29435881c609b7dfa94d8da659497d91fa561810",
+      "messages_sha256": "8f064019b38b1d1a1a123fbf8e2ea3c0f789a5b998d1d59004c807befbf2aed1",
+      "observation_id": "RESCS1-023:NH",
+      "prompt_char_count": 956,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "4168f03d64213c5b03f0a702139ad2b1e3081aaf31e4a44eb23f44a34e237455",
+      "messages_sha256": "8b9c8b1ba1541467ed67252c474cd6c5481d4b5036fc03786cb60a34ce57f76f",
+      "observation_id": "RESCS1-023:EL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1033,
+      "chat_template_prompt_sha256": "9905a6a9712edf2ff2ce4ccb86c6c3b2216a38e39c363df718ca6d8bb3569838",
+      "messages_sha256": "bdd63b5dccc1ad9bb9fe372204381e24c254476d26b82659e90754fafa37503a",
+      "observation_id": "RESCS1-007:NH",
+      "prompt_char_count": 953,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1017,
+      "chat_template_prompt_sha256": "138d3e84a075d87fd89bec8ed9e289fa1edd9cfb731c85cf7a21f42df3a8b563",
+      "messages_sha256": "a6b1a8a79a1758fdafecacfa69165f073bd29bbb990450e6241b1e04202c17ac",
+      "observation_id": "RESCS1-007:EH",
+      "prompt_char_count": 937,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 945,
+      "chat_template_prompt_sha256": "5529cc6a2734ab6e27bed6572c44b2ecef320033e909c97d4ca42bcfcd8aaabf",
+      "messages_sha256": "a78d9e6a6133fd50ec89f2ca2ab71bad2e9be1ddf406e7d27090db0e39263b3d",
+      "observation_id": "RESCS1-007:EL",
+      "prompt_char_count": 865,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 957,
+      "chat_template_prompt_sha256": "62791d19b3ff6cc499ccead4932b7a6e7163f76798cf93b75dd50dc58c1c67e2",
+      "messages_sha256": "4eb738081d8d881f966cc0613f17a25a53acb53d84aed6fb829c1f06a3ac02a7",
+      "observation_id": "RESCS1-007:NL",
+      "prompt_char_count": 877,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "4be7bb537ecd35c29095b5f738f40e1ad2070a58ac6c511e5b244af739d39e93",
+      "messages_sha256": "615a0d166caccf6acb718e07fcbd075ac38c2a20801f5b34a52c910f7efd7ddf",
+      "observation_id": "RESCS1-062:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "29c41770161de9d758103e6213a69cc63096997fbe3af7aa3939ea9b77c641cb",
+      "messages_sha256": "7ad408f662968dc40ebdb7ab3b8934cd20953508c9d04c2c89642ad984ce09d2",
+      "observation_id": "RESCS1-062:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "b213fff9b353dd4cbba2cd239695a97da8748c08290633af01a59dc19382f6ba",
+      "messages_sha256": "eec2705e22d93336458add2aead4583eee88e311fd9da3044ef672136628c312",
+      "observation_id": "RESCS1-062:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "76f1339f5333f21daa264110324deb55f23b2ffb05df6c10bc80d1499c563501",
+      "messages_sha256": "aa3545633ce9d1ce965e7de9f63ed15c773e5a1483e1b668601cde4d0c292499",
+      "observation_id": "RESCS1-062:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "452441d46bef6c4b71b126d3b459216dd5d24fc9c3779afdb2f4f449a4db5ef2",
+      "messages_sha256": "83816a54e6cfa6370ddb4e88c6a08c12361eada206b23cf2f3278abe26b8dfb6",
+      "observation_id": "RESCS1-040:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "b8227c5902c887cfd0ffc6e8e85a645715491ee3aed28e2d1eec24c27405ea8e",
+      "messages_sha256": "22153ef9a7c18c641bc3c51a3d91a5937e01f378b23efbc01392f9d36f81f771",
+      "observation_id": "RESCS1-040:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "b504e63ee78fd14f5370b0965204f939d350a0ca08b21b9e5d64b648cca4695a",
+      "messages_sha256": "e4c15e79256e9d7f525a39ed409bd961682f0fda2d2e7e1ee189b23aba5359fa",
+      "observation_id": "RESCS1-040:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "363dbbdff6684844078b9e643e8318d8fe443087b0ce83e05a649224278e2b38",
+      "messages_sha256": "70f1fe3c36fa12cf2eef080c6c5b5735c200f0b80847f56e6989f44e01a2dc26",
+      "observation_id": "RESCS1-040:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 937,
+      "chat_template_prompt_sha256": "3d2426c2c6b8c52a9e3a237d6668831d420adfbdda6351fd48cf054ee93347aa",
+      "messages_sha256": "e29b0e811540bffa0747ad8d12b9d9901c6eaf121faa2c66bae7030555c79a6c",
+      "observation_id": "RESCS1-011:NL",
+      "prompt_char_count": 857,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "eb22f94f3b27917a921b231f7d30e41b263e1582668f57a8bc5c1f85e0bd1367",
+      "messages_sha256": "655930bcf27b5883e3159eae71c6292a1c66cd1c911baf5590655c0e718d181c",
+      "observation_id": "RESCS1-011:NH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 997,
+      "chat_template_prompt_sha256": "06f0bc3b8bada71d6ab863377c9d816ed663cd75e3c8291859cdd6bbb9d6c6e6",
+      "messages_sha256": "978c4af3db903d338bc02dfff01efd8ae6c1339575087c4d679634255f93351f",
+      "observation_id": "RESCS1-011:EH",
+      "prompt_char_count": 917,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 925,
+      "chat_template_prompt_sha256": "15e4059edfa1a2d2d67366bddb978aaee59241c822232ce125a775d978727d85",
+      "messages_sha256": "dd494963406fbd7e2473d2e859d3e3473999e5f0b09c5eebcd30f1c76ba37b3c",
+      "observation_id": "RESCS1-011:EL",
+      "prompt_char_count": 845,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 942,
+      "chat_template_prompt_sha256": "bb4f7e1c762f6cb9525303ace346238a1bb789ac888a936a27c8307f6c8e961a",
+      "messages_sha256": "bd165c8df9c0ac428c67a4ab692e1395575bda0746954fc223f44062cb9092dd",
+      "observation_id": "RESCS1-053:EL",
+      "prompt_char_count": 862,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1031,
+      "chat_template_prompt_sha256": "16dd794fd96210db2b92c4b579b0e3a6b7aac735d01918ce9871264e3fa745a8",
+      "messages_sha256": "56c8c48f07ea2e37940a26e7aa9505dfb157511157a42c03466f56d92aa066ac",
+      "observation_id": "RESCS1-053:NH",
+      "prompt_char_count": 951,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 954,
+      "chat_template_prompt_sha256": "b2ac2299d2feac06c1b705c7da7f285491b823eb8ab89667a8d092445bf089c6",
+      "messages_sha256": "761dda0f82dd5302af19dc445efab28dec688c541abf5b6aee4ce2c5352297c8",
+      "observation_id": "RESCS1-053:NL",
+      "prompt_char_count": 874,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1015,
+      "chat_template_prompt_sha256": "32dc1bd1398491c6a173bca354bc98c5b0a33cebdb09e8e1f53d2ebece968a5e",
+      "messages_sha256": "f8ffc171e4792b932a1408c34b71fc8d176e9c3ea8d12786056109f1665190eb",
+      "observation_id": "RESCS1-053:EH",
+      "prompt_char_count": 935,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 1026,
+      "chat_template_prompt_sha256": "78b91cc548b29bf112034ca1ab541709ab32f2c9251644ab90cac28f414b2466",
+      "messages_sha256": "7ce8995a00697c19364edd6f0e1324a5c86c32642e94de4d0eb6495043f5d69d",
+      "observation_id": "RESCS1-032:NH",
+      "prompt_char_count": 946,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 950,
+      "chat_template_prompt_sha256": "ffcfa4b53193885697809dff8c7202f58f974ecf3134c3d59737f5cb55c0ef5a",
+      "messages_sha256": "dfd1c7648d5881489f5516a14fd02cb6bd6fee1c4e6fe7dc113b772e8f1114dd",
+      "observation_id": "RESCS1-032:NL",
+      "prompt_char_count": 870,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1010,
+      "chat_template_prompt_sha256": "d56ad20303f326a8fa909c25c40a7ba2d21ac1e00d1f9ef67d2d91f533f603a1",
+      "messages_sha256": "cb35e5d0e1f51a743dfa2d1411b2128ef978eeb1b31eca27a5b84c11f3010ac8",
+      "observation_id": "RESCS1-032:EH",
+      "prompt_char_count": 930,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 938,
+      "chat_template_prompt_sha256": "be331ceca321036422e9b263d547d1c190ff0a1613f786669ca91d6873d589ae",
+      "messages_sha256": "cecdf8fa32efe6ea1b410d925834ec17ea29f7ed02e4b14bc43cd68569bdcf25",
+      "observation_id": "RESCS1-032:EL",
+      "prompt_char_count": 858,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "628c8f4450f59d731cee1a6984e125d3ef5aaa64953ddd0b1172018b9681441e",
+      "messages_sha256": "43637feeecd9f9de2de6b57a0aeaa11979b038972097b61b7cf71a2abd7dcac4",
+      "observation_id": "RESCS1-054:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 216
+    },
+    {
+      "chat_template_char_count": 1013,
+      "chat_template_prompt_sha256": "ede6aa87c2ab14440b4f8281c3d4ac55f4b5b3fafdd2ed9ea8331eb307081ecf",
+      "messages_sha256": "ec7c0743d2e5042a2de5184374f61ee94585f8ff82eecf0c3c4e7379abb354a9",
+      "observation_id": "RESCS1-054:EH",
+      "prompt_char_count": 933,
+      "prompt_token_count": 249
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "943d352ab3f93815dab3d64b3659f75d57802342450e0819f8b43de9baac4fd9",
+      "messages_sha256": "e22a6bd6276ba050e10e5a9fc2e977e839275be7b3003c6508caa5ad22cd2d26",
+      "observation_id": "RESCS1-054:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 222
+    },
+    {
+      "chat_template_char_count": 1029,
+      "chat_template_prompt_sha256": "c651e9df0b2629ccf5ba6116abb529b840a07bc6172218f90f2e20553a4c604a",
+      "messages_sha256": "d5d3efc11a956502d644dc23c3ea6a03566b3af259c2d082b932270322d7fa7d",
+      "observation_id": "RESCS1-054:NH",
+      "prompt_char_count": 949,
+      "prompt_token_count": 234
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "1e3bc2019ebb551e51d94d6442512e65615c4b3d3f98d832165b1aefe41f701b",
+      "messages_sha256": "118fd9321ec1376cebf15932e2027c6bcd00681881dbcbcde2423fbce722a5cd",
+      "observation_id": "RESCS1-014:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "687319484fa585ca3149020e7efb4595e6fc2ce14c06aec6387b6d97979c1bc8",
+      "messages_sha256": "b0570998940727d9c7551fc7176ea079662191c38f0be5a5b02dfcfaa0da3f67",
+      "observation_id": "RESCS1-014:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "1756e4988d26f8e94664d13dbb8f7bf7f105571f642e1433bce82c2dc15de91b",
+      "messages_sha256": "7e20dd7d6f90bee8c6e60f845516791c71dd2f0e607d38f398df6b36b1dfcbe8",
+      "observation_id": "RESCS1-014:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "eee622a2b47fec062c52877e8e6745b34df9f879fd6ce5c97188ed04a074db38",
+      "messages_sha256": "b6b9ddcd8d404d3d8db330f63e6c3c0686ab1692780e229e7ab9228562c78298",
+      "observation_id": "RESCS1-014:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1028,
+      "chat_template_prompt_sha256": "035971ccfb44b5b74d686561eda07ab8a788f1c526e8d2d51b148dc896c86716",
+      "messages_sha256": "c21e33c6589aab034c47ebd5117c5939640595c7f3f167f8c5353240932e5aff",
+      "observation_id": "RESCS1-037:NH",
+      "prompt_char_count": 948,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 940,
+      "chat_template_prompt_sha256": "3f7e9e38385ea79bcb621938c9881e074a14dfbdea0a5072676b2904dd66ade2",
+      "messages_sha256": "30834f9037fa5181c3c23581d904f92116c556d8471ee61904db9dd582639357",
+      "observation_id": "RESCS1-037:EL",
+      "prompt_char_count": 860,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1012,
+      "chat_template_prompt_sha256": "f8ac98399fe170ab01b4185d9d95e2b9435e69e26d2dd83516d58542101352ea",
+      "messages_sha256": "5e64f3656416d4bbefc6784138e8f9b49c6db95af1fa9b3c218a9caf7be116d1",
+      "observation_id": "RESCS1-037:EH",
+      "prompt_char_count": 932,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 952,
+      "chat_template_prompt_sha256": "b84a49c1a8aa87898975c9f9c6580e2ba2a59e6fe00494efd43cb562be665a75",
+      "messages_sha256": "f2a6c34f021f0eef6b0374b57b91fb3780bf6061fc8eef1103ad77a9d9031d1b",
+      "observation_id": "RESCS1-037:NL",
+      "prompt_char_count": 872,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 933,
+      "chat_template_prompt_sha256": "244e03e07d73e8fe20624dbdef3294492bee6b57fad9be04f7e4ea841fac6728",
+      "messages_sha256": "293f82a4b80d3f678cc070b3efdfdb5c8fd88990d2af8eea00d78faf1f73ba72",
+      "observation_id": "RESCS1-001:EL",
+      "prompt_char_count": 853,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1005,
+      "chat_template_prompt_sha256": "14fc2079d36d524f951ccd5baa6983749674a7b26e0bdcfcbc795a813da8bde5",
+      "messages_sha256": "14636f9cb68b5450915444ccebfed395683a8e1c4b27a7b89e8af4c74ca37fe4",
+      "observation_id": "RESCS1-001:EH",
+      "prompt_char_count": 925,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 945,
+      "chat_template_prompt_sha256": "484a29cbfa34dbc9fb3708f6dc4c7890e8189aa33ba4ad6e894d9ed6369fe73d",
+      "messages_sha256": "49da2d8fb1cbdacb50cdff1359cb64ec7a4163f70d0f2ccb6a78daa775b802a4",
+      "observation_id": "RESCS1-001:NL",
+      "prompt_char_count": 865,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1021,
+      "chat_template_prompt_sha256": "7856c8cd7dbbaa4dc0ff3ef9e0f962053db159c61a5bab5a2eb1893b4981d9a0",
+      "messages_sha256": "de931348b5670d63c77cf42709d04f4acb1ded14c5758a2ac0552c549ede9b07",
+      "observation_id": "RESCS1-001:NH",
+      "prompt_char_count": 941,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 1007,
+      "chat_template_prompt_sha256": "aa953820f1f9d49ced446386a134e9a5fd13ecec725a4a754d9f19be2e408eed",
+      "messages_sha256": "6012fa4981a7b8d503f86c4ff729ac4fa2cb57d75d4f6b203af1ceb5ac7b3993",
+      "observation_id": "RESCS1-002:EH",
+      "prompt_char_count": 927,
+      "prompt_token_count": 252
+    },
+    {
+      "chat_template_char_count": 947,
+      "chat_template_prompt_sha256": "5386a3ff977d1f10003d944b04a197fd55949afe82d301c736f3fa8a4e70e4ef",
+      "messages_sha256": "5640ecdf9292bab80d87da84f48a6dcaeced983a8e65644824859960cd81c164",
+      "observation_id": "RESCS1-002:NL",
+      "prompt_char_count": 867,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1023,
+      "chat_template_prompt_sha256": "9a0454b3c4657b7ffef7fa8c05a8456f91da1fe3d736bf23c962e48ee1d9c563",
+      "messages_sha256": "3b5d4a8468125bb8048d8d509bd23c352896b6f5da70724e0baa83e399ce29b2",
+      "observation_id": "RESCS1-002:NH",
+      "prompt_char_count": 943,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 935,
+      "chat_template_prompt_sha256": "89ab190ee4d354effcb8042ff95fef7903c4e5ab3354db9d2d275586d74b8907",
+      "messages_sha256": "b6fb4761ab4060fcd20f6c5b2ceb2c95d48503af2745ddd03e4a1758c2975a73",
+      "observation_id": "RESCS1-002:EL",
+      "prompt_char_count": 855,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 945,
+      "chat_template_prompt_sha256": "aec75f77a7f198f40c7340e8e85038cba8d201c42efcf02110702c7cf5344169",
+      "messages_sha256": "459d7a4865d7ae93a3cb474173b6c216045338cb1bfc82a183ec80b9f0cb8de7",
+      "observation_id": "RESCS1-009:NL",
+      "prompt_char_count": 865,
+      "prompt_token_count": 217
+    },
+    {
+      "chat_template_char_count": 1021,
+      "chat_template_prompt_sha256": "7ae8fffc56875d4bcc37b2b957d3198488cc244e7b96bb1c865053172b31af27",
+      "messages_sha256": "40157f54104b161a4ca069dc1da0e9c72884e8fd9f26106096ba8781441604a1",
+      "observation_id": "RESCS1-009:NH",
+      "prompt_char_count": 941,
+      "prompt_token_count": 237
+    },
+    {
+      "chat_template_char_count": 933,
+      "chat_template_prompt_sha256": "4b4628b1f4e7281b6a1e9b228717fc9e46b120e810d148ceec7ea1806916f2ce",
+      "messages_sha256": "74c16db039b72967f4ee3a61449e680fac06456417ed2783b079d57fe95070f1",
+      "observation_id": "RESCS1-009:EL",
+      "prompt_char_count": 853,
+      "prompt_token_count": 224
+    },
+    {
+      "chat_template_char_count": 1005,
+      "chat_template_prompt_sha256": "5b80baa28d84a91118fe42a6b7c7ee27de32ed23e037dfaac436ee389e365ce4",
+      "messages_sha256": "a9329807650bd6284971e8b1fccb81faa634fcabfff94bcbe6a61b5321d1be82",
+      "observation_id": "RESCS1-009:EH",
+      "prompt_char_count": 925,
+      "prompt_token_count": 252
+    }
+  ],
+  "transformers": "4.48.3"
+}

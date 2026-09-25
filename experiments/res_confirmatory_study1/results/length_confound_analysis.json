@@ -1,0 +1,178 @@
+{
+  "adjusted_conditional_logit": {
+    "method": "ConditionalLogit fixture-stratified maximum likelihood; Wald intervals/tests",
+    "n_informative_fixtures": 21,
+    "n_observations": 84,
+    "status": "FIT_WITH_WARNINGS",
+    "terms": {
+      "explicit": {
+        "ci_95_log_odds": [
+          -2.0080818389732924,
+          11.591395151230618
+        ],
+        "ci_95_odds_ratio": [
+          0.13424593317531688,
+          108163.05663979593
+        ],
+        "log_odds": 4.791656656128662,
+        "odds_ratio": 120.50083183822444,
+        "standard_error": 3.469254334235691,
+        "two_sided_wald_p": 0.16722433546418092
+      },
+      "high": {
+        "ci_95_log_odds": [
+          -5.966538303982638,
+          33.09962114282838
+        ],
+        "ci_95_odds_ratio": [
+          0.0025630987481860728,
+          237127987472433.16
+        ],
+        "log_odds": 13.566541419422872,
+        "odds_ratio": 779604.0327310244,
+        "standard_error": 9.965857001737506,
+        "two_sided_wald_p": 0.17341826009134198
+      },
+      "interaction": {
+        "ci_95_log_odds": [
+          -1.0212167128358605,
+          16.89322464219901
+        ],
+        "ci_95_odds_ratio": [
+          0.3601564664831994,
+          21708721.326136928
+        ],
+        "log_odds": 7.936003964681575,
+        "odds_ratio": 2796.16458111642,
+        "standard_error": 4.5700105497537935,
+        "two_sided_wald_p": 0.08246848138305699
+      },
+      "position_centered": {
+        "ci_95_log_odds": [
+          -0.4294964055366786,
+          0.398442506668975
+        ],
+        "ci_95_odds_ratio": [
+          0.6508367700025626,
+          1.4895029991079554
+        ],
+        "log_odds": -0.01552694943385181,
+        "odds_ratio": 0.9845929721710142,
+        "standard_error": 0.21120890617491164,
+        "two_sided_wald_p": 0.9413965842706803
+      },
+      "prompt_tokens_centered": {
+        "ci_95_log_odds": [
+          -179.0725058124534,
+          26.35423691620798
+        ],
+        "ci_95_odds_ratio": [
+          1.6974573264583042e-78,
+          278932852067.4808
+        ],
+        "log_odds": -76.3591344481227,
+        "odds_ratio": 6.880963692186259e-34,
+        "standard_error": 52.404781308331984,
+        "two_sided_wald_p": 0.14508810636143166
+      }
+    },
+    "warnings": [
+      "Dropped 43 groups and 172 observations for having no within-group variance"
+    ]
+  },
+  "condition_position_counts": {
+    "EH": {
+      "0": 16,
+      "1": 16,
+      "2": 16,
+      "3": 16
+    },
+    "EL": {
+      "0": 16,
+      "1": 16,
+      "2": 16,
+      "3": 16
+    },
+    "NH": {
+      "0": 16,
+      "1": 16,
+      "2": 16,
+      "3": 16
+    },
+    "NL": {
+      "0": 16,
+      "1": 16,
+      "2": 16,
+      "3": 16
+    }
+  },
+  "correlations_descriptive": {
+    "evaluation_order": {
+      "p_value_diagnostic": 0.5963172617128382,
+      "spearman_rho": 0.03326009933891244
+    },
+    "prompt_char_count": {
+      "p_value_diagnostic": 0.32139052010887686,
+      "spearman_rho": -0.06221970140029916
+    },
+    "prompt_token_count": {
+      "p_value_diagnostic": 0.7441237742151954,
+      "spearman_rho": 0.020498001542269696
+    },
+    "response_token_count": {
+      "p_value_diagnostic": 0.27642022946788763,
+      "spearman_rho": 0.06827949299043558
+    }
+  },
+  "exclusion_rule": "No post-freeze exclusions; flag and stop if a design flaw is discovered.",
+  "note": "Response length can be an outcome of the manipulation; its association is diagnostic, not a causal adjustment.",
+  "pairwise_lengths": {
+    "HIGH": {
+      "explicit_minus_neutral_characters": {
+        "max": -16,
+        "mean": -16.0,
+        "median": -16.0,
+        "min": -16,
+        "nonzero": 64
+      },
+      "explicit_minus_neutral_prompt_tokens": {
+        "max": 15,
+        "mean": 15.0,
+        "median": 15.0,
+        "min": 15,
+        "nonzero": 64
+      },
+      "explicit_minus_neutral_response_tokens": {
+        "max": 0,
+        "mean": -0.734375,
+        "median": 0.0,
+        "min": -3,
+        "nonzero": 21
+      }
+    },
+    "LOW": {
+      "explicit_minus_neutral_characters": {
+        "max": -12,
+        "mean": -12.0,
+        "median": -12.0,
+        "min": -12,
+        "nonzero": 64
+      },
+      "explicit_minus_neutral_prompt_tokens": {
+        "max": 7,
+        "mean": 6.5,
+        "median": 6.5,
+        "min": 6,
+        "nonzero": 64
+      },
+      "explicit_minus_neutral_response_tokens": {
+        "max": 3,
+        "mean": 0.359375,
+        "median": 0.0,
+        "min": 0,
+        "nonzero": 11
+      }
+    }
+  },
+  "semantic_flags": []
+}
