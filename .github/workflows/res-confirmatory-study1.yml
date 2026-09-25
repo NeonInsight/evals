@@ -1,0 +1,152 @@
+name: RES Confirmatory Study 1 (frozen matched factorial)
+
+on:
+  push:
+    branches: [res-confirmatory-study-1]
+    paths: [experiments/res_confirmatory_study1/control.json]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: res-confirmatory-study-1
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      operation: ${{ steps.control.outputs.operation }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate frozen fixtures, pairing, parser and source hashes
+        run: |
+          python -m unittest discover -s experiments/res_confirmatory_study1 -p 'test_*.py' -v
+          python experiments/res_confirmatory_study1/run.py preflight
+      - id: control
+        name: Read explicit operation
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p = json.loads(Path('experiments/res_confirmatory_study1/control.json').read_text())
+          assert set(p) == {'operation','attempt'} and p['operation'] in ('preflight','run')
+          assert type(p['attempt']) is int and p['attempt'] >= 1
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
+              out.write('operation=' + p['operation'] + '\n')
+          PY
+      - name: Install pinned tokenizer for all-prompt audit
+        run: python -m pip install transformers==4.48.3 tokenizers==0.21.0
+      - name: Verify all 256 exact token counts and chat-template hashes before inference
+        run: python experiments/res_confirmatory_study1/run.py token-audit
+      - name: Preserve audit as raw run evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-cs1-token-audit-${{ github.run_attempt }}
+          path: experiments/res_confirmatory_study1/results/token_counts.json
+          retention-days: 90
+      - name: Preflight-only status
+        if: steps.control.outputs.operation == 'preflight'
+        run: echo 'Manifest and tokenizer audit valid. Zero model calls. A new control commit is required to run.' >> "$GITHUB_STEP_SUMMARY"
+
+  shard:
+    needs: preflight
+    if: needs.preflight.outputs.operation == 'run'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+    env:
+      HF_HUB_DISABLE_XET: '1'
+      TOKENIZERS_PARALLELISM: 'false'
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned CPU inference dependencies
+        timeout-minutes: 20
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.1
+          python -m pip install transformers==4.48.3 tokenizers==0.21.0 scikit-learn==1.6.1 safetensors==0.5.2 numpy==1.26.4
+      - name: Generate at most eight frozen prompts; checkpoint every four
+        timeout-minutes: 110
+        run: python experiments/res_confirmatory_study1/run.py run --shard ${{ matrix.shard }}
+      - name: Preserve raw complete or partial checkpoint
+        if: always()
+        timeout-minutes: 5
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-cs1-shard-${{ matrix.shard }}-${{ github.run_attempt }}
+          path: experiments/res_confirmatory_study1/results/shards/
+          if-no-files-found: warn
+          retention-days: 90
+
+  collect:
+    needs: [preflight, shard]
+    if: ${{ always() && needs.preflight.result == 'success' && needs.preflight.outputs.operation == 'run' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download token audit and all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: res-cs1-*-${{ github.run_attempt }}
+          path: incoming
+      - name: Merge checkpoints without overwriting earlier observations
+        run: python experiments/res_confirmatory_study1/run.py collect --artifacts incoming
+      - name: Install pinned analysis dependencies
+        run: python -m pip install numpy==1.26.4 scipy==1.14.1 pandas==2.2.3 statsmodels==0.14.5
+      - name: Analyze only if all 256 rows are present
+        run: python experiments/res_confirmatory_study1/analyze.py
+      - name: Preserve raw and derived results before publishing
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-cs1-collected-${{ github.run_attempt }}
+          path: experiments/res_confirmatory_study1/results/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publish checkpointed raw and analysis files
+        run: |
+          git add experiments/res_confirmatory_study1/results/
+          if git diff --cached --quiet; then
+            echo 'No new results.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Record frozen RES Confirmatory Study 1 results'
+            git pull --rebase origin res-confirmatory-study-1
+            python experiments/res_confirmatory_study1/run.py preflight
+            git push origin HEAD:res-confirmatory-study-1
+          fi
+      - name: Require 256 complete rows for success
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r = json.loads(Path('experiments/res_confirmatory_study1/results/results.json').read_text())
+          assert r['status'] == 'COMPLETE' and r['completed'] == 256, r
+          PY
