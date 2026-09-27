@@ -1,0 +1,112 @@
+name: RES Study 1 analysis recovery and surface efficiency
+
+on:
+  push:
+    branches: [res-confirmatory-study-1-complexity-continuation]
+    paths:
+      - experiments/res_confirmatory_study1_continuation/analysis_recovery_control.json
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: res-confirmatory-study1-analysis-recovery
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned analysis dependencies
+        run: python -m pip install transformers==4.48.3 tokenizers==0.21.0 jinja2==3.1.6 rapidfuzz==3.14.1 numpy==1.26.4 scipy==1.14.1 pandas==2.2.3 statsmodels==0.14.5
+      - name: Verify untouched Phase 0 freeze
+        run: python experiments/res_confirmatory_study1_continuation/phase0.py verify
+      - name: Validate one-shot recovery control
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('experiments/res_confirmatory_study1_continuation/analysis_recovery_control.json')
+          value = json.loads(path.read_text(encoding='utf-8'))
+          assert set(value) == {
+              'attempt', 'operation', 'source_artifact_id', 'source_artifact_name', 'source_run_id'
+          }
+          assert value['attempt'] == 1
+          assert value['operation'] == 'recover-analysis-from-preserved-artifact'
+          assert value['source_run_id'] == 36324399210
+          assert value['source_artifact_id'] == 10936466534
+          assert value['source_artifact_name'] == 'res-cs1c-collected-1'
+          PY
+      - name: Download the immutable complete collected artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: res-cs1c-collected-1
+          path: recovered
+          github-token: ${{ github.token }}
+          repository: NeonInsight/evals
+          run-id: 36324399210
+      - name: Merge only strict-prefix hash-matched checkpoints
+        run: python experiments/res_confirmatory_study1_continuation/run.py collect --artifacts recovered
+      - name: Rerun frozen analyses and add post-hoc efficiency summary
+        run: python experiments/res_confirmatory_study1_continuation/posthoc_analysis_recovery.py
+      - name: Validate complete strict-JSON outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('experiments/res_confirmatory_study1_continuation/results')
+          manifest = json.loads((root / 'run_manifest.json').read_text(encoding='utf-8'))
+          assert manifest['status'] == 'COMPLETE_ATTEMPTED_ALL_FIXTURES'
+          assert manifest['completed_fixtures'] == manifest['expected_fixtures'] == 128
+          assert manifest['stored_observations'] == manifest['expected_observations'] == 640
+          analysis = json.loads((root / 'analysis_status.json').read_text(encoding='utf-8'))
+          assert analysis['status'] == 'COMPLETE'
+          provenance = json.loads((root / 'analysis_recovery_provenance.json').read_text(encoding='utf-8'))
+          assert provenance['status'] == 'ANALYSIS_RECOVERY_COMPLETE'
+          assert provenance['target_model_calls_made_by_recovery'] == 0
+          assert provenance['frozen_inputs_or_observations_changed'] is False
+          posthoc = json.loads((root / 'posthoc_surface_efficiency_analysis.json').read_text(encoding='utf-8'))
+          assert posthoc['status'] == 'POSTHOC_DESCRIPTIVE_COMPLETE'
+          for result in posthoc['comparisons'].values():
+              assert result['status'] == 'COMPLETE_POSTHOC_DESCRIPTIVE'
+              assert result['frozen_structural_signature_preserved_n'] == result['n']
+          json.loads((root / 'length_structural_control_analysis.json').read_text(encoding='utf-8'))
+          json.loads((root / 'length_structural_correlation_estimability.json').read_text(encoding='utf-8'))
+          PY
+      - name: Preserve recovered raw and derived results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-cs1c-analysis-recovery-${{ github.run_attempt }}
+          path: experiments/res_confirmatory_study1_continuation/results/
+          if-no-files-found: error
+          retention-days: 90
+      - name: Publish recovered analysis
+        run: |
+          git add experiments/res_confirmatory_study1_continuation/results/
+          if git diff --cached --quiet; then
+            echo 'No recovered result changes.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Recover frozen RES analysis and add post-hoc efficiency summary'
+            git pull --rebase origin res-confirmatory-study-1-complexity-continuation
+            python experiments/res_confirmatory_study1_continuation/phase0.py verify
+            git push origin HEAD:res-confirmatory-study-1-complexity-continuation
+          fi
+      - name: Summarize recovery boundary
+        run: |
+          echo 'Recovered the frozen 640-observation analysis without target-model calls.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Undefined constant-input correlations are null with explicit estimability metadata.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Surface-efficiency outputs are post-hoc and descriptive.' >> "$GITHUB_STEP_SUMMARY"
