@@ -1,0 +1,7 @@
+{
+  "condition_metadata_visible": false,
+  "correctness": "parsed choice equals the precomputed code for the rendered decision locus",
+  "parser": "exactly one isolated A or B, case-insensitive",
+  "retry_on_substantive_wrong_answer": false,
+  "type": "deterministic"
+}

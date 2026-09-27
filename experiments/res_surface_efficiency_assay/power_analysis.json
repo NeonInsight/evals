@@ -1,0 +1,54 @@
+{
+  "achieved_power_grid": {
+    "128": {
+      "0.15": 0.8990811464551889,
+      "0.2": 0.8119131898703726,
+      "0.25": 0.7316754391501601,
+      "0.33": 0.6272619576313894
+    },
+    "192": {
+      "0.15": 0.9733729770919354,
+      "0.2": 0.9269620948715477,
+      "0.25": 0.8700077288784405,
+      "0.33": 0.778529729578532
+    },
+    "256": {
+      "0.15": 0.9935465638250012,
+      "0.2": 0.9733729770919354,
+      "0.25": 0.9400443936072936,
+      "0.33": 0.8729378357872692
+    },
+    "64": {
+      "0.15": 0.6630266093553681,
+      "0.2": 0.557250063295546,
+      "0.25": 0.48211198997313703,
+      "0.33": 0.40043072595763746
+    }
+  },
+  "alpha": 0.05,
+  "analysis": "paired generated-accuracy non-inferiority",
+  "candidate_n": [
+    64,
+    128,
+    192,
+    256
+  ],
+  "caveat": "The 0.25 and 0.33 discordance scenarios are sensitivity analyses; they are not used to shrink or expand N after scoring.",
+  "design_alternative": 0.0,
+  "design_discordance": 0.2,
+  "design_discordance_rule": "max(0.20, prior LOW representation disagreement)",
+  "historical_low_representation_disagreement": 0.1796875,
+  "historical_role": "design motivation only; no current outcomes",
+  "null_boundary": -0.1,
+  "required_n_continuous": 123.6511446403953,
+  "selected_n": 128,
+  "sensitivity_discordance": [
+    0.15,
+    0.2,
+    0.25,
+    0.33
+  ],
+  "sidedness": "one-sided",
+  "status": "PROSPECTIVE_PHASE0_POWER_COMPLETE",
+  "target_power": 0.8
+}

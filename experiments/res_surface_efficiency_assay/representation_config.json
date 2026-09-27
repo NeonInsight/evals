@@ -1,0 +1,31 @@
+{
+  "adaptive_search": false,
+  "canonical_edges": [
+    [
+      "REQUESTER",
+      "COORDINATOR"
+    ],
+    [
+      "COORDINATOR",
+      "EXECUTION_ACTOR"
+    ],
+    [
+      "REFERENCE_ACTOR",
+      "OBSERVER"
+    ],
+    [
+      "OBSERVER",
+      "REQUESTER"
+    ]
+  ],
+  "changed_locus": "REFERENCE_ACTOR",
+  "factor_record_wording": "identical across all conditions",
+  "preserved_locus": "EXECUTION_ACTOR",
+  "surface_forms": [
+    "VERBOSE",
+    "ABBREVIATED",
+    "SYMBOLIC"
+  ],
+  "symbolic_nonrelational_control": "M:X to M:Y while L:X is unchanged",
+  "symbolic_relational_edit": "L:X to L:Y"
+}
