@@ -4,7 +4,10 @@
     "RESCS1C-C001",
     "RESCS1C-C002",
     "RESCS1C-C003",
-    "RESCS1C-C004"
+    "RESCS1C-C004",
+    "RESCS1C-C005",
+    "RESCS1C-C006",
+    "RESCS1C-C007"
   ],
   "execution_attempts": [
     {
@@ -12,6 +15,15 @@
       "run_attempt": "1",
       "run_id": "36286467377",
       "started_at": "2026-09-27T01:47:29.980787+00:00",
+      "threads": 4,
+      "torch": "2.5.1+cpu",
+      "transformers": "4.48.3"
+    },
+    {
+      "python": "3.11.16",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "started_at": "2026-09-27T14:05:05.671743+00:00",
       "threads": 4,
       "torch": "2.5.1+cpu",
       "transformers": "4.48.3"
@@ -1371,11 +1383,841 @@
       "technical_problem": null,
       "technical_status": "VALID",
       "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "b58e6a55afe3ae78c2cf467507b7a2913f443c46afd70db0a2d5e571c907ef23",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:25.807948+00:00",
+      "condition": "CODE_MAPPED_HIGH",
+      "decision_margin": -3.75,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 33,
+      "fixture_id": "RESCS1C-C005",
+      "generated_ids": [
+        33,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "eb682538cb6dadb0cfa5683e49a1b09604b62dd945ac34bb9e72cf0ee97f7818",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C005:CODE_MAPPED_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 30.71428680419922,
+      "processed_b_logit": 36.0,
+      "raw_a_logit": 32.25,
+      "raw_b_logit": 36.0,
+      "rendering_hash": "48a89c6aa63a4fe798a38b5ef82a735cc7e1de81955d8ed80a562eeb9643f46d",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "4a35d45b582449c6691acf9154cb2025e527ba66a7f0a6883d091677f5c2e050",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:25.807977+00:00",
+      "condition": "NONREL_CONTROL_HIGH",
+      "decision_margin": -1.875,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 33,
+      "fixture_id": "RESCS1C-C005",
+      "generated_ids": [
+        33,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "0d65aaff3487097983b2dbe976d1566145ed2f0c83c6ac1e7ecd1ed9cba1951f",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C005:NONREL_CONTROL_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 29.880952835083008,
+      "processed_b_logit": 33.25,
+      "raw_a_logit": 31.375,
+      "raw_b_logit": 33.25,
+      "rendering_hash": "0f4d424b6be2f3162a8e33536c20cd2c329e89f18b58f3eab04db9f2e0ccd067",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "dbb1c04d8abace2ccef5a67b938b6cfdd9f8f62217bb65aaed6333a1bccefcc6",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:25.808009+00:00",
+      "condition": "CODE_MAPPED_LOW",
+      "decision_margin": -5.5,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 33,
+      "fixture_id": "RESCS1C-C005",
+      "generated_ids": [
+        33,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "002c22a64af3d715aeb664c0f798c9acb041a3a6c83aee00c84745e9656741ab",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C005:CODE_MAPPED_LOW",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 32.619049072265625,
+      "processed_b_logit": 39.75,
+      "raw_a_logit": 34.25,
+      "raw_b_logit": 39.75,
+      "rendering_hash": "d4c7a9d628c3179487d29367c72d1a794afe50e6688e602a9a9536725f45ed93",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "9611f4f4aa9f244098a8e55be512aa2263273b93ac7a3cce2e3d5e9f8eb8ada8",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:25.808018+00:00",
+      "condition": "NEUTRAL_LOW",
+      "decision_margin": -0.5,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 33,
+      "fixture_id": "RESCS1C-C005",
+      "generated_ids": [
+        33,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "5a3e6e7b52a2b397ac252b3f01618d41c50ab015f7d693a21e9d13b15d9abcb9",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C005:NEUTRAL_LOW",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 30.952383041381836,
+      "processed_b_logit": 33.0,
+      "raw_a_logit": 32.5,
+      "raw_b_logit": 33.0,
+      "rendering_hash": "29349dfc201cc347b66a741f884a2b03163ae2159dbfb0ac04acdb77b3abdf22",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "9160b21ed693a13f92bf2c89a5842d0b74d9e45f6a876c25ad8f23e036016972",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:25.808026+00:00",
+      "condition": "NEUTRAL_HIGH",
+      "decision_margin": -1.375,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 33,
+      "fixture_id": "RESCS1C-C005",
+      "generated_ids": [
+        33,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "c18eab2f1cec0577626e02c135dccc813a736d263afb14e1ebf7870dd61a03d7",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C005:NEUTRAL_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 30.35714340209961,
+      "processed_b_logit": 33.25,
+      "raw_a_logit": 31.875,
+      "raw_b_logit": 33.25,
+      "rendering_hash": "30ab38adc6740ae82981708adafede2cf98bc894e9109f7ed1a5c9b4608b8cd5",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645,
+            151643,
+            151643
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "ff8edc7bc1639e7aae972b84bbe860ae1194c5f7fb8ef9cf609067e7d3580cfa",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:47.284123+00:00",
+      "condition": "NONREL_CONTROL_HIGH",
+      "decision_margin": -1.0,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 33,
+      "fixture_id": "RESCS1C-C006",
+      "generated_ids": [
+        33,
+        151645,
+        151643,
+        151643
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "409a3bb8e267c0e7e0140efcb0f0fa9179383011225344ba7e1fefa80c15e8f1",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C006:NONREL_CONTROL_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 28.69047737121582,
+      "processed_b_logit": 31.125,
+      "raw_a_logit": 30.125,
+      "raw_b_logit": 31.125,
+      "rendering_hash": "9b691300a42475a04250a0981b16bc7580c5e9b2e1d54f71815fc20930709cfa",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645,
+            151643,
+            151643
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "aded66b80632a7aac71f726107ca366b5ca04d0132eb9b9078ab35c87d9574a4",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:47.284152+00:00",
+      "condition": "CODE_MAPPED_LOW",
+      "decision_margin": 0.75,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C006",
+      "generated_ids": [
+        33,
+        151645,
+        151643,
+        151643
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "cb1090b874f748ccaa620a987280d435c95c79dc5ada460d69ef3f348b67d046",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C006:CODE_MAPPED_LOW",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 36.42857360839844,
+      "processed_b_logit": 37.5,
+      "raw_a_logit": 38.25,
+      "raw_b_logit": 37.5,
+      "rendering_hash": "e0cc546e8b3c34671fc151416af4b9372090f898f4974b186e284c44e22bf1c9",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            33,
+            151645,
+            151643,
+            151643
+          ],
+          "technical_problem": null,
+          "text": "B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "5ffd875650e968e3c529353134724a544580e52d289b670c2f021fa419e80da0",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:47.284161+00:00",
+      "condition": "NEUTRAL_LOW",
+      "decision_margin": 0.5,
+      "expected": "A",
+      "first_generated_id": 33,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C006",
+      "generated_ids": [
+        33,
+        151645,
+        151643,
+        151643
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "b9f769d7826e0555435bc9ad2527d22db282e8dee255ad3e3eeee1631f9cde07",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C006:NEUTRAL_LOW",
+      "output_token_count": 1,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 33.57143020629883,
+      "processed_b_logit": 34.75,
+      "raw_a_logit": 35.25,
+      "raw_b_logit": 34.75,
+      "rendering_hash": "55ed896ec65cb075f36bd31121ea3de49130721379c782d0bea15a435498cf87",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            53325,
+            13765,
+            54526,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "ALLOW CODE=B"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "64a6ffd3293d45c0397cbe57c19917bb8a87b69b4ee9081943c7ec3736a673d9",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:47.284168+00:00",
+      "condition": "NEUTRAL_HIGH",
+      "decision_margin": -1.125,
+      "expected": "A",
+      "first_generated_id": 53325,
+      "first_raw_argmax_id": 53325,
+      "fixture_id": "RESCS1C-C006",
+      "generated_ids": [
+        53325,
+        13765,
+        54526,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "e4a35e5b26cad5b8aa8da8ab65426b0500c17ed37e49f12a6350d2086ed3c8c0",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C006:NEUTRAL_HIGH",
+      "output_token_count": 3,
+      "parsed_choice": "B",
+      "passed": false,
+      "processed_a_logit": 28.809524536132812,
+      "processed_b_logit": 31.375,
+      "raw_a_logit": 30.25,
+      "raw_b_logit": 31.375,
+      "rendering_hash": "c5f9e74a2db0877b2da2519730bb2505576a020329de109fa5a5786416031e1e",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "ALLOW CODE=B"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            32,
+            151645,
+            151643,
+            151643
+          ],
+          "technical_problem": null,
+          "text": "A"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "03910c2e63bcf10101283f2d4de40556e5d5d692a994f901205f38d0aff30d91",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:05:47.284175+00:00",
+      "condition": "CODE_MAPPED_HIGH",
+      "decision_margin": 3.25,
+      "expected": "A",
+      "first_generated_id": 32,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C006",
+      "generated_ids": [
+        32,
+        151645,
+        151643,
+        151643
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "03e16de684500a886a8c6fae668a9cac9834789736dfebae6731341882092dfb",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C006:CODE_MAPPED_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "A",
+      "passed": true,
+      "processed_a_logit": 35.9523811340332,
+      "processed_b_logit": 34.5,
+      "raw_a_logit": 37.75,
+      "raw_b_logit": 34.5,
+      "rendering_hash": "ccdf2254de13cb82747b7692f785e66ac1bee3ad59c0e2807f066d5e35cde7b6",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "A"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            32,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "A"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "2ba9006980e21392a19332799293d00146cbe0d56ebc0e823043e13a3445b7a7",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:06:07.338664+00:00",
+      "condition": "CODE_MAPPED_LOW",
+      "decision_margin": 3.0,
+      "expected": "A",
+      "first_generated_id": 32,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C007",
+      "generated_ids": [
+        32,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "22f6bc7dddc34634f3502b3ca4c77e00a156bb73d73f9f1f079cc33f9b1a7435",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C007:CODE_MAPPED_LOW",
+      "output_token_count": 1,
+      "parsed_choice": "A",
+      "passed": true,
+      "processed_a_logit": 38.09524154663086,
+      "processed_b_logit": 37.0,
+      "raw_a_logit": 40.0,
+      "raw_b_logit": 37.0,
+      "rendering_hash": "c361e4816e34b0105e15a60e5a8794b990968698432e8bcd8ae8013b2a7ecdcb",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "A"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            32,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "A"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "0db413804c2fce8c32c9125473d81d3f407496bdb434928f335fc87182915c24",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:06:07.338692+00:00",
+      "condition": "NEUTRAL_LOW",
+      "decision_margin": 3.0,
+      "expected": "A",
+      "first_generated_id": 32,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C007",
+      "generated_ids": [
+        32,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "b33e8ed5a6ea6af0b0e6bd0f8b398726fdba22f56327fbc3f57bc141b10c0e29",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C007:NEUTRAL_LOW",
+      "output_token_count": 1,
+      "parsed_choice": "A",
+      "passed": true,
+      "processed_a_logit": 35.476192474365234,
+      "processed_b_logit": 34.25,
+      "raw_a_logit": 37.25,
+      "raw_b_logit": 34.25,
+      "rendering_hash": "ae21156a45724ac9133c5bbf91c56cb5d1a5a84c9a7492adfe30f354ef574d96",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "A"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            32,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "A"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "e0fc27ffc8eaff524a8b5bb4fa51b1a9bb1359e73b73bcfbe49455f2b536be97",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:06:07.338700+00:00",
+      "condition": "NEUTRAL_HIGH",
+      "decision_margin": 2.75,
+      "expected": "A",
+      "first_generated_id": 32,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C007",
+      "generated_ids": [
+        32,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "1ce3b6d89f1dba9d58491bce19f65257b97d22b5752c382a7d51f6d8a6f8c8e3",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C007:NEUTRAL_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "A",
+      "passed": true,
+      "processed_a_logit": 33.095237731933594,
+      "processed_b_logit": 32.0,
+      "raw_a_logit": 34.75,
+      "raw_b_logit": 32.0,
+      "rendering_hash": "c8c32f7349ea247bf68f8a135cf8ebec26a327bbd93c9adbe112d58a9cfb2a7b",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "A"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            32,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "A"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "8eddc6257797bb81036928b889930023486b04837a16bd4e3c5495ac87088d16",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:06:07.338707+00:00",
+      "condition": "CODE_MAPPED_HIGH",
+      "decision_margin": 6.0,
+      "expected": "A",
+      "first_generated_id": 32,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C007",
+      "generated_ids": [
+        32,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "cf29639b9af71a0d6da5e30155d62b9c1935ed8fb09a6f7174c58a3bf375316b",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C007:CODE_MAPPED_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "A",
+      "passed": true,
+      "processed_a_logit": 37.38095474243164,
+      "processed_b_logit": 33.25,
+      "raw_a_logit": 39.25,
+      "raw_b_logit": 33.25,
+      "rendering_hash": "3143dd1df33c2685291afe824f0e8a38bbd21dc237a6af46f2b34effda38a025",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "A"
+    },
+    {
+      "a_token_id": 32,
+      "attempt_count": 1,
+      "attempt_log": [
+        {
+          "attempt": 1,
+          "generated_ids": [
+            32,
+            151645
+          ],
+          "technical_problem": null,
+          "text": "A"
+        }
+      ],
+      "b_token_id": 33,
+      "chat_prompt_sha256": "cfeb0b3f601003f31037580132eb4f667bea207aeb0a7f729a7d30bcedafeb5b",
+      "commit": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "completed_at": "2026-09-27T14:06:07.338714+00:00",
+      "condition": "NONREL_CONTROL_HIGH",
+      "decision_margin": 2.375,
+      "expected": "A",
+      "first_generated_id": 32,
+      "first_raw_argmax_id": 32,
+      "fixture_id": "RESCS1C-C007",
+      "generated_ids": [
+        32,
+        151645
+      ],
+      "inference_config_hash": "28c2225ebc88877d22826bcbfab4ba1047cd1c807de0e57be230c1ade3b76ede",
+      "messages_sha256": "c5dd39a9322018bb25c5cefedae46a8200ccbe5d05208a0771fb8804ed579312",
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "observation_id": "RESCS1C-C007:NONREL_CONTROL_HIGH",
+      "output_token_count": 1,
+      "parsed_choice": "A",
+      "passed": true,
+      "processed_a_logit": 31.90476417541504,
+      "processed_b_logit": 31.125,
+      "raw_a_logit": 33.5,
+      "raw_b_logit": 31.125,
+      "rendering_hash": "4ee87e106884bc8a1f021c3bb53267b3395de1a8f3f3764d5c87cbf9e5160963",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "run_attempt": "1",
+      "run_id": "36324399210",
+      "sampling": {
+        "do_sample": false,
+        "max_new_tokens": 4
+      },
+      "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
+      "seed": 2026092701,
+      "technical_failure_reason": null,
+      "technical_problem": null,
+      "technical_status": "VALID",
+      "text": "A"
     }
   ],
   "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
   "scorer_config_hash": "ce9ce11cb1038c2d7e35a42284b53ef8e73bf20a9c06b0d52ed0c8501f09c806",
   "shard_index": 0,
-  "status": "PARTIAL",
-  "updated_at": "2026-09-27T05:21:25.671152+00:00"
+  "status": "COMPLETE",
+  "updated_at": "2026-09-27T14:06:07.338726+00:00"
 }

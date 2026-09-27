@@ -1,0 +1,1044 @@
+{
+  "alternative": "transition < nontransition",
+  "bootstrap_repetitions": 10000,
+  "fixtures": [
+    {
+      "absolute_baseline_margin": 1.625,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.625,
+      "fixture_id": "RESCS1C-C000",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.0,
+      "fixture_id": "RESCS1C-C001",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 0.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.75,
+      "fixture_id": "RESCS1C-C002",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 4.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 4.125,
+      "fixture_id": "RESCS1C-C003",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.5,
+      "fixture_id": "RESCS1C-C004",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.375,
+      "fixture_id": "RESCS1C-C005",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.125,
+      "fixture_id": "RESCS1C-C006",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.75,
+      "fixture_id": "RESCS1C-C007",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.5,
+      "fixture_id": "RESCS1C-C008",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.5,
+      "fixture_id": "RESCS1C-C009",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 4.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 4.375,
+      "fixture_id": "RESCS1C-C010",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.875,
+      "fixture_id": "RESCS1C-C011",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.0,
+      "fixture_id": "RESCS1C-C012",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.75,
+      "fixture_id": "RESCS1C-C013",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.5,
+      "fixture_id": "RESCS1C-C014",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.875,
+      "fixture_id": "RESCS1C-C015",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.375,
+      "fixture_id": "RESCS1C-C016",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.5,
+      "fixture_id": "RESCS1C-C017",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.5,
+      "fixture_id": "RESCS1C-C018",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.25,
+      "fixture_id": "RESCS1C-C019",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.0,
+      "fixture_id": "RESCS1C-C020",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.75,
+      "fixture_id": "RESCS1C-C021",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 0.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.875,
+      "fixture_id": "RESCS1C-C022",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.5,
+      "fixture_id": "RESCS1C-C023",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.5,
+      "fixture_id": "RESCS1C-C024",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.625,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.625,
+      "fixture_id": "RESCS1C-C025",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 6.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 6.75,
+      "fixture_id": "RESCS1C-C026",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.25,
+      "fixture_id": "RESCS1C-C027",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.5,
+      "fixture_id": "RESCS1C-C028",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.25,
+      "fixture_id": "RESCS1C-C029",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 8.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.0,
+      "fixture_id": "RESCS1C-C030",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 3.0,
+      "fixture_id": "RESCS1C-C031",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.25,
+      "fixture_id": "RESCS1C-C032",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.875,
+      "fixture_id": "RESCS1C-C033",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 0.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.75,
+      "fixture_id": "RESCS1C-C034",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 8.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.5,
+      "fixture_id": "RESCS1C-C035",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.5,
+      "fixture_id": "RESCS1C-C036",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.25,
+      "fixture_id": "RESCS1C-C037",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -3.25,
+      "fixture_id": "RESCS1C-C038",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.75,
+      "fixture_id": "RESCS1C-C039",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.0,
+      "fixture_id": "RESCS1C-C040",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 9.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 9.75,
+      "fixture_id": "RESCS1C-C041",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.375,
+      "fixture_id": "RESCS1C-C042",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.5,
+      "fixture_id": "RESCS1C-C043",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.5,
+      "fixture_id": "RESCS1C-C044",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 8.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.125,
+      "fixture_id": "RESCS1C-C045",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 7.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 7.375,
+      "fixture_id": "RESCS1C-C046",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.0,
+      "fixture_id": "RESCS1C-C047",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.25,
+      "fixture_id": "RESCS1C-C048",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.625,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.625,
+      "fixture_id": "RESCS1C-C049",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.75,
+      "fixture_id": "RESCS1C-C050",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.0,
+      "fixture_id": "RESCS1C-C051",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.875,
+      "fixture_id": "RESCS1C-C052",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.375,
+      "fixture_id": "RESCS1C-C053",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.5,
+      "fixture_id": "RESCS1C-C054",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.875,
+      "fixture_id": "RESCS1C-C055",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.5,
+      "fixture_id": "RESCS1C-C056",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.25,
+      "fixture_id": "RESCS1C-C057",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 8.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.875,
+      "fixture_id": "RESCS1C-C058",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.0,
+      "fixture_id": "RESCS1C-C059",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.75,
+      "fixture_id": "RESCS1C-C060",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 10.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 10.25,
+      "fixture_id": "RESCS1C-C061",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -3.125,
+      "fixture_id": "RESCS1C-C062",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.125,
+      "fixture_id": "RESCS1C-C063",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 8.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.5,
+      "fixture_id": "RESCS1C-C064",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.5,
+      "fixture_id": "RESCS1C-C065",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.75,
+      "fixture_id": "RESCS1C-C066",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 6.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 6.875,
+      "fixture_id": "RESCS1C-C067",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.875,
+      "fixture_id": "RESCS1C-C068",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.0,
+      "fixture_id": "RESCS1C-C069",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.5,
+      "fixture_id": "RESCS1C-C070",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.5,
+      "fixture_id": "RESCS1C-C071",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 5.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -5.875,
+      "fixture_id": "RESCS1C-C072",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 10.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 10.0,
+      "fixture_id": "RESCS1C-C073",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 3.0,
+      "fixture_id": "RESCS1C-C074",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.375,
+      "fixture_id": "RESCS1C-C075",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.0,
+      "fixture_id": "RESCS1C-C076",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 4.625,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 4.625,
+      "fixture_id": "RESCS1C-C077",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -3.0,
+      "fixture_id": "RESCS1C-C078",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.0,
+      "fixture_id": "RESCS1C-C079",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 0.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.25,
+      "fixture_id": "RESCS1C-C080",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -3.0,
+      "fixture_id": "RESCS1C-C081",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.0,
+      "fixture_id": "RESCS1C-C082",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -3.375,
+      "fixture_id": "RESCS1C-C083",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.5,
+      "fixture_id": "RESCS1C-C084",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.75,
+      "fixture_id": "RESCS1C-C085",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.375,
+      "fixture_id": "RESCS1C-C086",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.0,
+      "fixture_id": "RESCS1C-C087",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.5,
+      "fixture_id": "RESCS1C-C088",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 3.375,
+      "fixture_id": "RESCS1C-C089",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.375,
+      "fixture_id": "RESCS1C-C090",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.0,
+      "fixture_id": "RESCS1C-C091",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.25,
+      "fixture_id": "RESCS1C-C092",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.0,
+      "fixture_id": "RESCS1C-C093",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 8.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.125,
+      "fixture_id": "RESCS1C-C094",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.25,
+      "fixture_id": "RESCS1C-C095",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.75,
+      "fixture_id": "RESCS1C-C096",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.875,
+      "fixture_id": "RESCS1C-C097",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 3.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 3.0,
+      "fixture_id": "RESCS1C-C098",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 3.875,
+      "fixture_id": "RESCS1C-C099",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -3.25,
+      "fixture_id": "RESCS1C-C100",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.375,
+      "fixture_id": "RESCS1C-C101",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.5,
+      "fixture_id": "RESCS1C-C102",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.75,
+      "fixture_id": "RESCS1C-C103",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 8.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.875,
+      "fixture_id": "RESCS1C-C104",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.75,
+      "fixture_id": "RESCS1C-C105",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.75,
+      "fixture_id": "RESCS1C-C106",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 3.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -3.5,
+      "fixture_id": "RESCS1C-C107",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 8.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 8.125,
+      "fixture_id": "RESCS1C-C108",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.25,
+      "fixture_id": "RESCS1C-C109",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.75,
+      "fixture_id": "RESCS1C-C110",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.375,
+      "fixture_id": "RESCS1C-C111",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.25,
+      "fixture_id": "RESCS1C-C112",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.375,
+      "fixture_id": "RESCS1C-C113",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 1.25,
+      "fixture_id": "RESCS1C-C114",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.875,
+      "fixture_id": "RESCS1C-C115",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.5,
+      "fixture_id": "RESCS1C-C116",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.125,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.125,
+      "fixture_id": "RESCS1C-C117",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 1.625,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.625,
+      "fixture_id": "RESCS1C-C118",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.5,
+      "fixture_id": "RESCS1C-C119",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 2.0,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -2.0,
+      "fixture_id": "RESCS1C-C120",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 2.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 2.875,
+      "fixture_id": "RESCS1C-C121",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.875,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.875,
+      "fixture_id": "RESCS1C-C122",
+      "margin_stratum": "1_50_lt_abs_m_le_3_00",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 9.75,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 9.75,
+      "fixture_id": "RESCS1C-C123",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 1.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -1.375,
+      "fixture_id": "RESCS1C-C124",
+      "margin_stratum": "0_75_lt_abs_m_le_1_50",
+      "transition": true
+    },
+    {
+      "absolute_baseline_margin": 7.375,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 7.375,
+      "fixture_id": "RESCS1C-C125",
+      "margin_stratum": "abs_m_gt_3_00",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.5,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": -0.5,
+      "fixture_id": "RESCS1C-C126",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    },
+    {
+      "absolute_baseline_margin": 0.25,
+      "baseline_condition": "NEUTRAL_HIGH",
+      "baseline_decision_margin": 0.25,
+      "fixture_id": "RESCS1C-C127",
+      "margin_stratum": "abs_m_le_0_75",
+      "transition": false
+    }
+  ],
+  "hypothesis": "transition absolute margins are smaller",
+  "nontransition_median_abs_margin": 2.0,
+  "nontransition_n": 86,
+  "one_sided_p": 0.2496439649845334,
+  "rank_biserial_bootstrap_95_ci": [
+    -0.11738648947951269,
+    0.2632890365448505
+  ],
+  "rank_biserial_positive_means_transition_smaller": 0.07392026578073085,
+  "status": "COMPLETE",
+  "test": "one-sided Mann-Whitney U",
+  "transition_median_abs_margin": 1.8125,
+  "transition_n": 42,
+  "u": 1672.5
+}

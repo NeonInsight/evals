@@ -1,0 +1,459 @@
+{
+  "comparisons": {
+    "code_mapped_high_vs_neutral_high": {
+      "absolute_decision_margin_shift": {
+        "maximum": 11.75,
+        "mean": 3.501953125,
+        "median": 3.125,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 2.9004557905717205
+      },
+      "accuracy_change_variant_minus_baseline": 0.1875,
+      "baseline": "NEUTRAL_HIGH",
+      "baseline_accuracy": 0.53125,
+      "character_savings_variant_vs_baseline": {
+        "maximum": 20.0,
+        "mean": 18.5,
+        "median": 18.5,
+        "minimum": 17.0,
+        "n": 128,
+        "standard_deviation": 1.5058939323315805
+      },
+      "compactness_behavior_classes": {
+        "VARIANT_SHORTER_CHOICE_CHANGED": 42,
+        "VARIANT_SHORTER_CHOICE_PRESERVED": 86
+      },
+      "corrections": 33,
+      "correctness_agreement_rate": 0.671875,
+      "descriptive_associations": {
+        "character_savings_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            17.0,
+            20.0
+          ],
+          "spearman_rho": 0.0,
+          "status": "ESTIMABLE_DESCRIPTIVE",
+          "two_sided_p_descriptive": 1.0
+        },
+        "input_token_savings_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            8.0
+          ],
+          "spearman_rho": null,
+          "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+          "two_sided_p_descriptive": null
+        },
+        "surface_edit_distance_vs_absolute_margin_shift": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            0.125,
+            0.25,
+            0.5,
+            0.75,
+            0.875,
+            1.0,
+            1.125,
+            1.25,
+            1.375,
+            1.75,
+            1.875,
+            2.0,
+            2.25,
+            2.375,
+            2.5,
+            2.625,
+            2.75,
+            3.0,
+            3.25,
+            3.375,
+            3.625,
+            3.75,
+            3.875,
+            4.0,
+            4.125,
+            4.25,
+            4.375,
+            4.5,
+            4.625,
+            4.75,
+            4.875,
+            5.125,
+            5.25,
+            5.5,
+            5.75,
+            6.0,
+            6.625,
+            6.875,
+            7.0,
+            7.125,
+            8.625,
+            9.125,
+            9.5,
+            10.625,
+            10.875,
+            11.125,
+            11.375,
+            11.75
+          ],
+          "predictor_unique_values": [
+            115.0,
+            117.0
+          ],
+          "spearman_rho": 0.02877625950535247,
+          "status": "ESTIMABLE_DESCRIPTIVE",
+          "two_sided_p_descriptive": 0.7471199405850999
+        },
+        "surface_edit_distance_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            115.0,
+            117.0
+          ],
+          "spearman_rho": 0.0,
+          "status": "ESTIMABLE_DESCRIPTIVE",
+          "two_sided_p_descriptive": 1.0
+        }
+      },
+      "frozen_structural_signature_preserved_n": 128,
+      "input_token_savings_variant_vs_baseline": {
+        "maximum": 8.0,
+        "mean": 8.0,
+        "median": 8.0,
+        "minimum": 8.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "n": 128,
+      "parsed_choice_agreement_rate": 0.671875,
+      "pass_transition_rate": 0.328125,
+      "regressions": 9,
+      "role": "same HIGH relational structure and decision; alternate frozen factor/task representation",
+      "status": "COMPLETE_POSTHOC_DESCRIPTIVE",
+      "surface_edit_distance_characters": {
+        "maximum": 117.0,
+        "mean": 116.0,
+        "median": 116.0,
+        "minimum": 115.0,
+        "n": 128,
+        "standard_deviation": 1.0039292882210538
+      },
+      "variant": "CODE_MAPPED_HIGH",
+      "variant_accuracy": 0.71875
+    },
+    "code_mapped_low_vs_neutral_low": {
+      "absolute_decision_margin_shift": {
+        "maximum": 15.625,
+        "mean": 3.408203125,
+        "median": 2.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 3.3817002743911133
+      },
+      "accuracy_change_variant_minus_baseline": -0.0078125,
+      "baseline": "NEUTRAL_LOW",
+      "baseline_accuracy": 0.6328125,
+      "character_savings_variant_vs_baseline": {
+        "maximum": 20.0,
+        "mean": 18.5,
+        "median": 18.5,
+        "minimum": 17.0,
+        "n": 128,
+        "standard_deviation": 1.5058939323315805
+      },
+      "compactness_behavior_classes": {
+        "VARIANT_SHORTER_CHOICE_CHANGED": 23,
+        "VARIANT_SHORTER_CHOICE_PRESERVED": 105
+      },
+      "corrections": 11,
+      "correctness_agreement_rate": 0.8203125,
+      "descriptive_associations": {
+        "character_savings_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            17.0,
+            20.0
+          ],
+          "spearman_rho": 0.020348923188911988,
+          "status": "ESTIMABLE_DESCRIPTIVE",
+          "two_sided_p_descriptive": 0.8196563753093742
+        },
+        "input_token_savings_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            8.0
+          ],
+          "spearman_rho": null,
+          "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+          "two_sided_p_descriptive": null
+        },
+        "surface_edit_distance_vs_absolute_margin_shift": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            0.25,
+            0.375,
+            0.5,
+            0.625,
+            0.75,
+            0.875,
+            1.0,
+            1.125,
+            1.25,
+            1.375,
+            1.5,
+            1.75,
+            2.0,
+            2.125,
+            2.25,
+            2.375,
+            2.5,
+            2.625,
+            2.75,
+            3.0,
+            3.125,
+            3.5,
+            3.75,
+            3.875,
+            4.125,
+            4.25,
+            4.375,
+            4.5,
+            4.75,
+            5.0,
+            5.125,
+            5.25,
+            5.5,
+            6.0,
+            6.25,
+            6.5,
+            6.75,
+            6.875,
+            7.25,
+            7.875,
+            8.0,
+            8.25,
+            8.625,
+            9.25,
+            10.875,
+            11.5,
+            11.625,
+            11.75,
+            13.25,
+            15.625
+          ],
+          "predictor_unique_values": [
+            115.0,
+            117.0
+          ],
+          "spearman_rho": -0.028779145786029012,
+          "status": "ESTIMABLE_DESCRIPTIVE",
+          "two_sided_p_descriptive": 0.7470954333778097
+        },
+        "surface_edit_distance_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            115.0,
+            117.0
+          ],
+          "spearman_rho": 0.020348923188911988,
+          "status": "ESTIMABLE_DESCRIPTIVE",
+          "two_sided_p_descriptive": 0.8196563753093742
+        }
+      },
+      "frozen_structural_signature_preserved_n": 128,
+      "input_token_savings_variant_vs_baseline": {
+        "maximum": 8.0,
+        "mean": 8.0,
+        "median": 8.0,
+        "minimum": 8.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "n": 128,
+      "parsed_choice_agreement_rate": 0.8203125,
+      "pass_transition_rate": 0.1796875,
+      "regressions": 12,
+      "role": "same LOW relational structure and decision; alternate frozen factor/task representation",
+      "status": "COMPLETE_POSTHOC_DESCRIPTIVE",
+      "surface_edit_distance_characters": {
+        "maximum": 117.0,
+        "mean": 116.0,
+        "median": 116.0,
+        "minimum": 115.0,
+        "n": 128,
+        "standard_deviation": 1.0039292882210538
+      },
+      "variant": "CODE_MAPPED_LOW",
+      "variant_accuracy": 0.625
+    },
+    "nonrel_control_high_vs_neutral_high": {
+      "absolute_decision_margin_shift": {
+        "maximum": 3.5,
+        "mean": 0.6943359375,
+        "median": 0.5,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.6064792455094896
+      },
+      "accuracy_change_variant_minus_baseline": 0.03125,
+      "baseline": "NEUTRAL_HIGH",
+      "baseline_accuracy": 0.53125,
+      "character_savings_variant_vs_baseline": {
+        "maximum": -22.0,
+        "mean": -22.0,
+        "median": -22.0,
+        "minimum": -22.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "compactness_behavior_classes": {
+        "VARIANT_LONGER_CHOICE_CHANGED": 10,
+        "VARIANT_LONGER_CHOICE_PRESERVED": 118
+      },
+      "corrections": 7,
+      "correctness_agreement_rate": 0.921875,
+      "descriptive_associations": {
+        "character_savings_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            -22.0
+          ],
+          "spearman_rho": null,
+          "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+          "two_sided_p_descriptive": null
+        },
+        "input_token_savings_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            -7.0
+          ],
+          "spearman_rho": null,
+          "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+          "two_sided_p_descriptive": null
+        },
+        "surface_edit_distance_vs_absolute_margin_shift": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            0.125,
+            0.25,
+            0.375,
+            0.5,
+            0.625,
+            0.75,
+            0.875,
+            1.0,
+            1.125,
+            1.25,
+            1.375,
+            1.5,
+            1.625,
+            1.75,
+            1.875,
+            2.0,
+            2.25,
+            2.625,
+            3.5
+          ],
+          "predictor_unique_values": [
+            22.0
+          ],
+          "spearman_rho": null,
+          "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+          "two_sided_p_descriptive": null
+        },
+        "surface_edit_distance_vs_choice_change": {
+          "n": 128,
+          "outcome_unique_values": [
+            0.0,
+            1.0
+          ],
+          "predictor_unique_values": [
+            22.0
+          ],
+          "spearman_rho": null,
+          "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+          "two_sided_p_descriptive": null
+        }
+      },
+      "frozen_structural_signature_preserved_n": 128,
+      "input_token_savings_variant_vs_baseline": {
+        "maximum": -7.0,
+        "mean": -7.0,
+        "median": -7.0,
+        "minimum": -7.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "n": 128,
+      "parsed_choice_agreement_rate": 0.921875,
+      "pass_transition_rate": 0.078125,
+      "regressions": 3,
+      "role": "same HIGH relational structure and decision; matched generic surface perturbation",
+      "status": "COMPLETE_POSTHOC_DESCRIPTIVE",
+      "surface_edit_distance_characters": {
+        "maximum": 22.0,
+        "mean": 22.0,
+        "median": 22.0,
+        "minimum": 22.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "variant": "NONREL_CONTROL_HIGH",
+      "variant_accuracy": 0.5625
+    }
+  },
+  "interpretation_limits": [
+    "The frozen variants were not generated as a paraphrase-distance experiment.",
+    "Levenshtein distance measures surface edits, not relational or semantic distance.",
+    "Token savings are model-specific because they use the pinned tokenizer.",
+    "Choice preservation does not establish an internal relational mechanism.",
+    "Post-hoc associations are descriptive and are omitted when either variable has no variation."
+  ],
+  "measurement_definition": {
+    "behavioral_fidelity": "Exact parsed-choice agreement, correctness transitions, and absolute change in the frozen decision margin.",
+    "character_savings_variant_vs_baseline": "baseline full-prompt character count minus variant count; positive means the variant is shorter.",
+    "efficiency_question": "Whether a more compact representation preserves the same choice and similar decision margin. Compactness and behavioral fidelity are reported separately rather than collapsed into an unsupported scalar.",
+    "input_token_savings_variant_vs_baseline": "baseline pinned-tokenizer input count minus variant count; positive means the variant uses fewer model tokens.",
+    "relational_structure": "Operationally checked here only as equality of the six frozen structural metrics within a matched fixture. This is not an independently validated graph-isomorphism or mechanistic measure.",
+    "surface_edit_distance_characters": "Frozen character-level Levenshtein distance between a variant's full chat-formatted prompt and the same fixture/complexity Neutral prompt."
+  },
+  "role": "Surface-form and representation-efficiency summary added after outcomes were observed. It is not preregistered, confirmatory, or a replacement for the frozen primary/secondary analyses.",
+  "status": "POSTHOC_DESCRIPTIVE_COMPLETE"
+}

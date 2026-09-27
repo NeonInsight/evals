@@ -1,0 +1,462 @@
+{
+  "role": "Companion metadata for the frozen length/structure analysis. It does not substitute a new inferential test.",
+  "rule": "A rank correlation is reported only when n >= 3 and both predictor and correctness vary. Otherwise the coefficient and p-value are null with an explicit reason.",
+  "scopes": {
+    "CODE_MAPPED_HIGH": {
+      "character_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1148.0,
+          1149.0,
+          1151.0,
+          1152.0,
+          1156.0,
+          1157.0,
+          1158.0,
+          1159.0,
+          1160.0,
+          1161.0,
+          1162.0,
+          1163.0,
+          1164.0,
+          1168.0,
+          1169.0,
+          1171.0,
+          1172.0
+        ],
+        "spearman_rho": -0.12680135695126277,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.15378622484107501
+      },
+      "edit_distance_from_neutral_baseline": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          115.0,
+          117.0
+        ],
+        "spearman_rho": 0.03475240234284579,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.6969512562005531
+      },
+      "input_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          276.0,
+          277.0
+        ],
+        "spearman_rho": -0.03475240234284579,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.6969512562005531
+      },
+      "output_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1.0,
+          3.0
+        ],
+        "spearman_rho": 0.12612169046575017,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.15602217133263413
+      }
+    },
+    "CODE_MAPPED_LOW": {
+      "character_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          765.0,
+          766.0,
+          768.0,
+          769.0,
+          773.0,
+          774.0,
+          775.0,
+          776.0,
+          777.0,
+          778.0,
+          779.0,
+          780.0,
+          781.0,
+          785.0,
+          786.0,
+          788.0,
+          789.0
+        ],
+        "spearman_rho": 0.050971410087199055,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.5677351494352478
+      },
+      "edit_distance_from_neutral_baseline": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          115.0,
+          117.0
+        ],
+        "spearman_rho": 0.12909944487358055,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.14640418364360674
+      },
+      "input_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          194.0,
+          195.0
+        ],
+        "spearman_rho": 0.0,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 1.0
+      },
+      "output_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1.0,
+          3.0
+        ],
+        "spearman_rho": 0.2375084343981417,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.0069447425668573304
+      }
+    },
+    "NEUTRAL_HIGH": {
+      "character_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1168.0,
+          1169.0,
+          1176.0,
+          1177.0,
+          1178.0,
+          1179.0,
+          1180.0,
+          1181.0,
+          1188.0,
+          1189.0
+        ],
+        "spearman_rho": 0.09997028673237036,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.26154168590784294
+      },
+      "edit_distance_from_neutral_baseline": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          0.0
+        ],
+        "spearman_rho": null,
+        "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+        "two_sided_p_descriptive": null
+      },
+      "input_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          284.0,
+          285.0
+        ],
+        "spearman_rho": 0.03131121455425747,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.7256956845629532
+      },
+      "output_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1.0,
+          3.0
+        ],
+        "spearman_rho": -0.2363924170342104,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.007222116823442663
+      }
+    },
+    "NEUTRAL_LOW": {
+      "character_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          785.0,
+          786.0,
+          793.0,
+          794.0,
+          795.0,
+          796.0,
+          797.0,
+          798.0,
+          805.0,
+          806.0
+        ],
+        "spearman_rho": 0.09100217313579971,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.30697323818866623
+      },
+      "edit_distance_from_neutral_baseline": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          0.0
+        ],
+        "spearman_rho": null,
+        "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+        "two_sided_p_descriptive": null
+      },
+      "input_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          202.0,
+          203.0
+        ],
+        "spearman_rho": -0.01620722127754384,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.8559147483874425
+      },
+      "output_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1.0,
+          3.0
+        ],
+        "spearman_rho": 0.13379493116639318,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.1321581496603429
+      }
+    },
+    "NONREL_CONTROL_HIGH": {
+      "character_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1190.0,
+          1191.0,
+          1198.0,
+          1199.0,
+          1200.0,
+          1201.0,
+          1202.0,
+          1203.0,
+          1210.0,
+          1211.0
+        ],
+        "spearman_rho": 0.12310370183110418,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.1662456907334142
+      },
+      "edit_distance_from_neutral_baseline": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          22.0
+        ],
+        "spearman_rho": null,
+        "status": "NOT_ESTIMABLE_ZERO_VARIANCE_PREDICTOR",
+        "two_sided_p_descriptive": null
+      },
+      "input_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          291.0,
+          292.0
+        ],
+        "spearman_rho": 0.0314970394174356,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.7241332598281716
+      },
+      "output_token_count": {
+        "n": 128,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1.0,
+          3.0
+        ],
+        "spearman_rho": -0.16265001215808886,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.06660086204753538
+      }
+    },
+    "all_primary": {
+      "character_count": {
+        "n": 512,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          765.0,
+          766.0,
+          768.0,
+          769.0,
+          773.0,
+          774.0,
+          775.0,
+          776.0,
+          777.0,
+          778.0,
+          779.0,
+          780.0,
+          781.0,
+          785.0,
+          786.0,
+          788.0,
+          789.0,
+          793.0,
+          794.0,
+          795.0,
+          796.0,
+          797.0,
+          798.0,
+          805.0,
+          806.0,
+          1148.0,
+          1149.0,
+          1151.0,
+          1152.0,
+          1156.0,
+          1157.0,
+          1158.0,
+          1159.0,
+          1160.0,
+          1161.0,
+          1162.0,
+          1163.0,
+          1164.0,
+          1168.0,
+          1169.0,
+          1171.0,
+          1172.0,
+          1176.0,
+          1177.0,
+          1178.0,
+          1179.0,
+          1180.0,
+          1181.0,
+          1188.0,
+          1189.0
+        ],
+        "spearman_rho": -0.03412569179054938,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.44099542014774085
+      },
+      "edit_distance_from_neutral_baseline": {
+        "n": 512,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          0.0,
+          115.0,
+          117.0
+        ],
+        "spearman_rho": 0.10661359066164577,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.015805513455713183
+      },
+      "input_token_count": {
+        "n": 512,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          194.0,
+          195.0,
+          202.0,
+          203.0,
+          276.0,
+          277.0,
+          284.0,
+          285.0
+        ],
+        "spearman_rho": -0.0449460291278323,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.3100868430831977
+      },
+      "output_token_count": {
+        "n": 512,
+        "outcome_unique_values": [
+          0.0,
+          1.0
+        ],
+        "predictor_unique_values": [
+          1.0,
+          3.0
+        ],
+        "spearman_rho": -0.012524593887463213,
+        "status": "ESTIMABLE_DESCRIPTIVE",
+        "two_sided_p_descriptive": 0.7773933029677937
+      }
+    }
+  },
+  "source_analysis": "length_structural_control_analysis.json",
+  "status": "COMPLETE_DESCRIPTIVE_ESTIMABILITY_AUDIT"
+}

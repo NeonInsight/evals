@@ -1,0 +1,18 @@
+{
+  "compatibility_correction": "Non-finite descriptive statistics caused by constant-input Spearman correlations were serialized as JSON null instead of invalid NaN.",
+  "estimability_metadata": "length_structural_correlation_estimability.json",
+  "frozen_inputs_or_observations_changed": false,
+  "frozen_primary_or_secondary_definition_changed": false,
+  "phase0_hash_verification": "required before collection and again before publication",
+  "posthoc_addition": "posthoc_surface_efficiency_analysis.json",
+  "protocol": "res-confirmatory-study1-complexity-continuation-v1",
+  "recovery_commit": "f8e5145629128262d79b8a4285a04f55c5a754ae",
+  "recovery_workflow_run_id": "36335796513",
+  "source_artifact_id": 10936466534,
+  "source_artifact_name": "res-cs1c-collected-1",
+  "source_observations": 640,
+  "source_run_id": 36324399210,
+  "source_run_manifest_status": "COMPLETE_ATTEMPTED_ALL_FIXTURES",
+  "status": "ANALYSIS_RECOVERY_COMPLETE",
+  "target_model_calls_made_by_recovery": 0
+}

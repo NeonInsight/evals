@@ -1,0 +1,886 @@
+{
+  "by_condition": {
+    "CODE_MAPPED_HIGH": {
+      "character_count": {
+        "maximum": 1172.0,
+        "mean": 1160.0,
+        "median": 1160.0,
+        "minimum": 1148.0,
+        "n": 128,
+        "standard_deviation": 5.359515784921143
+      },
+      "conjunction_dependency_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 117.0,
+        "mean": 116.0,
+        "median": 116.0,
+        "minimum": 115.0,
+        "n": 128,
+        "standard_deviation": 1.0039292882210538
+      },
+      "input_token_count": {
+        "maximum": 277.0,
+        "mean": 276.5,
+        "median": 276.5,
+        "minimum": 276.0,
+        "n": 128,
+        "standard_deviation": 0.5019646441105269
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 3.0,
+        "mean": 1.078125,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.3890099486613168
+      },
+      "relational_binding_count": {
+        "maximum": 9.0,
+        "mean": 9.0,
+        "median": 9.0,
+        "minimum": 9.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 5.0,
+        "mean": 5.0,
+        "median": 5.0,
+        "minimum": 5.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    },
+    "CODE_MAPPED_LOW": {
+      "character_count": {
+        "maximum": 789.0,
+        "mean": 777.0,
+        "median": 777.0,
+        "minimum": 765.0,
+        "n": 128,
+        "standard_deviation": 5.359515784921143
+      },
+      "conjunction_dependency_count": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 117.0,
+        "mean": 116.0,
+        "median": 116.0,
+        "minimum": 115.0,
+        "n": 128,
+        "standard_deviation": 1.0039292882210538
+      },
+      "input_token_count": {
+        "maximum": 195.0,
+        "mean": 194.5,
+        "median": 194.5,
+        "minimum": 194.0,
+        "n": 128,
+        "standard_deviation": 0.5019646441105269
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 3.0,
+        "mean": 1.171875,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.5627460091961042
+      },
+      "relational_binding_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 2.0,
+        "mean": 2.0,
+        "median": 2.0,
+        "minimum": 2.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    },
+    "NEUTRAL_HIGH": {
+      "character_count": {
+        "maximum": 1189.0,
+        "mean": 1178.5,
+        "median": 1178.5,
+        "minimum": 1168.0,
+        "n": 128,
+        "standard_deviation": 5.143606994453
+      },
+      "conjunction_dependency_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "input_token_count": {
+        "maximum": 285.0,
+        "mean": 284.5,
+        "median": 284.5,
+        "minimum": 284.0,
+        "n": 128,
+        "standard_deviation": 0.5019646441105269
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 3.0,
+        "mean": 1.484375,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.8601810375280512
+      },
+      "relational_binding_count": {
+        "maximum": 9.0,
+        "mean": 9.0,
+        "median": 9.0,
+        "minimum": 9.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 5.0,
+        "mean": 5.0,
+        "median": 5.0,
+        "minimum": 5.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    },
+    "NEUTRAL_LOW": {
+      "character_count": {
+        "maximum": 806.0,
+        "mean": 795.5,
+        "median": 795.5,
+        "minimum": 785.0,
+        "n": 128,
+        "standard_deviation": 5.143606994453
+      },
+      "conjunction_dependency_count": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "input_token_count": {
+        "maximum": 203.0,
+        "mean": 202.5,
+        "median": 202.5,
+        "minimum": 202.0,
+        "n": 128,
+        "standard_deviation": 0.5019646441105269
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 3.0,
+        "mean": 1.1875,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.5852518133584638
+      },
+      "relational_binding_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 2.0,
+        "mean": 2.0,
+        "median": 2.0,
+        "minimum": 2.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    },
+    "NONREL_CONTROL_HIGH": {
+      "character_count": {
+        "maximum": 1211.0,
+        "mean": 1200.5,
+        "median": 1200.5,
+        "minimum": 1190.0,
+        "n": 128,
+        "standard_deviation": 5.143606994453
+      },
+      "conjunction_dependency_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 22.0,
+        "mean": 22.0,
+        "median": 22.0,
+        "minimum": 22.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "input_token_count": {
+        "maximum": 292.0,
+        "mean": 291.5,
+        "median": 291.5,
+        "minimum": 291.0,
+        "n": 128,
+        "standard_deviation": 0.5019646441105269
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 3.0,
+        "mean": 1.125,
+        "median": 1.0,
+        "minimum": 1.0,
+        "n": 128,
+        "standard_deviation": 0.48602517675625084
+      },
+      "relational_binding_count": {
+        "maximum": 9.0,
+        "mean": 9.0,
+        "median": 9.0,
+        "minimum": 9.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 5.0,
+        "mean": 5.0,
+        "median": 5.0,
+        "minimum": 5.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    }
+  },
+  "descriptive_length_correctness_correlations": {
+    "CODE_MAPPED_HIGH": {
+      "character_count": {
+        "spearman_rho": -0.12680135695126277,
+        "two_sided_p_descriptive": 0.15378622484107501
+      },
+      "edit_distance_from_neutral_baseline": {
+        "spearman_rho": 0.03475240234284579,
+        "two_sided_p_descriptive": 0.6969512562005531
+      },
+      "input_token_count": {
+        "spearman_rho": -0.03475240234284579,
+        "two_sided_p_descriptive": 0.6969512562005531
+      },
+      "output_token_count": {
+        "spearman_rho": 0.12612169046575017,
+        "two_sided_p_descriptive": 0.15602217133263413
+      }
+    },
+    "CODE_MAPPED_LOW": {
+      "character_count": {
+        "spearman_rho": 0.050971410087199055,
+        "two_sided_p_descriptive": 0.5677351494352478
+      },
+      "edit_distance_from_neutral_baseline": {
+        "spearman_rho": 0.12909944487358055,
+        "two_sided_p_descriptive": 0.14640418364360674
+      },
+      "input_token_count": {
+        "spearman_rho": 0.0,
+        "two_sided_p_descriptive": 1.0
+      },
+      "output_token_count": {
+        "spearman_rho": 0.2375084343981417,
+        "two_sided_p_descriptive": 0.0069447425668573304
+      }
+    },
+    "NEUTRAL_HIGH": {
+      "character_count": {
+        "spearman_rho": 0.09997028673237036,
+        "two_sided_p_descriptive": 0.26154168590784294
+      },
+      "edit_distance_from_neutral_baseline": {
+        "spearman_rho": null,
+        "two_sided_p_descriptive": null
+      },
+      "input_token_count": {
+        "spearman_rho": 0.03131121455425747,
+        "two_sided_p_descriptive": 0.7256956845629532
+      },
+      "output_token_count": {
+        "spearman_rho": -0.2363924170342104,
+        "two_sided_p_descriptive": 0.007222116823442663
+      }
+    },
+    "NEUTRAL_LOW": {
+      "character_count": {
+        "spearman_rho": 0.09100217313579971,
+        "two_sided_p_descriptive": 0.30697323818866623
+      },
+      "edit_distance_from_neutral_baseline": {
+        "spearman_rho": null,
+        "two_sided_p_descriptive": null
+      },
+      "input_token_count": {
+        "spearman_rho": -0.01620722127754384,
+        "two_sided_p_descriptive": 0.8559147483874425
+      },
+      "output_token_count": {
+        "spearman_rho": 0.13379493116639318,
+        "two_sided_p_descriptive": 0.1321581496603429
+      }
+    },
+    "NONREL_CONTROL_HIGH": {
+      "character_count": {
+        "spearman_rho": 0.12310370183110418,
+        "two_sided_p_descriptive": 0.1662456907334142
+      },
+      "edit_distance_from_neutral_baseline": {
+        "spearman_rho": null,
+        "two_sided_p_descriptive": null
+      },
+      "input_token_count": {
+        "spearman_rho": 0.0314970394174356,
+        "two_sided_p_descriptive": 0.7241332598281716
+      },
+      "output_token_count": {
+        "spearman_rho": -0.16265001215808886,
+        "two_sided_p_descriptive": 0.06660086204753538
+      }
+    },
+    "all_primary": {
+      "character_count": {
+        "spearman_rho": -0.03412569179054938,
+        "two_sided_p_descriptive": 0.44099542014774085
+      },
+      "edit_distance_from_neutral_baseline": {
+        "spearman_rho": 0.10661359066164577,
+        "two_sided_p_descriptive": 0.015805513455713183
+      },
+      "input_token_count": {
+        "spearman_rho": -0.0449460291278323,
+        "two_sided_p_descriptive": 0.3100868430831977
+      },
+      "output_token_count": {
+        "spearman_rho": -0.012524593887463213,
+        "two_sided_p_descriptive": 0.7773933029677937
+      }
+    }
+  },
+  "interpretation_rule": "Length and structure results are descriptive controls; stimuli and primary inference remain frozen regardless of their values.",
+  "length_adjusted_gee_diagnostic": {
+    "coefficients": {
+      "centered_tokens": -0.01860594745713672,
+      "const": 0.42708577450150986,
+      "high": 0.5800125572475279,
+      "neutral": 0.048360691656528024,
+      "neutral_by_high": -0.846582524945438
+    },
+    "role": "length diagnostic only; not a replacement primary model",
+    "standard_errors": {
+      "centered_tokens": 3.0136328086269124,
+      "const": 13.560704993945798,
+      "high": 24.702706823023934,
+      "neutral": 2.4127503919085593,
+      "neutral_by_high": 0.24191283165118613
+    },
+    "status": "DESCRIPTIVE_FIT"
+  },
+  "measures": [
+    "character_count",
+    "input_token_count",
+    "output_token_count",
+    "edit_distance_from_neutral_baseline",
+    "task_relevant_actor_entity_count",
+    "relational_binding_count",
+    "directed_role_delegation_count",
+    "maximum_relational_nesting_depth",
+    "locus_of_action_transition_count",
+    "conjunction_dependency_count"
+  ],
+  "paired_differences": {
+    "code_mapped_minus_neutral_high": {
+      "character_count": {
+        "maximum": -17.0,
+        "mean": -18.5,
+        "median": -18.5,
+        "minimum": -20.0,
+        "n": 128,
+        "standard_deviation": 1.5058939323315805
+      },
+      "conjunction_dependency_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 117.0,
+        "mean": 116.0,
+        "median": 116.0,
+        "minimum": 115.0,
+        "n": 128,
+        "standard_deviation": 1.0039292882210538
+      },
+      "input_token_count": {
+        "maximum": -8.0,
+        "mean": -8.0,
+        "median": -8.0,
+        "minimum": -8.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 2.0,
+        "mean": -0.40625,
+        "median": 0.0,
+        "minimum": -2.0,
+        "n": 128,
+        "standard_deviation": 0.9510665376592313
+      },
+      "relational_binding_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    },
+    "code_mapped_minus_neutral_low": {
+      "character_count": {
+        "maximum": -17.0,
+        "mean": -18.5,
+        "median": -18.5,
+        "minimum": -20.0,
+        "n": 128,
+        "standard_deviation": 1.5058939323315805
+      },
+      "conjunction_dependency_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 117.0,
+        "mean": 116.0,
+        "median": 116.0,
+        "minimum": 115.0,
+        "n": 128,
+        "standard_deviation": 1.0039292882210538
+      },
+      "input_token_count": {
+        "maximum": -8.0,
+        "mean": -8.0,
+        "median": -8.0,
+        "minimum": -8.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 2.0,
+        "mean": -0.015625,
+        "median": 0.0,
+        "minimum": -2.0,
+        "n": 128,
+        "standard_deviation": 0.7734204121034483
+      },
+      "relational_binding_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    },
+    "high_minus_low_code_mapped": {
+      "character_count": {
+        "maximum": 383.0,
+        "mean": 383.0,
+        "median": 383.0,
+        "minimum": 383.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "conjunction_dependency_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "input_token_count": {
+        "maximum": 82.0,
+        "mean": 82.0,
+        "median": 82.0,
+        "minimum": 82.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 2.0,
+        "mean": 2.0,
+        "median": 2.0,
+        "minimum": 2.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 0.0,
+        "mean": -0.09375,
+        "median": 0.0,
+        "minimum": -2.0,
+        "n": 128,
+        "standard_deviation": 0.42440324013397973
+      },
+      "relational_binding_count": {
+        "maximum": 6.0,
+        "mean": 6.0,
+        "median": 6.0,
+        "minimum": 6.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    },
+    "high_minus_low_neutral": {
+      "character_count": {
+        "maximum": 383.0,
+        "mean": 383.0,
+        "median": 383.0,
+        "minimum": 383.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "conjunction_dependency_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "directed_role_delegation_count": {
+        "maximum": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "minimum": 4.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "edit_distance_from_neutral_baseline": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "input_token_count": {
+        "maximum": 82.0,
+        "mean": 82.0,
+        "median": 82.0,
+        "minimum": 82.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 2.0,
+        "mean": 2.0,
+        "median": 2.0,
+        "minimum": 2.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "output_token_count": {
+        "maximum": 2.0,
+        "mean": 0.296875,
+        "median": 0.0,
+        "minimum": -2.0,
+        "n": 128,
+        "standard_deviation": 0.9749570957650788
+      },
+      "relational_binding_count": {
+        "maximum": 6.0,
+        "mean": 6.0,
+        "median": 6.0,
+        "minimum": 6.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 3.0,
+        "mean": 3.0,
+        "median": 3.0,
+        "minimum": 3.0,
+        "n": 128,
+        "standard_deviation": 0.0
+      }
+    }
+  },
+  "status": "COMPLETE"
+}

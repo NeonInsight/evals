@@ -1,0 +1,1260 @@
+{
+  "alpha": 0.05,
+  "alpha_sidedness": "two-sided",
+  "cells": {
+    "CODE_MAPPED_HIGH": {
+      "clopper_pearson_95_ci": [
+        0.6324768061351952,
+        0.7946129348684058
+      ],
+      "n": 128,
+      "passes": 92,
+      "proportion": 0.71875
+    },
+    "CODE_MAPPED_LOW": {
+      "clopper_pearson_95_ci": [
+        0.5351108510265343,
+        0.7089650098495499
+      ],
+      "n": 128,
+      "passes": 80,
+      "proportion": 0.625
+    },
+    "NEUTRAL_HIGH": {
+      "clopper_pearson_95_ci": [
+        0.44105282866530526,
+        0.6199685380605667
+      ],
+      "n": 128,
+      "passes": 68,
+      "proportion": 0.53125
+    },
+    "NEUTRAL_LOW": {
+      "clopper_pearson_95_ci": [
+        0.5430915177920569,
+        0.7162376082446532
+      ],
+      "n": 128,
+      "passes": 81,
+      "proportion": 0.6328125
+    }
+  },
+  "coding": "neutral=1, high=1; predicted neutral-by-high interaction is positive",
+  "complete_fixture_ids": [
+    "RESCS1C-C000",
+    "RESCS1C-C001",
+    "RESCS1C-C002",
+    "RESCS1C-C003",
+    "RESCS1C-C004",
+    "RESCS1C-C005",
+    "RESCS1C-C006",
+    "RESCS1C-C007",
+    "RESCS1C-C008",
+    "RESCS1C-C009",
+    "RESCS1C-C010",
+    "RESCS1C-C011",
+    "RESCS1C-C012",
+    "RESCS1C-C013",
+    "RESCS1C-C014",
+    "RESCS1C-C015",
+    "RESCS1C-C016",
+    "RESCS1C-C017",
+    "RESCS1C-C018",
+    "RESCS1C-C019",
+    "RESCS1C-C020",
+    "RESCS1C-C021",
+    "RESCS1C-C022",
+    "RESCS1C-C023",
+    "RESCS1C-C024",
+    "RESCS1C-C025",
+    "RESCS1C-C026",
+    "RESCS1C-C027",
+    "RESCS1C-C028",
+    "RESCS1C-C029",
+    "RESCS1C-C030",
+    "RESCS1C-C031",
+    "RESCS1C-C032",
+    "RESCS1C-C033",
+    "RESCS1C-C034",
+    "RESCS1C-C035",
+    "RESCS1C-C036",
+    "RESCS1C-C037",
+    "RESCS1C-C038",
+    "RESCS1C-C039",
+    "RESCS1C-C040",
+    "RESCS1C-C041",
+    "RESCS1C-C042",
+    "RESCS1C-C043",
+    "RESCS1C-C044",
+    "RESCS1C-C045",
+    "RESCS1C-C046",
+    "RESCS1C-C047",
+    "RESCS1C-C048",
+    "RESCS1C-C049",
+    "RESCS1C-C050",
+    "RESCS1C-C051",
+    "RESCS1C-C052",
+    "RESCS1C-C053",
+    "RESCS1C-C054",
+    "RESCS1C-C055",
+    "RESCS1C-C056",
+    "RESCS1C-C057",
+    "RESCS1C-C058",
+    "RESCS1C-C059",
+    "RESCS1C-C060",
+    "RESCS1C-C061",
+    "RESCS1C-C062",
+    "RESCS1C-C063",
+    "RESCS1C-C064",
+    "RESCS1C-C065",
+    "RESCS1C-C066",
+    "RESCS1C-C067",
+    "RESCS1C-C068",
+    "RESCS1C-C069",
+    "RESCS1C-C070",
+    "RESCS1C-C071",
+    "RESCS1C-C072",
+    "RESCS1C-C073",
+    "RESCS1C-C074",
+    "RESCS1C-C075",
+    "RESCS1C-C076",
+    "RESCS1C-C077",
+    "RESCS1C-C078",
+    "RESCS1C-C079",
+    "RESCS1C-C080",
+    "RESCS1C-C081",
+    "RESCS1C-C082",
+    "RESCS1C-C083",
+    "RESCS1C-C084",
+    "RESCS1C-C085",
+    "RESCS1C-C086",
+    "RESCS1C-C087",
+    "RESCS1C-C088",
+    "RESCS1C-C089",
+    "RESCS1C-C090",
+    "RESCS1C-C091",
+    "RESCS1C-C092",
+    "RESCS1C-C093",
+    "RESCS1C-C094",
+    "RESCS1C-C095",
+    "RESCS1C-C096",
+    "RESCS1C-C097",
+    "RESCS1C-C098",
+    "RESCS1C-C099",
+    "RESCS1C-C100",
+    "RESCS1C-C101",
+    "RESCS1C-C102",
+    "RESCS1C-C103",
+    "RESCS1C-C104",
+    "RESCS1C-C105",
+    "RESCS1C-C106",
+    "RESCS1C-C107",
+    "RESCS1C-C108",
+    "RESCS1C-C109",
+    "RESCS1C-C110",
+    "RESCS1C-C111",
+    "RESCS1C-C112",
+    "RESCS1C-C113",
+    "RESCS1C-C114",
+    "RESCS1C-C115",
+    "RESCS1C-C116",
+    "RESCS1C-C117",
+    "RESCS1C-C118",
+    "RESCS1C-C119",
+    "RESCS1C-C120",
+    "RESCS1C-C121",
+    "RESCS1C-C122",
+    "RESCS1C-C123",
+    "RESCS1C-C124",
+    "RESCS1C-C125",
+    "RESCS1C-C126",
+    "RESCS1C-C127"
+  ],
+  "complete_primary_fixtures": 128,
+  "conditional_logistic": {
+    "conditional_success_totals": {
+      "1": 25,
+      "2": 10,
+      "3": 20
+    },
+    "convergence_reason": "gradient/step tolerance reached",
+    "covariance": [
+      [
+        0.1535986577144448,
+        0.07780508403297871,
+        -0.15520783999236773
+      ],
+      [
+        0.07780508403297874,
+        0.150298533565636,
+        -0.15857608559121372
+      ],
+      [
+        -0.15520783999236773,
+        -0.15857608559121367,
+        0.33021686209075507
+      ]
+    ],
+    "degenerate_all_fail": 19,
+    "degenerate_all_pass": 54,
+    "gradient_max_abs": 7.034373084024992e-13,
+    "iterations": 4,
+    "log_likelihood": -70.00453249061655,
+    "n_fixtures": 128,
+    "n_informative_fixtures": 55,
+    "status": "FIT_CONVERGED",
+    "terms": {
+      "high": {
+        "ci_95_log_odds": [
+          0.09957065198260906,
+          1.6192622358286268
+        ],
+        "ci_95_odds_ratio": [
+          1.1046965169819658,
+          5.049363702423822
+        ],
+        "log_odds": 0.8594164439056179,
+        "odds_ratio": 2.361782059175393,
+        "standard_error": 0.38768354822668966,
+        "two_sided_wald_p": 0.026636840139294665
+      },
+      "neutral": {
+        "ci_95_log_odds": [
+          -0.6913708021409309,
+          0.8449142215756081
+        ],
+        "ci_95_odds_ratio": [
+          0.5008889785569031,
+          2.3277781328655953
+        ],
+        "log_odds": 0.07677170971733863,
+        "odds_ratio": 1.079795541423534,
+        "standard_error": 0.3919166463859947,
+        "two_sided_wald_p": 0.8446979463783256
+      },
+      "neutral_by_high": {
+        "ci_95_log_odds": [
+          -2.9836315580357877,
+          -0.7310645977698189
+        ],
+        "ci_95_odds_ratio": [
+          0.05060871126921593,
+          0.48139622384742536
+        ],
+        "log_odds": -1.8573480779028033,
+        "odds_ratio": 0.15608600993934463,
+        "standard_error": 0.5746449878757798,
+        "two_sided_wald_p": 0.001228555996974717
+      }
+    }
+  },
+  "fallback_reason": null,
+  "fallback_triggered": false,
+  "gee_fallback": null,
+  "incomplete_primary_fixtures": [],
+  "interpretation": {
+    "category": "CONTRARY_DIRECTION_RESULT",
+    "statement": "The interval excludes zero on the negative side, contrary to the preregistered direction. A practically meaningful contrary-direction interaction is supported or compatible with the interval."
+  },
+  "matched_four_cell_vectors": [
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C000"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C001"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C002"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C003"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C004"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C005"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C006"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C007"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C008"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C009"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C010"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C011"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C012"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C013"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C014"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C015"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C016"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C017"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C018"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C019"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C020"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C021"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C022"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C023"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C024"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C025"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C026"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C027"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C028"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C029"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C030"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C031"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C032"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C033"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C034"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C035"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C036"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C037"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C038"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C039"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C040"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C041"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C042"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C043"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C044"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C045"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C046"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C047"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C048"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C049"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C050"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C051"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C052"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C053"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C054"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C055"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C056"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C057"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C058"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C059"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C060"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C061"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C062"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C063"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C064"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C065"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C066"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C067"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C068"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C069"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C070"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C071"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C072"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C073"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C074"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C075"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C076"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C077"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C078"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C079"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C080"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C081"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C082"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C083"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C084"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C085"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C086"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C087"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C088"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C089"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C090"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C091"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C092"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C093"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C094"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C095"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C096"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C097"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C098"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C099"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C100"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C101"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C102"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C103"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C104"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C105"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C106"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C107"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C108"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C109"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C110"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C111"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C112"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C113"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C114"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C115"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C116"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C117"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C118"
+    },
+    {
+      "CODE_MAPPED_HIGH": 0,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C119"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C120"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C121"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C122"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C123"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 0,
+      "NEUTRAL_HIGH": 0,
+      "NEUTRAL_LOW": 0,
+      "fixture_id": "RESCS1C-C124"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C125"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C126"
+    },
+    {
+      "CODE_MAPPED_HIGH": 1,
+      "CODE_MAPPED_LOW": 1,
+      "NEUTRAL_HIGH": 1,
+      "NEUTRAL_LOW": 1,
+      "fixture_id": "RESCS1C-C127"
+    }
+  ],
+  "probability_scale": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 2026092705,
+    "code_mapped_high": 0.71875,
+    "code_mapped_low": 0.625,
+    "framing_effect_high": -0.1875,
+    "framing_effect_high_95_ci": [
+      -0.28125,
+      -0.09375
+    ],
+    "framing_effect_low": 0.0078125,
+    "framing_effect_low_95_ci": [
+      -0.0625,
+      0.078125
+    ],
+    "interaction": -0.1953125,
+    "interaction_95_ci": [
+      -0.3046875,
+      -0.0859375
+    ],
+    "neutral_high": 0.53125,
+    "neutral_low": 0.6328125
+  },
+  "selected_primary_model": "conditional_logistic",
+  "selected_primary_result": {
+    "conditional_success_totals": {
+      "1": 25,
+      "2": 10,
+      "3": 20
+    },
+    "convergence_reason": "gradient/step tolerance reached",
+    "covariance": [
+      [
+        0.1535986577144448,
+        0.07780508403297871,
+        -0.15520783999236773
+      ],
+      [
+        0.07780508403297874,
+        0.150298533565636,
+        -0.15857608559121372
+      ],
+      [
+        -0.15520783999236773,
+        -0.15857608559121367,
+        0.33021686209075507
+      ]
+    ],
+    "degenerate_all_fail": 19,
+    "degenerate_all_pass": 54,
+    "gradient_max_abs": 7.034373084024992e-13,
+    "iterations": 4,
+    "log_likelihood": -70.00453249061655,
+    "n_fixtures": 128,
+    "n_informative_fixtures": 55,
+    "status": "FIT_CONVERGED",
+    "terms": {
+      "high": {
+        "ci_95_log_odds": [
+          0.09957065198260906,
+          1.6192622358286268
+        ],
+        "ci_95_odds_ratio": [
+          1.1046965169819658,
+          5.049363702423822
+        ],
+        "log_odds": 0.8594164439056179,
+        "odds_ratio": 2.361782059175393,
+        "standard_error": 0.38768354822668966,
+        "two_sided_wald_p": 0.026636840139294665
+      },
+      "neutral": {
+        "ci_95_log_odds": [
+          -0.6913708021409309,
+          0.8449142215756081
+        ],
+        "ci_95_odds_ratio": [
+          0.5008889785569031,
+          2.3277781328655953
+        ],
+        "log_odds": 0.07677170971733863,
+        "odds_ratio": 1.079795541423534,
+        "standard_error": 0.3919166463859947,
+        "two_sided_wald_p": 0.8446979463783256
+      },
+      "neutral_by_high": {
+        "ci_95_log_odds": [
+          -2.9836315580357877,
+          -0.7310645977698189
+        ],
+        "ci_95_odds_ratio": [
+          0.05060871126921593,
+          0.48139622384742536
+        ],
+        "log_odds": -1.8573480779028033,
+        "odds_ratio": 0.15608600993934463,
+        "standard_error": 0.5746449878757798,
+        "two_sided_wald_p": 0.001228555996974717
+      }
+    }
+  },
+  "sesoi_probability_interaction": 0.15,
+  "status": "COMPLETE"
+}
