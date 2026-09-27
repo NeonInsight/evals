@@ -1,0 +1,28 @@
+{
+  "decision_dimensions": [
+    "actors",
+    "directed relations",
+    "nesting",
+    "locus distinctions",
+    "dependencies"
+  ],
+  "forbidden_fields": [
+    "high_low_labels",
+    "framing_labels",
+    "hypotheses",
+    "predicted_outcomes",
+    "prior_performance"
+  ],
+  "individual_final_threshold": "intended HIGH must be selected",
+  "initial_global_threshold": 0.85,
+  "input_fields": [
+    "packet_id",
+    "question",
+    "version_a",
+    "version_b"
+  ],
+  "maximum_cycles": 2,
+  "prompt_length_used": false,
+  "question": "Which version requires maintaining more relational state, including actors, roles, delegation relationships, nested dependencies, or locus-of-action distinctions, in order to make the same underlying decision?",
+  "validator": "deterministic blinded relational-state adjudicator v1"
+}

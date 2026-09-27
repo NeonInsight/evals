@@ -1,0 +1,8 @@
+{
+  "condition_metadata_visible": false,
+  "correctness": "parsed choice equals prespecified correct code",
+  "model_scorer": null,
+  "parser": "exactly one isolated A or B, case-insensitive",
+  "retry_on_substantive_wrong_answer": false,
+  "type": "deterministic"
+}

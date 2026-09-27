@@ -1,0 +1,1 @@
+NONE: scoring is deterministic and receives no condition metadata or model prompt.

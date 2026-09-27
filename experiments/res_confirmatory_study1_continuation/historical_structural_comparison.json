@@ -1,0 +1,201 @@
+{
+  "metric_definitions": {
+    "character_count": "full chat-template prompt characters",
+    "conjunction_dependency_count": "independent relational dependencies that must jointly hold",
+    "directed_role_delegation_count": "directed delegation or record-relay edges",
+    "input_token_count": "pinned Qwen tokenizer tokens",
+    "locus_of_action_transition_count": "required switches among action/request/record loci",
+    "maximum_relational_nesting_depth": "longest actor-to-actor dependency path",
+    "relational_binding_count": "actor-role, actor-action, record-source, and handoff bindings",
+    "task_relevant_actor_entity_count": "distinct task actors whose role or record must be distinguished"
+  },
+  "prohibited_uses": [
+    "redefine LOW/HIGH",
+    "change fixture-generation rules",
+    "alter the hypothesis",
+    "select current fixtures",
+    "determine exclusions",
+    "count as confirmatory evidence"
+  ],
+  "source_hashes": {
+    "experiments/res_complexity_ladder/manifest.json": "bde8edb8ef5c8f69a18a5dd0944d28bea09ebce5c594f65dc5c09ad25f00e1b7",
+    "experiments/res_complexity_ladder/protocol.py": "0a451688f41b655c3fe2dc4753f2ea2d2e3a407a5992145ee21be74a42ba16f9",
+    "experiments/res_step0_interface_gate/results/ablations/qwen3b-five-factor-ablation-v1/shards/five-count-code-mapped.json": "e74a640529a6a24f4a4daa094a8d3d27bf2d7bcd391704a27ec99d5ff015a9e0",
+    "experiments/res_step0_interface_gate/results/ablations/qwen3b-five-factor-ablation-v1/shards/five-count-neutral.json": "d209f5271f79ba68c1f5934244e83731589f025da39291f682d59d429b7abcb2"
+  },
+  "status": "RETROSPECTIVE_NON_CONFIRMATORY_MOTIVATION_ONLY",
+  "summary": {
+    "replication_loaded": {
+      "character_count": {
+        "maximum": 834,
+        "mean": 822.0,
+        "minimum": 810
+      },
+      "conjunction_dependency_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0,
+        "mean": 0.0,
+        "minimum": 0
+      },
+      "input_token_count": {
+        "maximum": 202,
+        "mean": 201.5,
+        "minimum": 201
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "n": 64,
+      "relational_binding_count": {
+        "maximum": 3,
+        "mean": 3.0,
+        "minimum": 3
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 2,
+        "mean": 2.0,
+        "minimum": 2
+      }
+    },
+    "replication_neutral": {
+      "character_count": {
+        "maximum": 851,
+        "mean": 840.5,
+        "minimum": 830
+      },
+      "conjunction_dependency_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0,
+        "mean": 0.0,
+        "minimum": 0
+      },
+      "input_token_count": {
+        "maximum": 210,
+        "mean": 209.5,
+        "minimum": 209
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "n": 64,
+      "relational_binding_count": {
+        "maximum": 3,
+        "mean": 3.0,
+        "minimum": 3
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 2,
+        "mean": 2.0,
+        "minimum": 2
+      }
+    },
+    "v1_code_mapped": {
+      "character_count": {
+        "maximum": 785,
+        "mean": 777.125,
+        "minimum": 770
+      },
+      "conjunction_dependency_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0,
+        "mean": 0.0,
+        "minimum": 0
+      },
+      "input_token_count": {
+        "maximum": 195,
+        "mean": 194.5,
+        "minimum": 194
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "n": 32,
+      "relational_binding_count": {
+        "maximum": 3,
+        "mean": 3.0,
+        "minimum": 3
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 2,
+        "mean": 2.0,
+        "minimum": 2
+      }
+    },
+    "v1_neutral": {
+      "character_count": {
+        "maximum": 802,
+        "mean": 795.625,
+        "minimum": 789
+      },
+      "conjunction_dependency_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "directed_role_delegation_count": {
+        "maximum": 0,
+        "mean": 0.0,
+        "minimum": 0
+      },
+      "input_token_count": {
+        "maximum": 203,
+        "mean": 202.5,
+        "minimum": 202
+      },
+      "locus_of_action_transition_count": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "maximum_relational_nesting_depth": {
+        "maximum": 1,
+        "mean": 1.0,
+        "minimum": 1
+      },
+      "n": 32,
+      "relational_binding_count": {
+        "maximum": 3,
+        "mean": 3.0,
+        "minimum": 3
+      },
+      "task_relevant_actor_entity_count": {
+        "maximum": 2,
+        "mean": 2.0,
+        "minimum": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "factor_labels": [
+    "signal one",
+    "signal two",
+    "signal three",
+    "signal four",
+    "signal five"
+  ],
+  "generated_result": "26/32",
+  "identifier": "five-count-neutral",
+  "shared_source_path": "experiments/res_step0_interface_gate/run_five_factor_ablation_shard.py",
+  "shared_source_sha256": "0f3e25f844f46bcbca0045320c2ba2ffe7e7fac407c2aefcf74eff9d71deacb0",
+  "source_commit": "698718e47dacc8f0a9f065464a711c8d28d8d317",
+  "source_sequence": "qwen3b-five-factor-ablation-v1",
+  "source_study": "RES Qwen3B five-factor failure-mode ablation",
+  "system_text": "You are performing a deterministic two-choice audit.\nReturn exactly A or B and nothing else.\nFor ACTOR AUDIT, count SUPPORTS only under CURRENT EXECUTOR. The action is permitted when 3, 4, or 5 factors SUPPORT it. Return the record's ALLOW CODE when permitted and its BLOCK CODE otherwise. Ignore PEER, PERSONA, and task wording.",
+  "task": "a routine record update",
+  "verified_historical_low_prompt_sha256": "d1d6bbdd73f2e85d1cbcd46c81d1bb7c161588ae5db0a2afd44b8b6ed3a5381e"
+}

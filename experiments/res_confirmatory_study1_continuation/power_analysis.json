@@ -1,0 +1,1184 @@
+{
+  "alpha": 0.05,
+  "alpha_sidedness": "two-sided",
+  "candidate_n": [
+    64,
+    128,
+    192,
+    256
+  ],
+  "computational_feasibility_ceiling": 256,
+  "copula": {
+    "cell_order": [
+      "CODE_MAPPED_LOW",
+      "NEUTRAL_LOW",
+      "CODE_MAPPED_HIGH",
+      "NEUTRAL_HIGH"
+    ],
+    "correlation_matrix": [
+      [
+        1.0000000000000002,
+        0.803682009837907,
+        0.9391204791343726,
+        0.8283073698936575
+      ],
+      [
+        0.803682009837907,
+        0.9999999999999998,
+        0.7045773083534119,
+        0.9534408688018118
+      ],
+      [
+        0.9391204791343726,
+        0.7045773083534119,
+        1.0,
+        0.7023576347818484
+      ],
+      [
+        0.8283073698936573,
+        0.9534408688018117,
+        0.7023576347818484,
+        0.9999999999999998
+      ]
+    ],
+    "fixed_nearest_correlation_eigenvalue_floor": 0.03,
+    "method": "Gaussian copula with pairwise tetrachoric correlations from prior four-cell RES outcomes",
+    "raw_tetrachoric_eigenvalues": [
+      0.012262037264265084,
+      0.059493234671409316,
+      0.44505870324990726,
+      3.483186024814419
+    ]
+  },
+  "feasibility_basis": "At N=256 the fixed design requires 1,280 CPU target-model evaluations in 32 eight-fixture shards; larger Ns were not authorized for this run budget.",
+  "historical_inputs": {
+    "files": {
+      "experiments/res_complexity_ladder/results/report.json": "c8d40ab5018297ebf259de98c0b4e4cc42eddd6b5c582bb00fb4bf9085b82849",
+      "experiments/res_confirmatory_study1/results/scored_observations.csv": "115c6fe51833c496deaabe01bdf61bc589fc61af9ee54496f531282a7e673f6d",
+      "experiments/res_step0_interface_gate/results/ablations/qwen3b-five-factor-ablation-v1/shards/five-count-code-mapped.json": "e74a640529a6a24f4a4daa094a8d3d27bf2d7bcd391704a27ec99d5ff015a9e0",
+      "experiments/res_step0_interface_gate/results/ablations/qwen3b-five-factor-ablation-v1/shards/five-count-neutral.json": "d209f5271f79ba68c1f5934244e83731589f025da39291f682d59d429b7abcb2"
+    },
+    "fresh_replication_file_schema": null,
+    "fresh_replication_generated": {
+      "loaded": 35,
+      "n": 64,
+      "neutral": 38,
+      "paired_result_role": "approximately-null framing-main-effect anchor only"
+    },
+    "prior_binary_correlations": [
+      [
+        1.0,
+        0.5932458672098203,
+        0.7851207681555709,
+        0.6255774501577784
+      ],
+      [
+        0.5932458672098203,
+        0.9999999999999998,
+        0.5014662756598239,
+        0.78977651132369
+      ],
+      [
+        0.7851207681555707,
+        0.5014662756598239,
+        0.9999999999999998,
+        0.4834148419437196
+      ],
+      [
+        0.6255774501577785,
+        0.7897765113236901,
+        0.48341484194371953,
+        1.0
+      ]
+    ],
+    "prior_complexity_discordance": {
+      "code_mapped": 0.109375,
+      "neutral": 0.109375
+    },
+    "prior_degenerate_rates": {
+      "all_fail": 0.34375,
+      "all_pass": 0.328125,
+      "informative": 0.328125
+    },
+    "prior_four_cell_n": 64,
+    "prior_four_cell_pass_probabilities": {
+      "CM_HIGH": 0.515625,
+      "CM_LOW": 0.46875,
+      "N_HIGH": 0.40625,
+      "N_LOW": 0.484375
+    },
+    "prior_framing_discordance": {
+      "high": 0.265625,
+      "low": 0.203125
+    },
+    "v1_generated": {
+      "code_mapped": 17,
+      "n": 32,
+      "neutral": 26
+    }
+  },
+  "mde_replicates_per_cell": 1500,
+  "mde_results": {
+    "128": {
+      "definition": "smallest simulated probability interaction whose Monte Carlo 95% lower bound reaches 0.80",
+      "grid": {
+        "0.08": {
+          "achieved_power": 0.2773333333333333,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.92333333333333,
+          "mean_informative_fraction": 0.34315104166666666,
+          "monte_carlo_wilson_95_ci": [
+            0.25526848591240203,
+            0.3005357539016521
+          ],
+          "n": 128,
+          "positive_estimate_rate": 0.9706666666666667,
+          "rejections": 416,
+          "repetitions": 1500
+        },
+        "0.10": {
+          "achieved_power": 0.44533333333333336,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.21933333333333,
+          "mean_informative_fraction": 0.33765104166666665,
+          "monte_carlo_wilson_95_ci": [
+            0.42035339342971756,
+            0.47059255766235564
+          ],
+          "n": 128,
+          "positive_estimate_rate": 0.984,
+          "rejections": 668,
+          "repetitions": 1500
+        },
+        "0.12": {
+          "achieved_power": 0.636,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.40866666666667,
+          "mean_informative_fraction": 0.33913020833333335,
+          "monte_carlo_wilson_95_ci": [
+            0.611332202318438,
+            0.6599729925256728
+          ],
+          "n": 128,
+          "positive_estimate_rate": 0.998,
+          "rejections": 954,
+          "repetitions": 1500
+        },
+        "0.14": {
+          "achieved_power": 0.7986666666666666,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.60066666666667,
+          "mean_informative_fraction": 0.34063020833333335,
+          "monte_carlo_wilson_95_ci": [
+            0.7776224719343476,
+            0.8181850147821306
+          ],
+          "n": 128,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1198,
+          "repetitions": 1500
+        },
+        "0.15": {
+          "achieved_power": 0.866,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.309333333333335,
+          "mean_informative_fraction": 0.3383541666666667,
+          "monte_carlo_wilson_95_ci": [
+            0.8478226760593904,
+            0.8823074806534367
+          ],
+          "n": 128,
+          "positive_estimate_rate": 0.9993333333333333,
+          "rejections": 1299,
+          "repetitions": 1500
+        },
+        "0.16": {
+          "achieved_power": 0.9073333333333333,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.354,
+          "mean_informative_fraction": 0.338703125,
+          "monte_carlo_wilson_95_ci": [
+            0.8916007201325461,
+            0.9209849369740793
+          ],
+          "n": 128,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1361,
+          "repetitions": 1500
+        },
+        "0.18": {
+          "achieved_power": 0.9666666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.728,
+          "mean_informative_fraction": 0.341625,
+          "monte_carlo_wilson_95_ci": [
+            0.9563241640542839,
+            0.9746250339402134
+          ],
+          "n": 128,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1450,
+          "repetitions": 1500
+        },
+        "0.20": {
+          "achieved_power": 0.9873333333333333,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 44.49933333333333,
+          "mean_informative_fraction": 0.34765104166666666,
+          "monte_carlo_wilson_95_ci": [
+            0.9803009052832014,
+            0.9918760429081951
+          ],
+          "n": 128,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1481,
+          "repetitions": 1500
+        },
+        "0.22": {
+          "achieved_power": 0.9926666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 44.87866666666667,
+          "mean_informative_fraction": 0.35061458333333334,
+          "monte_carlo_wilson_95_ci": [
+            0.9869160908041851,
+            0.9959002767928627
+          ],
+          "n": 128,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1489,
+          "repetitions": 1500
+        },
+        "0.24": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 45.653333333333336,
+          "mean_informative_fraction": 0.3566666666666667,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 128,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        }
+      },
+      "mde_grid_estimate": 0.15
+    },
+    "192": {
+      "definition": "smallest simulated probability interaction whose Monte Carlo 95% lower bound reaches 0.80",
+      "grid": {
+        "0.08": {
+          "achieved_power": 0.456,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.2,
+          "mean_informative_fraction": 0.33958333333333335,
+          "monte_carlo_wilson_95_ci": [
+            0.43093949414951055,
+            0.4812852957538654
+          ],
+          "n": 192,
+          "positive_estimate_rate": 0.9866666666666667,
+          "rejections": 684,
+          "repetitions": 1500
+        },
+        "0.10": {
+          "achieved_power": 0.672,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.458,
+          "mean_informative_fraction": 0.3409270833333333,
+          "monte_carlo_wilson_95_ci": [
+            0.6478281614195585,
+            0.6952931144126993
+          ],
+          "n": 192,
+          "positive_estimate_rate": 0.998,
+          "rejections": 1008,
+          "repetitions": 1500
+        },
+        "0.12": {
+          "achieved_power": 0.8353333333333334,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.032,
+          "mean_informative_fraction": 0.33870833333333333,
+          "monte_carlo_wilson_95_ci": [
+            0.8157124288112625,
+            0.8532410663190693
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1253,
+          "repetitions": 1500
+        },
+        "0.14": {
+          "achieved_power": 0.942,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.17666666666666,
+          "mean_informative_fraction": 0.33946180555555555,
+          "monte_carlo_wilson_95_ci": [
+            0.9290033955548009,
+            0.9527384876885585
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1413,
+          "repetitions": 1500
+        },
+        "0.15": {
+          "achieved_power": 0.9713333333333334,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.048,
+          "mean_informative_fraction": 0.33879166666666666,
+          "monte_carlo_wilson_95_ci": [
+            0.9616101063172817,
+            0.9786485836571606
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1457,
+          "repetitions": 1500
+        },
+        "0.16": {
+          "achieved_power": 0.982,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.292,
+          "mean_informative_fraction": 0.3400625,
+          "monte_carlo_wilson_95_ci": [
+            0.9739373620090142,
+            0.9876001667767309
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1473,
+          "repetitions": 1500
+        },
+        "0.18": {
+          "achieved_power": 0.9973333333333333,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.546,
+          "mean_informative_fraction": 0.3413854166666667,
+          "monte_carlo_wilson_95_ci": [
+            0.9931633478220959,
+            0.9989625117548969
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1496,
+          "repetitions": 1500
+        },
+        "0.20": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 66.37866666666666,
+          "mean_informative_fraction": 0.3457222222222222,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        },
+        "0.22": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 67.56266666666667,
+          "mean_informative_fraction": 0.3518888888888889,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        },
+        "0.24": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 68.896,
+          "mean_informative_fraction": 0.35883333333333334,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        }
+      },
+      "mde_grid_estimate": 0.12
+    },
+    "256": {
+      "definition": "smallest simulated probability interaction whose Monte Carlo 95% lower bound reaches 0.80",
+      "grid": {
+        "0.08": {
+          "achieved_power": 0.6073333333333333,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 87.11466666666666,
+          "mean_informative_fraction": 0.34029166666666666,
+          "monte_carlo_wilson_95_ci": [
+            0.5823760729725632,
+            0.6317422425661711
+          ],
+          "n": 256,
+          "positive_estimate_rate": 0.9993333333333333,
+          "rejections": 911,
+          "repetitions": 1500
+        },
+        "0.10": {
+          "achieved_power": 0.8246666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 86.618,
+          "mean_informative_fraction": 0.3383515625,
+          "monte_carlo_wilson_95_ci": [
+            0.804600984594549,
+            0.8430736717244798
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1237,
+          "repetitions": 1500
+        },
+        "0.12": {
+          "achieved_power": 0.94,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 86.40066666666667,
+          "mean_informative_fraction": 0.33750260416666666,
+          "monte_carlo_wilson_95_ci": [
+            0.9268206303272428,
+            0.9509314706389973
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1410,
+          "repetitions": 1500
+        },
+        "0.14": {
+          "achieved_power": 0.986,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 86.69266666666667,
+          "mean_informative_fraction": 0.33864322916666667,
+          "monte_carlo_wilson_95_ci": [
+            0.9786920346546757,
+            0.9908250586853078
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1479,
+          "repetitions": 1500
+        },
+        "0.15": {
+          "achieved_power": 0.9933333333333333,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 86.84133333333334,
+          "mean_informative_fraction": 0.33922395833333335,
+          "monte_carlo_wilson_95_ci": [
+            0.9877715110569365,
+            0.9963747839658177
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1490,
+          "repetitions": 1500
+        },
+        "0.16": {
+          "achieved_power": 0.9966666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 87.09933333333333,
+          "mean_informative_fraction": 0.34023177083333334,
+          "monte_carlo_wilson_95_ci": [
+            0.9922205476749006,
+            0.9985753844763858
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1495,
+          "repetitions": 1500
+        },
+        "0.18": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 87.636,
+          "mean_informative_fraction": 0.342328125,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        },
+        "0.20": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 89.00533333333334,
+          "mean_informative_fraction": 0.34767708333333336,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        },
+        "0.22": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 90.162,
+          "mean_informative_fraction": 0.3521953125,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        },
+        "0.24": {
+          "achieved_power": 1.0,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 92.07266666666666,
+          "mean_informative_fraction": 0.35965885416666665,
+          "monte_carlo_wilson_95_ci": [
+            0.9974455692798185,
+            1.0
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 1500,
+          "repetitions": 1500
+        }
+      },
+      "mde_grid_estimate": 0.1
+    },
+    "64": {
+      "definition": "smallest simulated probability interaction whose Monte Carlo 95% lower bound reaches 0.80",
+      "grid": {
+        "0.08": {
+          "achieved_power": 0.12266666666666666,
+          "convergence_rate": 0.998,
+          "mean_informative_fixtures": 21.998,
+          "mean_informative_fraction": 0.34371875,
+          "monte_carlo_wilson_95_ci": [
+            0.10702223494636451,
+            0.1402388421037991
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9,
+          "rejections": 184,
+          "repetitions": 1500
+        },
+        "0.10": {
+          "achieved_power": 0.20333333333333334,
+          "convergence_rate": 0.9966666666666667,
+          "mean_informative_fixtures": 21.737333333333332,
+          "mean_informative_fraction": 0.3396458333333333,
+          "monte_carlo_wilson_95_ci": [
+            0.183735222921894,
+            0.224447072638747
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.952,
+          "rejections": 305,
+          "repetitions": 1500
+        },
+        "0.12": {
+          "achieved_power": 0.3273333333333333,
+          "convergence_rate": 0.9986666666666667,
+          "mean_informative_fixtures": 21.478,
+          "mean_informative_fraction": 0.33559375,
+          "monte_carlo_wilson_95_ci": [
+            0.3040542594892024,
+            0.3514945372528335
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9753333333333334,
+          "rejections": 491,
+          "repetitions": 1500
+        },
+        "0.14": {
+          "achieved_power": 0.4186666666666667,
+          "convergence_rate": 0.9986666666666667,
+          "mean_informative_fixtures": 21.870666666666665,
+          "mean_informative_fraction": 0.34172916666666664,
+          "monte_carlo_wilson_95_ci": [
+            0.39393945156821253,
+            0.44380940249560374
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9873333333333333,
+          "rejections": 628,
+          "repetitions": 1500
+        },
+        "0.15": {
+          "achieved_power": 0.5026666666666667,
+          "convergence_rate": 0.9986666666666667,
+          "mean_informative_fixtures": 21.660666666666668,
+          "mean_informative_fraction": 0.3384479166666667,
+          "monte_carlo_wilson_95_ci": [
+            0.4773895251819067,
+            0.527930184520919
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9913333333333333,
+          "rejections": 754,
+          "repetitions": 1500
+        },
+        "0.16": {
+          "achieved_power": 0.558,
+          "convergence_rate": 0.998,
+          "mean_informative_fixtures": 21.77,
+          "mean_informative_fraction": 0.34015625,
+          "monte_carlo_wilson_95_ci": [
+            0.5327513146255058,
+            0.5829523714109532
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.994,
+          "rejections": 837,
+          "repetitions": 1500
+        },
+        "0.18": {
+          "achieved_power": 0.6433333333333333,
+          "convergence_rate": 0.998,
+          "mean_informative_fixtures": 21.668666666666667,
+          "mean_informative_fraction": 0.33857291666666667,
+          "monte_carlo_wilson_95_ci": [
+            0.6187543426921366,
+            0.6671800538347447
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9966666666666667,
+          "rejections": 965,
+          "repetitions": 1500
+        },
+        "0.20": {
+          "achieved_power": 0.7686666666666667,
+          "convergence_rate": 0.9966666666666667,
+          "mean_informative_fixtures": 21.988666666666667,
+          "mean_informative_fraction": 0.3435729166666667,
+          "monte_carlo_wilson_95_ci": [
+            0.7466567901849227,
+            0.7893039623747665
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9966666666666667,
+          "rejections": 1153,
+          "repetitions": 1500
+        },
+        "0.22": {
+          "achieved_power": 0.8726666666666667,
+          "convergence_rate": 0.9973333333333333,
+          "mean_informative_fixtures": 22.713333333333335,
+          "mean_informative_fraction": 0.35489583333333335,
+          "monte_carlo_wilson_95_ci": [
+            0.8548400771961882,
+            0.8885893537737033
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9973333333333333,
+          "rejections": 1309,
+          "repetitions": 1500
+        },
+        "0.24": {
+          "achieved_power": 0.9246666666666666,
+          "convergence_rate": 0.9986666666666667,
+          "mean_informative_fixtures": 22.891333333333332,
+          "mean_informative_fraction": 0.3576770833333333,
+          "monte_carlo_wilson_95_ci": [
+            0.910198542686131,
+            0.9369652274888616
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9986666666666667,
+          "rejections": 1387,
+          "repetitions": 1500
+        }
+      },
+      "mde_grid_estimate": 0.22
+    }
+  },
+  "power_replicates_per_cell": 3000,
+  "scenario_results": {
+    "replication_anchored_zero_nearby_negative": {
+      "aggregate_framing_main_effect": -0.025000000000000022,
+      "cell_probabilities": [
+        0.62,
+        0.52,
+        0.5,
+        0.55
+      ],
+      "expected_design_diagnostics": {
+        "binary_correlations": [
+          [
+            1.0,
+            0.5780038362923572,
+            0.720470312994918,
+            0.6114869090570936
+          ],
+          [
+            0.5780038362923572,
+            1.0,
+            0.4983674201304465,
+            0.800818990529949
+          ],
+          [
+            0.7204703129949181,
+            0.4983674201304465,
+            1.0,
+            0.49390855335036704
+          ],
+          [
+            0.6114869090570936,
+            0.800818990529949,
+            0.49390855335036704,
+            1.0
+          ]
+        ],
+        "cell_pass_probabilities": [
+          0.621035,
+          0.519665,
+          0.49985,
+          0.549525
+        ],
+        "complexity_discordance": {
+          "code_mapped": 0.150515,
+          "neutral": 0.09992
+        },
+        "degenerate_rates": {
+          "all_fail": 0.291985,
+          "all_pass": 0.366185,
+          "informative": 0.34183
+        },
+        "framing_discordance": {
+          "high": 0.254275,
+          "low": 0.21505
+        }
+      },
+      "power_by_n": {
+        "128": {
+          "achieved_power": 0.8483333333333334,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.606,
+          "mean_informative_fraction": 0.340671875,
+          "monte_carlo_wilson_95_ci": [
+            0.8350527560880747,
+            0.8607229792999482
+          ],
+          "n": 128,
+          "positive_estimate_rate": 0.999,
+          "rejections": 2545,
+          "repetitions": 3000
+        },
+        "192": {
+          "achieved_power": 0.9706666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.65166666666667,
+          "mean_informative_fraction": 0.3419357638888889,
+          "monte_carlo_wilson_95_ci": [
+            0.964000531005899,
+            0.9761289793939942
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2912,
+          "repetitions": 3000
+        },
+        "256": {
+          "achieved_power": 0.9966666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 87.26966666666667,
+          "mean_informative_fraction": 0.34089713541666666,
+          "monte_carlo_wilson_95_ci": [
+            0.9938746440277139,
+            0.9981883662384624
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2990,
+          "repetitions": 3000
+        },
+        "64": {
+          "achieved_power": 0.485,
+          "convergence_rate": 0.9976666666666667,
+          "mean_informative_fixtures": 21.72833333333333,
+          "mean_informative_fraction": 0.3395052083333333,
+          "monte_carlo_wilson_95_ci": [
+            0.4671467232374174,
+            0.5028916422243424
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.99,
+          "rejections": 1455,
+          "repetitions": 3000
+        }
+      },
+      "probability_scale_interaction": 0.15000000000000002,
+      "rationale": "Aggregate framing effect is -0.025; LOW=-0.100 and HIGH=+0.050."
+    },
+    "replication_anchored_zero_nearby_positive": {
+      "aggregate_framing_main_effect": 0.02499999999999991,
+      "cell_probabilities": [
+        0.6,
+        0.55,
+        0.5,
+        0.6
+      ],
+      "expected_design_diagnostics": {
+        "binary_correlations": [
+          [
+            1.0,
+            0.5905874114958409,
+            0.7403231803076076,
+            0.6186594363418954
+          ],
+          [
+            0.5905874114958409,
+            0.9999999999999999,
+            0.4970016260071718,
+            0.7920124873188078
+          ],
+          [
+            0.7403231803076076,
+            0.4970016260071718,
+            1.0,
+            0.4860775341618569
+          ],
+          [
+            0.6186594363418952,
+            0.7920124873188078,
+            0.48607753416185684,
+            0.9999999999999999
+          ]
+        ],
+        "cell_pass_probabilities": [
+          0.6021,
+          0.55122,
+          0.502585,
+          0.601395
+        ],
+        "complexity_discordance": {
+          "code_mapped": 0.137115,
+          "neutral": 0.103875
+        },
+        "degenerate_rates": {
+          "all_fail": 0.279085,
+          "all_pass": 0.38654,
+          "informative": 0.334375
+        },
+        "framing_discordance": {
+          "high": 0.26149,
+          "low": 0.20199
+        }
+      },
+      "power_by_n": {
+        "128": {
+          "achieved_power": 0.8466666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.18933333333333,
+          "mean_informative_fraction": 0.33741666666666664,
+          "monte_carlo_wilson_95_ci": [
+            0.8333307171663606,
+            0.8591159477174133
+          ],
+          "n": 128,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2540,
+          "repetitions": 3000
+        },
+        "192": {
+          "achieved_power": 0.962,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 64.24833333333333,
+          "mean_informative_fraction": 0.3346267361111111,
+          "monte_carlo_wilson_95_ci": [
+            0.9545463246765623,
+            0.9682720191012365
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2886,
+          "repetitions": 3000
+        },
+        "256": {
+          "achieved_power": 0.994,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 85.84633333333333,
+          "mean_informative_fraction": 0.33533723958333334,
+          "monte_carlo_wilson_95_ci": [
+            0.9905352002893365,
+            0.9962012971700415
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2982,
+          "repetitions": 3000
+        },
+        "64": {
+          "achieved_power": 0.47333333333333333,
+          "convergence_rate": 0.999,
+          "mean_informative_fixtures": 21.485666666666667,
+          "mean_informative_fraction": 0.33571354166666667,
+          "monte_carlo_wilson_95_ci": [
+            0.4555123543144721,
+            0.4912225176175452
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9916666666666667,
+          "rejections": 1420,
+          "repetitions": 3000
+        }
+      },
+      "probability_scale_interaction": 0.1499999999999999,
+      "rationale": "Aggregate framing effect is +0.025; LOW=-0.050 and HIGH=+0.100."
+    },
+    "replication_anchored_zero_symmetric": {
+      "aggregate_framing_main_effect": 0.0,
+      "cell_probabilities": [
+        0.62,
+        0.545,
+        0.5,
+        0.575
+      ],
+      "expected_design_diagnostics": {
+        "binary_correlations": [
+          [
+            0.9999999999999999,
+            0.580077470855323,
+            0.7221222659983785,
+            0.6114628597784629
+          ],
+          [
+            0.580077470855323,
+            0.9999999999999999,
+            0.49288546197108984,
+            0.7986862527402808
+          ],
+          [
+            0.7221222659983785,
+            0.4928854619710899,
+            1.0,
+            0.48607072939322654
+          ],
+          [
+            0.6114628597784629,
+            0.7986862527402809,
+            0.48607072939322654,
+            0.9999999999999999
+          ]
+        ],
+        "cell_pass_probabilities": [
+          0.62162,
+          0.54619,
+          0.50154,
+          0.5762
+        ],
+        "complexity_discordance": {
+          "code_mapped": 0.14941,
+          "neutral": 0.09997
+        },
+        "degenerate_rates": {
+          "all_fail": 0.279995,
+          "all_pass": 0.37895,
+          "informative": 0.341055
+        },
+        "framing_discordance": {
+          "high": 0.25957,
+          "low": 0.20864
+        }
+      },
+      "power_by_n": {
+        "128": {
+          "achieved_power": 0.852,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 43.50566666666667,
+          "mean_informative_fraction": 0.33988802083333336,
+          "monte_carlo_wilson_95_ci": [
+            0.838843140397748,
+            0.8642565500996225
+          ],
+          "n": 128,
+          "positive_estimate_rate": 0.9996666666666667,
+          "rejections": 2556,
+          "repetitions": 3000
+        },
+        "192": {
+          "achieved_power": 0.9653333333333334,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 65.08533333333334,
+          "mean_informative_fraction": 0.33898611111111115,
+          "monte_carlo_wilson_95_ci": [
+            0.9581693259127978,
+            0.9713071588734988
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2896,
+          "repetitions": 3000
+        },
+        "256": {
+          "achieved_power": 0.992,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 86.99366666666667,
+          "mean_informative_fraction": 0.3398190104166667,
+          "monte_carlo_wilson_95_ci": [
+            0.9881235263289165,
+            0.9946180865253627
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2976,
+          "repetitions": 3000
+        },
+        "64": {
+          "achieved_power": 0.49366666666666664,
+          "convergence_rate": 0.9983333333333333,
+          "mean_informative_fixtures": 21.605,
+          "mean_informative_fraction": 0.337578125,
+          "monte_carlo_wilson_95_ci": [
+            0.47579570144424593,
+            0.5115538306396081
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.9926666666666667,
+          "rejections": 1481,
+          "repetitions": 3000
+        }
+      },
+      "probability_scale_interaction": 0.1499999999999999,
+      "rationale": "Aggregate framing effect is zero; LOW=-0.075 and HIGH=+0.075."
+    },
+    "v1_positive_main_effect_allocation": {
+      "aggregate_framing_main_effect": 0.15000000000000002,
+      "cell_probabilities": [
+        0.55,
+        0.625,
+        0.45,
+        0.675
+      ],
+      "expected_design_diagnostics": {
+        "binary_correlations": [
+          [
+            0.9999999999999999,
+            0.584144837236902,
+            0.7434281149214802,
+            0.5896200252458574
+          ],
+          [
+            0.5841448372369021,
+            1.0,
+            0.4696153667428485,
+            0.7878123461054035
+          ],
+          [
+            0.7434281149214802,
+            0.46961536674284843,
+            1.0,
+            0.44775777440632564
+          ],
+          [
+            0.5896200252458574,
+            0.7878123461054034,
+            0.44775777440632564,
+            1.0
+          ]
+        ],
+        "cell_pass_probabilities": [
+          0.54738,
+          0.62335,
+          0.450275,
+          0.673775
+        ],
+        "complexity_discordance": {
+          "code_mapped": 0.136505,
+          "neutral": 0.099195
+        },
+        "degenerate_rates": {
+          "all_fail": 0.25733,
+          "all_pass": 0.380785,
+          "informative": 0.361885
+        },
+        "framing_discordance": {
+          "high": 0.3084,
+          "low": 0.20654
+        }
+      },
+      "power_by_n": {
+        "128": {
+          "achieved_power": 0.866,
+          "convergence_rate": 0.9996666666666667,
+          "mean_informative_fixtures": 46.35633333333333,
+          "mean_informative_fraction": 0.36215885416666665,
+          "monte_carlo_wilson_95_ci": [
+            0.8533408872543511,
+            0.8777229954787102
+          ],
+          "n": 128,
+          "positive_estimate_rate": 0.9993333333333333,
+          "rejections": 2598,
+          "repetitions": 3000
+        },
+        "192": {
+          "achieved_power": 0.9776666666666667,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 69.52266666666667,
+          "mean_informative_fraction": 0.36209722222222224,
+          "monte_carlo_wilson_95_ci": [
+            0.9717363815193127,
+            0.9823752249984259
+          ],
+          "n": 192,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2933,
+          "repetitions": 3000
+        },
+        "256": {
+          "achieved_power": 0.997,
+          "convergence_rate": 1.0,
+          "mean_informative_fixtures": 92.72266666666667,
+          "mean_informative_fraction": 0.3621979166666667,
+          "monte_carlo_wilson_95_ci": [
+            0.9943079568813202,
+            0.9984208674857058
+          ],
+          "n": 256,
+          "positive_estimate_rate": 1.0,
+          "rejections": 2991,
+          "repetitions": 3000
+        },
+        "64": {
+          "achieved_power": 0.45866666666666667,
+          "convergence_rate": 0.9766666666666667,
+          "mean_informative_fixtures": 23.233,
+          "mean_informative_fraction": 0.363015625,
+          "monte_carlo_wilson_95_ci": [
+            0.44090015052218756,
+            0.47653890097243934
+          ],
+          "n": 64,
+          "positive_estimate_rate": 0.972,
+          "rejections": 1376,
+          "repetitions": 3000
+        }
+      },
+      "probability_scale_interaction": 0.15000000000000008,
+      "rationale": "Positive framing effects at both levels; LOW=+0.075 and HIGH=+0.225."
+    }
+  },
+  "schema_version": "res-cs1-continuation-power-v1",
+  "seeds": {
+    "mde": 2026092712,
+    "power": 2026092711
+  },
+  "selected_n": 128,
+  "selection_rule": "smallest candidate N whose 95% Monte Carlo lower bound is at least 0.80 in every SESOI scenario",
+  "sesoi_probability_interaction": 0.15,
+  "target_power": 0.8,
+  "test": "fixture-stratified conditional logistic neutral-by-high Wald test"
+}

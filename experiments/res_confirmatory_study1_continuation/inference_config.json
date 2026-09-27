@@ -1,0 +1,15 @@
+{
+  "backend": "transformers CPU",
+  "decision_margin": "logit(correct/scored decision token) - logit(other admissible token)",
+  "do_sample": false,
+  "dtype": "torch.bfloat16",
+  "first_scorable_token": "first generation step, admissible tokens A and B",
+  "max_input_tokens": 768,
+  "max_new_tokens": 4,
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "padding_side": "left",
+  "retry_identity": "same five-rendering fixture batch, prompt, model, revision, decoding, and seed",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "seed": 2026092701,
+  "technical_retries": 2
+}

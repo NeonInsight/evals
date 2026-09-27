@@ -1,0 +1,156 @@
+name: RES Confirmatory Study 1 continuation (frozen complexity interaction)
+
+on:
+  push:
+    branches: [res-confirmatory-study-1-complexity-continuation]
+    paths: [experiments/res_confirmatory_study1_continuation/control.json]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: res-confirmatory-study-1-complexity-continuation
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    outputs:
+      operation: ${{ steps.control.outputs.operation }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install frozen preflight dependencies
+        run: python -m pip install transformers==4.48.3 tokenizers==0.21.0 jinja2==3.1.6 rapidfuzz==3.14.1 numpy==1.26.4 scipy==1.14.1 pandas==2.2.3
+      - name: Verify Phase 0 hashes, fixtures, controls, parser, and primary coding
+        run: |
+          python experiments/res_confirmatory_study1_continuation/phase0.py verify
+          python -m unittest discover -s experiments/res_confirmatory_study1_continuation -p 'test_*.py' -v
+          python experiments/res_confirmatory_study1_continuation/run.py preflight
+      - id: control
+        name: Read explicit frozen operation
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          value = json.loads(Path('experiments/res_confirmatory_study1_continuation/control.json').read_text())
+          assert set(value) == {'operation', 'attempt'}
+          assert value['operation'] in ('preflight', 'run')
+          assert type(value['attempt']) is int and value['attempt'] >= 1
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('operation=' + value['operation'] + '\n')
+          PY
+      - name: Verify exact pinned-tokenizer counts and chat-template hashes
+        run: python experiments/res_confirmatory_study1_continuation/run.py token-audit
+      - name: Preserve tokenizer audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-cs1c-token-audit-${{ github.run_attempt }}
+          path: experiments/res_confirmatory_study1_continuation/results/token_audit.json
+          retention-days: 90
+      - name: Record zero-call preflight
+        if: steps.control.outputs.operation == 'preflight'
+        run: echo 'Phase 0 and tokenizer audit passed. No target-model call was made.' >> "$GITHUB_STEP_SUMMARY"
+
+  shard:
+    needs: preflight
+    if: needs.preflight.outputs.operation == 'run'
+    runs-on: ubuntu-latest
+    timeout-minutes: 270
+    strategy:
+      fail-fast: false
+      max-parallel: 16
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    env:
+      HF_HUB_DISABLE_XET: '1'
+      TOKENIZERS_PARALLELISM: 'false'
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+      RES_CS1C_SOFT_SECONDS: '14400'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned CPU inference dependencies
+        timeout-minutes: 20
+        run: |
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.1
+          python -m pip install transformers==4.48.3 tokenizers==0.21.0 jinja2==3.1.6 numpy==1.26.4
+      - name: Evaluate eight frozen fixtures and checkpoint each fixture
+        timeout-minutes: 250
+        run: python experiments/res_confirmatory_study1_continuation/run.py run --shard ${{ matrix.shard }}
+      - name: Preserve complete or resumable raw checkpoint
+        if: always()
+        timeout-minutes: 5
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-cs1c-shard-${{ matrix.shard }}-${{ github.run_attempt }}
+          path: experiments/res_confirmatory_study1_continuation/results/shards/
+          if-no-files-found: warn
+          retention-days: 90
+
+  collect:
+    needs: [preflight, shard]
+    if: ${{ always() && needs.preflight.result == 'success' && needs.preflight.outputs.operation == 'run' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download audit and shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: res-cs1c-*-${{ github.run_attempt }}
+          path: incoming
+      - name: Install frozen collection and analysis dependencies
+        run: python -m pip install numpy==1.26.4 scipy==1.14.1 pandas==2.2.3 statsmodels==0.14.5
+      - name: Merge only hash-matched checkpoints
+        run: python experiments/res_confirmatory_study1_continuation/run.py collect --artifacts incoming
+      - name: Infer only after all predetermined fixtures were attempted
+        run: python experiments/res_confirmatory_study1_continuation/analyze.py
+      - name: Preserve raw and derived results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: res-cs1c-collected-${{ github.run_attempt }}
+          path: experiments/res_confirmatory_study1_continuation/results/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Publish checkpointed observations and analysis
+        run: |
+          git add experiments/res_confirmatory_study1_continuation/results/
+          if git diff --cached --quiet; then
+            echo 'No new results.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Record frozen RES Study 1 complexity-continuation results'
+            git pull --rebase origin res-confirmatory-study-1-complexity-continuation
+            python experiments/res_confirmatory_study1_continuation/run.py preflight
+            git push origin HEAD:res-confirmatory-study-1-complexity-continuation
+          fi
+      - name: Report completion or clean resumable stop
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          status = json.loads(Path('experiments/res_confirmatory_study1_continuation/results/run_manifest.json').read_text())
+          with open(Path(os.environ['GITHUB_STEP_SUMMARY']), 'a') as summary:
+              summary.write('Run status: **' + status['status'] + '**; completed fixtures: ' + str(status['completed_fixtures']) + '/' + str(status['expected_fixtures']) + '.\n')
+          PY

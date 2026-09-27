@@ -1,0 +1,14 @@
+{
+  "generator": "fixed-document-marker-enumeration-v1-with-one-fixed-fallback",
+  "matching": "absolute token and character delta versus CodeMapped×High",
+  "maximum_attempts": 2,
+  "outcome_visibility": false,
+  "relative_tolerance": 0.2,
+  "seed": 2026092704,
+  "small_change_absolute_tolerance": {
+    "characters": 20,
+    "tokens": 2
+  },
+  "source": "exact Neutral×High rendering",
+  "transformation": "insert a fixture-seeded generic DOCUMENT MARKER selected from a fixed lexical bank"
+}
