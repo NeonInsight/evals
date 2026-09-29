@@ -1,0 +1,76 @@
+{
+  "completed_fixtures": 73,
+  "expected_fixtures": 128,
+  "expected_observations": 896,
+  "freeze_manifest_hash": "442670e751808d831b1491c7d81f178a07bb9051315fb33808b3c443e7b90ca1",
+  "protocol": "res-surface-efficiency-assay-v1",
+  "run_id": "36499730628",
+  "shards": {
+    "0": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "1": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "10": {
+      "completed_fixtures": 8,
+      "status": "COMPLETE"
+    },
+    "11": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "12": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "13": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "14": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "15": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "2": {
+      "completed_fixtures": 8,
+      "status": "COMPLETE"
+    },
+    "3": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "4": {
+      "completed_fixtures": 8,
+      "status": "COMPLETE"
+    },
+    "5": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "6": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "7": {
+      "completed_fixtures": 3,
+      "status": "PARTIAL"
+    },
+    "8": {
+      "completed_fixtures": 8,
+      "status": "COMPLETE"
+    },
+    "9": {
+      "completed_fixtures": 8,
+      "status": "COMPLETE"
+    }
+  },
+  "status": "INCOMPLETE_RESUMABLE",
+  "stored_observations": 511
+}
