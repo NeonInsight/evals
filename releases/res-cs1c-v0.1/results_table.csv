@@ -1,12 +1,11 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: results_table.csv>index,result,estimate,ci_low,ci_high,p_value,test_or_scale,interpretation
-0,neutral_low_pass_rate,0.6328125,0.5430915177920569,0.7162376082446532,,exact binomial,descriptive
-1,code_mapped_low_pass_rate,0.625,0.5351108510265343,0.7089650098495499,,exact binomial,descriptive
-2,neutral_high_pass_rate,0.53125,0.4410528286653052,0.6199685380605667,,exact binomial,descriptive
-3,code_mapped_high_pass_rate,0.71875,0.6324768061351952,0.7946129348684058,,exact binomial,descriptive
-4,probability_interaction,-0.1953125,-0.3046875,-0.0859375,,bootstrap probability scale,contrary direction
-5,conditional_logistic_interaction_or,0.1560860099393446,0.0506087112692159,0.4813962238474253,0.0012285559969747,conditional logistic,contrary direction
-6,relational_transition_rate,0.328125,,,,paired specificity assay,descriptive
-7,nonrelational_transition_rate,0.078125,,,,paired specificity assay,descriptive
-8,perturbation_specificity_mcnemar,,,,9.70612745732069e-09,one-sided paired exact McNemar,relational > nonrelational
-9,decision_margin_rank_biserial,0.0739202657807308,-0.1173864894795126,0.2632890365448505,0.2496439649845334,one-sided Mann-Whitney U,not supported
+result,estimate,ci_low,ci_high,p_value,test_or_scale,interpretation
+neutral_low_pass_rate,0.6328125,0.5430915177920569,0.7162376082446532,,exact binomial,descriptive
+code_mapped_low_pass_rate,0.625,0.5351108510265343,0.7089650098495499,,exact binomial,descriptive
+neutral_high_pass_rate,0.53125,0.44105282866530526,0.6199685380605667,,exact binomial,descriptive
+code_mapped_high_pass_rate,0.71875,0.6324768061351952,0.7946129348684058,,exact binomial,descriptive
+probability_interaction,-0.1953125,-0.3046875,-0.0859375,,bootstrap probability scale,contrary direction
+conditional_logistic_interaction_or,0.15608600993934463,0.05060871126921593,0.48139622384742536,0.001228555996974717,conditional logistic,contrary direction
+relational_transition_rate,0.328125,,,,paired specificity assay,descriptive
+nonrelational_transition_rate,0.078125,,,,paired specificity assay,descriptive
+perturbation_specificity_mcnemar,,,,9.70612745732069e-09,one-sided paired exact McNemar,relational > nonrelational
+decision_margin_rank_biserial,0.07392026578073085,-0.11738648947951269,0.2632890365448505,0.2496439649845334,one-sided Mann-Whitney U,not supported
