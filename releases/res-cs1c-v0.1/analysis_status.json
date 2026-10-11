@@ -1,0 +1,88 @@
+{
+  "expected_observations": 640,
+  "note": "Regenerated from the complete final run manifest and analysis outputs; supersedes stale 505/640 collector status.",
+  "observations_present": 640,
+  "primary_analysis_status": "COMPLETE",
+  "primary_interpretation": "CONTRARY_DIRECTION_RESULT",
+  "run_status": {
+    "completed_fixtures": 128,
+    "expected_fixtures": 128,
+    "expected_observations": 640,
+    "freeze_manifest_hash": "41938f71803fecaa17b6c8961343843be25f4c72887d03c32b6f34697d5553ef",
+    "protocol": "res-confirmatory-study1-complexity-continuation-v1",
+    "run_id": "36324399210",
+    "shards": {
+      "0": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "1": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "10": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "11": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "12": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "13": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "14": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "15": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "2": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "3": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "4": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "5": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "6": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "7": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "8": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      },
+      "9": {
+        "completed_fixtures": 8,
+        "status": "COMPLETE"
+      }
+    },
+    "status": "COMPLETE_ATTEMPTED_ALL_FIXTURES",
+    "stored_observations": 640
+  },
+  "secondary_analysis_status": {
+    "decision_margin": "COMPLETE",
+    "perturbation_specificity": "COMPLETE"
+  },
+  "status": "COMPLETE_CONFIRMATORY_INFERENCE"
+}
