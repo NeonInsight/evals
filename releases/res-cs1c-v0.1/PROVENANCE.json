@@ -1,0 +1,69 @@
+{
+  "files": {
+    "REPORT.md": {
+      "bytes": 8377,
+      "sha256": "6f6dea8b48cf1b0e91de24161be09645c65c05a1a268d58967f657e459203e53"
+    },
+    "analysis_status.json": {
+      "bytes": 2219,
+      "sha256": "6dde251ce8ab8c00b3cd6b519ff628121145f655044657b8ceb749fad72b4952"
+    },
+    "machine/decision_margin_analysis.json": {
+      "bytes": 31922,
+      "sha256": "b139e29eafa23a08e494a347582cac1d3efdbed21683389c9ffcc3a7e4969276"
+    },
+    "machine/fixture_level_matched_summary.csv": {
+      "bytes": 13545,
+      "sha256": "b704d77cf9ac9866400475fb4a4bdf16d40b33975c589af265e1df1527d9f73a"
+    },
+    "machine/perturbation_specificity_analysis.json": {
+      "bytes": 56427,
+      "sha256": "56c989336a29f86c8101c80b108d653b26c7624b7487c62df0a0d324ae100116"
+    },
+    "machine/primary_interaction_analysis.json": {
+      "bytes": 28391,
+      "sha256": "c4eafe116435f32b4e0e4a17b2cd0f7b3688e4a3557d1c13692119ec284f5187"
+    },
+    "machine/run_manifest.json": {
+      "bytes": 1598,
+      "sha256": "9a95514fb207d13718c683f8e7bda75c80e6b6800b67106d57714f8daff311d0"
+    },
+    "machine/scored_observations.csv": {
+      "bytes": 177788,
+      "sha256": "3b447f9ec06a9b5b0a2630a84d832c65a423cfe309dd42b9316b1781c279c3c1"
+    },
+    "machine/surface_efficiency_run_manifest.json": {
+      "bytes": 1556,
+      "sha256": "a5d1c6f5fcf35cd648c78b9605c819553ba92a3b61adc44f4d8dead288d07a81"
+    },
+    "results_summary.json": {
+      "bytes": 3967,
+      "sha256": "57d6174535a1975030a98cacb17632070fd9b18c67b9a0d78560e6b2b78fca65"
+    },
+    "results_table.csv": {
+      "bytes": 1154,
+      "sha256": "78fb4ee999610c8a9cd4aea4428c0c948e3a4038d7266021dd777b1a87a0124e"
+    }
+  },
+  "prepared_date": "2026-10-09",
+  "regeneration_note": "REPORT.md and analysis_status.json were regenerated from complete preserved outputs because the collector-packaged originals were stale at 505/640. No model inference was rerun and no frozen statistical analysis was modified.",
+  "source_artifacts": {
+    "confirmatory_complexity_continuation": {
+      "artifact_id": "10936466534",
+      "artifact_name": "res-cs1c-collected-1",
+      "freeze_manifest_hash": "41938f71803fecaa17b6c8961343843be25f4c72887d03c32b6f34697d5553ef",
+      "github_actions_run_id": "36324399210",
+      "github_head_sha": "2e1e094cc9021d17367453214f3d167f14d13283",
+      "source_zip_sha256": "a7d5c9e705191e5a82bb9a1840f94b0e59507ddf820da8739ca08a8396740cd0"
+    },
+    "surface_efficiency_assay": {
+      "artifact_id": "11012009179",
+      "artifact_name": "res-sfe-collected-1",
+      "freeze_manifest_hash": "442670e751808d831b1491c7d81f178a07bb9051315fb33808b3c443e7b90ca1",
+      "github_actions_run_id": "36499730628",
+      "github_head_sha": "f4e3bf7999246642b90799d7a651308b2c4644d7",
+      "source_zip_sha256": "27707d0f4cfd293bbf613b58c6c655c670a48a1e2979132f67315ec79ba8b170",
+      "use": "status only; no confirmatory inference"
+    }
+  }
+}

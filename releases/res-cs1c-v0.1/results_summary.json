@@ -1,0 +1,132 @@
+{
+  "artifact_version": "1.0",
+  "claim_ceiling": "behavioral evaluation only; no consciousness, persistent identity, or mechanistic self-model claim",
+  "confirmatory_complexity_continuation": {
+    "cells": {
+      "CODE_MAPPED_HIGH": {
+        "clopper_pearson_95_ci": [
+          0.6324768061351952,
+          0.7946129348684058
+        ],
+        "n": 128,
+        "passes": 92,
+        "proportion": 0.71875
+      },
+      "CODE_MAPPED_LOW": {
+        "clopper_pearson_95_ci": [
+          0.5351108510265343,
+          0.7089650098495499
+        ],
+        "n": 128,
+        "passes": 80,
+        "proportion": 0.625
+      },
+      "NEUTRAL_HIGH": {
+        "clopper_pearson_95_ci": [
+          0.44105282866530526,
+          0.6199685380605667
+        ],
+        "n": 128,
+        "passes": 68,
+        "proportion": 0.53125
+      },
+      "NEUTRAL_LOW": {
+        "clopper_pearson_95_ci": [
+          0.5430915177920569,
+          0.7162376082446532
+        ],
+        "n": 128,
+        "passes": 81,
+        "proportion": 0.6328125
+      }
+    },
+    "conditional_logistic_interaction": {
+      "ci_95_log_odds": [
+        -2.9836315580357877,
+        -0.7310645977698189
+      ],
+      "ci_95_odds_ratio": [
+        0.05060871126921593,
+        0.48139622384742536
+      ],
+      "log_odds": -1.8573480779028033,
+      "odds_ratio": 0.15608600993934463,
+      "standard_error": 0.5746449878757798,
+      "two_sided_wald_p": 0.001228555996974717
+    },
+    "decision_margin": {
+      "interpretation": "NOT_SUPPORTED",
+      "nontransition_median_abs_margin": 2.0,
+      "nontransition_n": 86,
+      "one_sided_p": 0.2496439649845334,
+      "rank_biserial": 0.07392026578073085,
+      "rank_biserial_bootstrap_95_ci": [
+        -0.11738648947951269,
+        0.2632890365448505
+      ],
+      "test": "one-sided Mann-Whitney U",
+      "transition_median_abs_margin": 1.8125,
+      "transition_n": 42,
+      "u": 1672.5
+    },
+    "fixtures_complete": 128,
+    "fixtures_expected": 128,
+    "freeze_manifest_hash": "41938f71803fecaa17b6c8961343843be25f4c72887d03c32b6f34697d5553ef",
+    "observations": 640,
+    "primary_interpretation": "CONTRARY_DIRECTION_RESULT",
+    "primary_prediction": "positive neutral-by-high interaction",
+    "probability_scale": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 2026092705,
+      "code_mapped_high": 0.71875,
+      "code_mapped_low": 0.625,
+      "framing_effect_high": -0.1875,
+      "framing_effect_high_95_ci": [
+        -0.28125,
+        -0.09375
+      ],
+      "framing_effect_low": 0.0078125,
+      "framing_effect_low_95_ci": [
+        -0.0625,
+        0.078125
+      ],
+      "interaction": -0.1953125,
+      "interaction_95_ci": [
+        -0.3046875,
+        -0.0859375
+      ],
+      "neutral_high": 0.53125,
+      "neutral_low": 0.6328125
+    },
+    "protocol": "res-confirmatory-study1-complexity-continuation-v1",
+    "relational_perturbation_specificity": {
+      "n": 128,
+      "nonrelational_transition_rate": 0.078125,
+      "one_sided_p": 9.70612745732069e-09,
+      "paired_table": {
+        "both": 8,
+        "neither": 84,
+        "nonrelational_only": 2,
+        "relational_only": 34
+      },
+      "relational_transition_rate": 0.328125,
+      "test": "one-sided paired exact McNemar"
+    },
+    "run_id": "36324399210",
+    "selected_primary_model": "conditional_logistic",
+    "status": "COMPLETE"
+  },
+  "prepared_date": "2026-10-09",
+  "scope": "RES confirmatory complexity continuation and current surface-efficiency assay status",
+  "surface_efficiency_assay": {
+    "fixtures_complete": 73,
+    "fixtures_expected": 128,
+    "freeze_manifest_hash": "442670e751808d831b1491c7d81f178a07bb9051315fb33808b3c443e7b90ca1",
+    "inference_status": "WITHHELD_UNTIL_FROZEN_COMPLETION",
+    "observations_expected": 896,
+    "observations_present": 511,
+    "protocol": "res-surface-efficiency-assay-v1",
+    "run_id": "36499730628",
+    "status": "INCOMPLETE_RESUMABLE"
+  }
+}
